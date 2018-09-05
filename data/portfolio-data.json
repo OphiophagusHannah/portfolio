@@ -1,1 +1,155 @@
-portfolio-data.json
+var portfolioJSON = {
+  "projects": [
+    {
+      "name": "Gallery",
+      "type": "Web Development, Interactive Design",
+      "area": "Web VR, WebGL",
+      "role": "",
+      "summary": "Tried to explore bla bla",
+      "dates": "2017",
+      "link": "",
+      "skills": [
+        "WebGL",
+        "Advanced CSS",
+        "Web Development",
+        "UI Design",
+        "Information Architecture"
+      ],
+      "content":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus, ligula ac ultricies condimentum, velit lectus porttitor turpis, ac consectetur mi massa vel quam. Proin lorem lectus, lobortis quis ex sit amet, condimentum venenatis ante. Aliquam porttitor blandit vehicula. Nulla dictum commodo nulla vitae consequat. Donec vel mi purus. Curabitur nec vestibulum arcu. Etiam aliquet nunc id venenatis pretium.Fusce consequat ullamcorper justo, vel mattis odio consectetur eu. Sed eu justo dui. Nam dictum lorem ut nibh mollis, ac ultrices eros egestas. Vestibulum suscipit gravida sollicitudin. Fusce quis arcu gravida, ultricies odio sed, hendrerit ante. Integer at dui a ipsum hendrerit semper vel in ligula. Curabitur luctus ante interdum, sollicitudin libero congue, facilisis metus.Quisque fermentum eros id elit ultricies, id rhoncus dui finibus. Fusce at lacus venenatis, vestibulum metus condimentum, efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et libero vel orci pharetra ultrices sed vel est. Suspendisse aliquet finibus orci quis blandit. Morbi rutrum ac ante nec posuere. Vestibulum egestas viverra dolor. Suspendisse semper, mauris sit amet lobortis vehicula, quam arcu lacinia felis, tempus venenatis lacus purus quis sem. Sed eu rutrum turpis. Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio."
+
+    },
+    {
+      "name": "Refract",
+      "type": "Web Development, Interactive Design & UX/UI, IA",
+      "area": "",
+      "role": "",
+      "summary": "Final Senior Project",
+      "dates": "2017",
+      "link": "",
+      "skills": [
+        "Frontend Web Development",
+        "Advanced CSS",
+        "Interactive Design",
+        "UX/UI Design",
+        "IA"
+      ],
+      "content":
+        "Vestibulum suscipit gravida sollicitudin. Fusce quis arcu gravida, ultricies odio sed, hendrerit ante. Integer at dui a ipsum hendrerit semper vel in ligula. Curabitur luctus ante interdum, sollicitudin libero congue, facilisis metus.Quisque fermentum eros id elit ultricies, id rhoncus dui finibus. Fusce at lacus venenatis, vestibulum metus condimentum, efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et libero vel orci pharetra ultrices sed vel est. Suspendisse aliquet finibus orci quis blandit. Morbi rutrum ac ante nec posuere. Vestibulum egestas viverra dolor. Suspendisse semper, mauris sit amet lobortis vehicula, quam arcu lacinia felis, tempus venenatis lacus purus quis sem. Sed eu rutrum turpis. Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio."
+
+    },
+        {
+      "name": "Mixology",
+      "type": "Web Development, Interactive Design & UX/UI, IA",
+      "area": "",
+      "role": "",
+      "summary": "Final Senior Project",
+      "dates": "2017",
+      "link": "",
+      "skills": [
+        "User Research",
+        "Cincept Design",
+        "Interactive Design",
+        "UX/UI Design",
+        "Medium Fidelity Prototyping"
+      ],
+      "content":
+        "Donec vel mi purus. Curabitur nec vestibulum arcu. Etiam aliquet nunc id venenatis pretium.Fusce consequat ullamcorper justo, vel mattis odio consectetur eu. Sed eu justo dui. Nam dictum lorem ut nibh mollis, ac ultrices eros egestas. Vestibulum suscipit gravida sollicitudin. Fusce quis arcu gravida, ultricies odio sed, hendrerit ante. Integer at dui a ipsum hendrerit semper vel in ligula. Curabitur luctus ante interdum, sollicitudin libero congue, facilisis metus.Quisque fermentum eros id elit ultricies, id rhoncus dui finibus. Fusce at lacus venenatis, vestibulum metus condimentum, efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et libero vel orci pharetra ultrices sed vel est. Suspendisse aliquet finibus orci quis blandit. Morbi rutrum ac ante nec posuere. Vestibulum egestas viverra dolor. Suspendisse semper, mauris sit amet lobortis vehicula, quam arcu lacinia felis, tempus venenatis lacus purus quis sem. Sed eu rutrum turpis. Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit.Donec vel mi purus. Curabitur nec vestibulum arcu. Etiam aliquet nunc id venenatis pretium.Fusce consequat ullamcorper justo, vel mattis odio consectetur eu. Sed eu justo dui. Nam dictum lorem ut nibh mollis, ac ultrices eros egestas. Vestibulum suscipit gravida sollicitudin. Fusce quis arcu gravida, ultricies odio sed, hendrerit ante. Integer at dui a ipsum hendrerit semper vel in ligula. Curabitur luctus ante interdum, sollicitudin libero congue, facilisis metus.Quisque fermentum eros id elit ultricies, id rhoncus dui finibus. Fusce at lacus venenatis, vestibulum metus condimentum, efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et libero vel orci pharetra ultrices sed vel est. Suspendisse aliquet finibus orci quis blandit. Morbi rutrum ac ante nec posuere. Vestibulum egestas viverra dolor. Suspendisse semper, mauris sit amet lobortis vehicula, quam arcu lacinia felis, tempus venenatis lacus purus quis sem. Sed eu rutrum turpis. Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit.Donec vel mi purus. Curabitur nec vestibulum arcu. Etiam aliquet nunc id venenatis pretium.Fusce consequat ullamcorper justo, vel mattis odio consectetur eu. Sed eu justo dui. Nam dictum lorem ut nibh mollis, ac ultrices eros egestas. Vestibulum suscipit gravida sollicitudin. Fusce quis arcu gravida, ultricies odio sed, hendrerit ante. Integer at dui a ipsum hendrerit semper vel in ligula. Curabitur luctus ante interdum, sollicitudin libero congue, facilisis metus.Quisque fermentum eros id elit ultricies, id rhoncus dui finibus. Fusce at lacus venenatis, vestibulum metus condimentum, efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et libero vel orci pharetra ultrices sed vel est. Suspendisse aliquet finibus orci quis blandit. Morbi rutrum ac ante nec posuere. Vestibulum egestas viverra dolor. Suspendisse semper, mauris sit amet lobortis vehicula, quam arcu lacinia felis, tempus venenatis lacus purus quis sem. Sed eu rutrum turpis. Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit."
+
+    },
+    {
+      "name": "Visuals",
+      "type": "Web Development, Interactive Design & UX/UI, IA",
+      "area": "",
+      "role": "",
+      "summary": "Final Senior Project",
+      "dates": "2017",
+      "link": "",
+      "skills": [
+        "Processing",
+        "Paper Prototyping",
+        "Interactive Design",
+        "UX/UI Design",
+        "Creative Coding"
+      ],
+      "content": [
+        "Vestibulum suscipit gravida sollicitudin. Fusce quis arcu gravida, ultricies odio sed, hendrerit ante. Integer at dui a ipsum hendrerit semper vel in ligula. Curabitur luctus ante interdum, sollicitudin libero congue, facilisis metus.Quisque fermentum eros id elit ultricies, id rhoncus dui finibus. Fusce at lacus venenatis, vestibulum metus condimentum, efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et libero vel orci pharetra ultrices sed vel est. Suspendisse aliquet finibus orci quis blandit. Morbi rutrum ac ante nec posuere. Vestibulum egestas viverra dolor. Suspendisse semper, mauris sit amet lobortis vehicula, quam arcu lacinia felis, tempus venenatis lacus purus quis sem. Sed eu rutrum turpis. Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio."
+      ]
+    },
+    {
+      "name": "The Room",
+      "type": "Web Development, Interactive Design & UX/UI, IA",
+      "area": "",
+      "role": "",
+      "summary": "Final Senior Project",
+      "dates": "2017",
+      "link": "",
+      "skills": [
+        "Experience Design",
+        "Prototyping",
+        "Interactive Design",
+        "UX/UI Design",
+        "User Testing"
+      ],
+      "content":
+        "Curabitur luctus ante interdum, sollicitudin libero congue, facilisis metus.Quisque fermentum eros id elit ultricies, id rhoncus dui finibus. Fusce at lacus venenatis, vestibulum metus condimentum, efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et libero vel orci pharetra ultrices sed vel est. Suspendisse aliquet finibus orci quis blandit. Morbi rutrum ac ante nec posuere. Vestibulum egestas viverra dolor. Suspendisse semper, mauris sit amet lobortis vehicula, quam arcu lacinia felis, tempus venenatis lacus purus quis sem. Sed eu rutrum turpis. Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio."
+
+    },
+    {
+      "name": "Workspace",
+      "type": "Web Development, Interactive Design & UX/UI, IA",
+      "area": "",
+      "role": "",
+      "summary": "Final Senior Project",
+      "dates": "2017",
+      "link": "",
+      "skills": [
+        "Concept Development",
+        "Advanced CSS",
+        "Graphic Design",
+        "UX/UI Design",
+        "IA"
+      ],
+      "content":
+        "Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio.Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proisellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio.n mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Pha Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio.Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proisellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio.n mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Pha Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio.Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proisellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio.n mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Pha Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio.Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proisellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio.n mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Pha"
+
+    },
+    {
+      "name": "Evil Friend",
+      "type": "Web Development, Interactive Design & UX/UI, IA",
+      "area": "",
+      "role": "",
+      "summary": "Final Senior Project",
+      "dates": "2017",
+      "link": "",
+      "skills": [
+        "Frontend Web Development",
+        "Advanced CSS",
+        "Interactive Design",
+        "UX/UI Design"
+      ],
+      "content": [
+        "Vestibulum suscipit gravida sollicitudin. Fusce quis arcu gravida, ultricies odio sed, hendrerit ante. Integer at dui a ipsum hendrerit semper vel in ligula. Curabitur luctus ante interdum, sollicitudin libero congue, facilisis metus.Quisque fermentum eros id elit ultricies, id rhoncus dui finibus. Fusce at lacus venenatis, vestibulum metus condimentum, efficitur turpis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et libero vel orci pharetra ultrices sed vel est. Suspendisse aliquet finibus orci quis blandit. Morbi rutrum ac ante nec posuere. Vestibulum egestas viverra dolor. Suspendisse semper, mauris sit amet lobortis vehicula, quam arcu lacinia felis, tempus venenatis lacus purus quis sem. Sed eu rutrum turpis. Morbi et enim vehicula, gravida elit et, suscipit sem. Praesent eu tellus nulla. Ut at nibh risus. Integer sit amet mauris sagittis, pellentesque magna eu, molestie quam. In non ullamcorper dolor.Nunc at cursus odio. Mauris vitae porttitor quam. In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio."
+      ]
+    },
+    {
+      "name": "Some New Project",
+      "type": "Web Development, Interactive Design & UX/UI, IA",
+      "area": "",
+      "role": "",
+      "summary": "Final Senior Project",
+      "dates": "2017",
+      "link": "",
+      "skills": [
+        "Frontend Web Development",
+        "Advanced CSS",
+        "UX/UI Design",
+        "IA"
+      ],
+      "content":
+        "In imperdiet, diam sit amet venenatis laoreet, erat tellus euismod sem, condimentum dignissim magna neque ut elit. Aliquam sodales tempus nisi eu bibendum. Aenean eu venenatis libero, vel gravida elit. Etiam semper purus dui, eu cursus leo semper quis. Sed velit nibh, vehicula ut dolor nec, consequat gravida velit. Proin mollis, tortor sed ullamcorper aliquam, ipsum dolor dictum massa, eu iaculis dolor dui sed orci. Nullam eu tincidunt erat, eu egestas dui. Aenean volutpat tellus ipsum, eget venenatis est maximus eget. Phasellus sed urna eu massa ornare placerat sed ac metus. Proin at elit rhoncus, mollis neque ut, lacinia neque. Maecenas luctus efficitur nunc a volutpat. Sed sit amet leo condimentum, porttitor velit vitae, congue odio."
+
+    }
+
+  ]
+}

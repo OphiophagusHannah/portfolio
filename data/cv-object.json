@@ -1,128 +1,228 @@
-{
-    "basics": {
+var resumeJSON = {
+  "basics": {
     "first_name": "Hannah",
     "last_name": "Bogdanova",
-    "label": "Programmer",
+    "label": "Graphic, Interactive and Web Designer",
     "picture": "",
-    "email": "richard.hendriks@gmail.com",
-    "phone": "(912) 555-4321",
-    "website": "https://richardhendricks.com",
-    "summary": "Richard hails from Tulsa. He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinal!) Before starting Pied Piper, he worked for Hooli as a part time software developer. While his work focuses on applied information theory, mostly optimizing lossless compression schema of both the length-limited and adaptive variants, his non-work interests range widely, everything from quantum computing to chaos theory. He could tell you about it, but THAT would NOT be a “length-limited” conversation!",
+    "email": "hannahavgust@gmail.com",
+    "phone": "(847) 987-8801",
+    "website": "https://hannaaugust.github.io/portfolio-old-old/",
+    "summary": "Hanna's Summary",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "821 W Bradly Pl",
+      "postalCode": "IL 60613",
+      "city": "Chicago",
       "countryCode": "US",
-      "region": "California"
+      "region": "Illinois"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "neutralthoughts",
-        "url": ""
+        "network": "Linkedin",
+        "username": "Hannah Bogdanova",
+        "url": "https://www.linkedin.com/in/hannabahdanava/"
       },
       {
-        "network": "SoundCloud",
-        "username": "dandymusicnl",
-        "url": "https://soundcloud.com/dandymusicnl"
+        "network": "Medium",
+        "username": "Hanna Bogdanova",
+        "url": "https://medium.com/@hannaleibscher"
       }
     ]
   },
-  "work": [
+"work": [
     {
-      "company": "Pied Piper",
-      "position": "CEO/President",
-      "website": "https://piedpiper.com",
-      "startDate": "2013-12-01",
-      "endDate": "2014-12-01",
-      "summary": "Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.",
+      "company": "Gulo Digital Agency",
+      "position": "Frontend Developer, Interaction Designer",
+      "website": "",
+      "startDate": "2017-06",
+      "endDate": "Present",
+      "summary": "",
+      "skills": [
+        "Advanced SASS/CSS",
+        "Information Architecture",
+        "Web Development",
+        "PHP",
+        "JS",
+        "Wordpress",
+        "UI/UX Design"
+      ],
       "highlights": [
-        "Build an algorithm for artist to detect if their music was violating copy right infringement laws",
-        "Successfully won Techcrunch Disrupt",
-        "Optimized an algorithm that holds the current world record for Weisman Scores"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "CoderDojo",
-      "position": "Teacher",
-      "website": "https://coderdojo.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Global movement of free coding clubs for young people.",
-      "highlights": [
-        "Awarded 'Teacher of the Month'"
+        "Building Custom Websites",
+        "Colaborating in UX/UI and Interaction Design Development",
+        "Responsible for Data Structre and IA",
+        "Maintenance and Support for existing clients web space",
+        "Colaborating in idea development"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Oklahoma",
-      "area": "Information Technology",
+      "institution": "Columbia College Chicago",
+      "area": "Interaction Design and UX/UI, Frontend Web Development",
       "studyType": "Bachelor",
-      "startDate": "2011-06-01",
-      "endDate": "2014-01-01",
+      "startDate": "2015",
+      "endDate": "2018",
       "gpa": "4.0",
       "courses": [
-        "DB1101 - Basic SQL",
-        "CS2011 - Java Introduction"
+        " ",
+        " "
+      ]
+    },
+    {
+      "institution": "William Rainey Harper College",
+      "area": "General Education, ESL",
+      "studyType": "",
+      "startDate": "2012",
+      "endDate": "2015",
+      "gpa": "4.0",
+      "courses": [
+        " ",
+        " "
+      ]
+    },
+    {
+      "institution": "Glebov Minsk State College",
+      "area": "Graphic Design and Identity Design",
+      "studyType": "Bachelor",
+      "startDate": "2008",
+      "endDate": "2012",
+      "gpa": "4.0",
+      "courses": [
+        " ",
+        " "
       ]
     }
   ],
-  "awards": [
+  "certification": [
     {
-      "title": "Digital Compression Pioneer Award",
-      "date": "2014-11-01",
-      "awarder": "Techcrunch",
-      "summary": "There is no spoon."
+      "title": "",
+      "date": "",
+      "awarder": "",
+      "summary": ""
     }
   ],
-  "publications": [
+  "software": [
     {
-      "name": "Video compression for 3d media",
-      "publisher": "Hooli",
-      "releaseDate": "2014-10-01",
-      "website": "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
-      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+      "name": "Proto.io",
+      "level": "Master"
+    },
+    {
+      "name": "InVision",
+      "level": "Master"
+    },
+    {
+      "name": "Balsamiq",
+      "level": "Master"
+    },
+        {
+      "name": "Adobe Photoshop",
+      "level": "Master"
+    },
+            {
+      "name": "Adobe Illustrator",
+      "level": "Master"
+    },
+            {
+      "name": "Adobe InDesign",
+      "level": "Master"
+    },
+            {
+      "name": "Adobe AfterEffects",
+      "level": "Master"
+    },
+            {
+      "name": "Sketch",
+      "level": "Master"
+    },
+                {
+      "name": "Paint Tool Sai",
+      "level": "Master"
+    },
+                {
+      "name": "Maya",
+      "level": "Master"
+    },
+                {
+      "name": "ZBrush",
+      "level": "Master"
+    },
+                    {
+      "name": "Sublime/Athom",
+      "level": "Master"
     }
   ],
   "skills": [
     {
-      "name": "Web Development",
-      "level": "Master",
+      "name": "Web Design & Development",
+      "level": "",
       "keywords": [
+        "Frontend Development",
         "HTML",
-        "CSS",
-        "Javascript"
+        "SASS/CSS/CSS Grid",
+        "Javascript/JQuery",
+        "PHP",
+        "Wordpress",
+        "SVG",
+        "D3",
+        "WebGL",
+        "JSON",
+        "Three.js",
+        "Processing",
+        "Various Frameworks"
       ]
     },
     {
-      "name": "Compression",
+      "name": "Interaction Design & UX/UI",
       "level": "Master",
       "keywords": [
-        "Mpeg",
-        "MP4",
-        "GIF"
+        "UX/UI Techniques",
+        "Information Architecture",
+        "Concept Development",
+        "Wireframing",
+        "Storyboarding",
+        "Rapid Prototyping",
+        "Paper Prototyping",
+        "Data Visualisation"
+      ]
+    },
+        {
+      "name": "Graphic Design & Visual Arts",
+      "level": "Master",
+      "keywords": [
+        "Identity Design",
+        "Concept Development",
+        "Ilustration",
+        "Digital Painting",
+        "Animation",
+        "Visual Interface"
+
       ]
     }
   ],
   "languages": [
     {
       "language": "English",
-      "fluency": "Native speaker"
+      "fluency": "Working Efficiency"
+    },
+    {
+      "language": "Russian",
+      "fluency": "Native"
     }
   ],
   "interests": [
     {
-      "name": "Wildlife",
+      "name": "Interests",
       "keywords": [
-        "Ferrets",
-        "Unicorns"
+        "Sex",
+        "Drugs",
+        "Industrial"
       ]
     }
   ],
   "references": [
+    {
+      "name": "Erlich Bachman",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    },
     {
       "name": "Erlich Bachman",
       "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
