@@ -44,6 +44,7 @@ body {
   top: 40%;
   left: 20%;
   transition: .5s ease;
+  width: 100%;
 }
 
 .current-title {
@@ -193,4 +194,9 @@ body {
     width: 2rem;
     transition: .5s ease;
   }
+}
+
+.hidden-image {
+  width: 100%;
+  height: auto;
 }
