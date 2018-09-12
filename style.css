@@ -48,7 +48,7 @@ body {
     display: none; }
   .default-layout #cont .blind-bottom {
     position: fixed;
-    top: 70vh;
+    top: 60vh;
     height: 40vh;
     width: 100%;
     grid-column-start: 1;
@@ -155,7 +155,10 @@ body {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(crimson));
+  background: -webkit-linear-gradient(top, red, crimson);
+  background: -o-linear-gradient(top, red, crimson);
+  background: linear-gradient(to bottom, red, crimson);
   position: fixed;
   bottom: 2rem;
   -webkit-transition: .5s ease;

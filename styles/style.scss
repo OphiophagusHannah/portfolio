@@ -51,7 +51,7 @@ body {
 
     .blind-bottom {
       position: fixed;
-      top: 70vh;
+      top: 60vh;
       height: 40vh;
       width: 100%;
       grid-column-start: 1;
@@ -157,8 +157,8 @@ body {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  //background: linear-gradient(to bottom, red, crimson);
-  background: white;
+  background: linear-gradient(to bottom, red, crimson);
+  //background: white;
   position: fixed;
   bottom: 2rem;
   transition: .5s ease;
