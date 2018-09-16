@@ -23,9 +23,21 @@ body {
   left:0;
   display: grid;
   grid-template-columns: 20% 50% 30%;
+
 }
 
 .default-layout {
+
+  #resume {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 0;
+       position: fixed;
+    top: 0;
+    z-index: 20;
+    background: lightgrey;
+    transition: .5s ease;
+  }
 
   #main {
     grid-column-start: 1;
@@ -33,6 +45,11 @@ body {
     margin-left: 0;
     height: 200vh;
     transition: .5s ease;
+
+    overflow: auto;
+    scroll-snap-points-y: repeat(90px);
+    scroll-snap-type: mandatory;
+    scroll-snap-destination: 100% 0%;
   }
 
   #cont {
@@ -40,6 +57,7 @@ body {
     grid-column-end: 4;
     margin-right: 0;
     background: whitesmoke;
+
     height: 200vh;
     transition: .5s ease;
     display: grid;
@@ -57,7 +75,6 @@ body {
       grid-column-start: 1;
       grid-column-end: 2;
       background: linear-gradient(to top, rgba(245,245,245,1) 0%, rgba(245,245,245,0) 100%);
-
     }
   }
 }
@@ -93,6 +110,32 @@ body {
 }
 
 .open-layout {
+  #resume-switch-button {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, red, crimson);
+    position: fixed;
+    z-index: 30;
+    right: 88.3%;
+    top: 75%;
+    transition: .5s ease;
+  }
+
+  .hline {
+    display: none;
+  }
+
+  #resume {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    width: 0;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    background: lightgrey;
+    transition: .5s ease;
+  }
 
   #main {
     grid-column-start: 1;
@@ -153,55 +196,6 @@ body {
   }
 }
 
-#project-switch-button {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, red, crimson);
-  //background: white;
-  position: fixed;
-  bottom: 2rem;
-  transition: .5s ease;
-}
-
-.button-open {
-  right: 87%;
-  background: grey;
-  transition: .5s ease;
-
-  .right:after {
-    content: '';
-    display: inline-block;
-    margin-top: 1.9rem;
-    margin-left: 2.1rem;
-    width: 1rem;
-    height: 1rem;
-    border-top: 3px solid white;
-    border-right: 3px solid white;
-    transform: rotate(225deg);
-    transition: .5s ease;
-  }
-}
-
-.button-closed {
-  right: 12%;
-  transition: .5s ease;
-
-  .right:after {
-    content: '';
-    display: inline-block;
-    margin-top: 1.9rem;
-    margin-left: 1.6rem;
-    width: 1rem;
-    height: 1rem;
-    border-top: 3px solid white;
-    border-right: 3px solid white;
-    transform: rotate(45deg);
-    transition: .5s ease;
-  }
-}
-
-
 #projects, #descriptions{
   display: none;
 }
@@ -217,10 +211,10 @@ body {
   left: 0;
   top: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 2;
   background: lightgrey;
   height: 100vh;
-/*   transition: .5s ease;*/
+
 }
 
 #scroll-line-over {
@@ -228,29 +222,185 @@ body {
   width: 15px;
   left: 0;
   top: 0;
-  z-index: 4;
-  background: linear-gradient(to bottom, purple, red, yellow, cyan, blue, violet);
+  z-index: 6;
+  height: 0;
+  //background: linear-gradient(to bottom, purple, red, yellow, cyan, blue, violet);
   height: 100vh;
-/*   transition: .5s ease; */
+  scroll-snap-points-y: repeat(90px);
+  scroll-snap-type: mandatory;
+  scroll-snap-destination: 100% 0%;
+      transition: .5s ease;
 }
 
 .hline {
   position: fixed;
   left: 0;
-  width: 2rem;
-  border-bottom: 2px solid lightgrey;
+  width: 3rem;
+  //border-bottom: 2px solid lightgrey;
   top: 0;
-  z-index: 3;
+  z-index: 7;
   transition: .5s ease;
 
-  &:hover {
-    cursor:pointer;
-    width: 2rem;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: 7;
+    width: 15px;
+    height: 1px;
+    background: black;
     transition: .5s ease;
+  }
+
+  &:after {
+    content: attr(data-ind);
+    position: absolute;
+    top: 30%;
+    left: 20px;
+/*    height: 100%;*/
+    width: 15rem;
+    color: lightgrey;
+    font-size: 12px;
+    line-height: 12px;
+    opacity: 0;
+    font-weight: 600;
+    transition: .5s ease;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transition: .5s ease;
+
+    &:before {
+      width: 60px;
+      transition: .5s ease;
+    }
+
+    &:after {
+      opacity: 1;
+      transition: .5s ease;
+    }
   }
 }
 
 .hidden-image {
   width: 100%;
   height: auto;
+}
+
+
+.front-layout {
+  #resume {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    height: 100vh;
+    background: lightgrey;
+    transition: .5s ease;
+  }
+}
+
+
+#resume-switch-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, red, crimson);
+  position: fixed;
+  z-index: 30;
+  top: 5rem;
+  transition: .5s ease;
+
+  &:hover {
+    box-shadow: -1px 0px 20px 2px rgba(0,0,0,0.4);
+      transition: .5s ease;
+  }
+}
+
+.resume-button-open {
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+
+  .round {
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin: auto;
+    transition: .3s .3s ease;
+  }
+}
+
+.resume-button-closed {
+  right: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+
+  .round {
+    background: white;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    margin: auto;
+    transition: .3s .3s ease;
+  }
+}
+
+
+#project-switch-button {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, red, crimson);
+  position: fixed;
+  bottom: 2rem;
+  transition: .5s ease;
+
+  &:hover {
+    box-shadow: -1px 0px 20px 2px rgba(0,0,0,0.4);
+    transition: .5s ease;
+  }
+}
+
+.button-open {
+  right: 87%;
+  background: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+
+  .round {
+    background: white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
+    transition: .3s .3s ease;
+  }
+}
+
+.button-closed {
+  right: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s ease;
+
+  .round {
+    background: white;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    margin: auto;
+    transition: .3s .3s ease;
+  }
 }

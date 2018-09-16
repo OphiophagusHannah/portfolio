@@ -3,7 +3,7 @@
 <head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- <script src="jquery.min.js"></script> -->
+<script src="jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 <script>
 
@@ -424,8 +424,14 @@ var portfolioJSON = {
               <div id="content" class="content"></div>
               <div class="blind-bottom"></div>
         </div>
-
-        <div id="project-switch-button" class="button-closed"> <span class="right"></span></div>
+        <div id="resume-switch-button" class="resume-button-closed">
+    <!--     <span class="right"></span> -->
+    <div class="round"></div>
+         </div>
+        <div id="project-switch-button" class="button-closed">
+    <!--      <span class="right"></span> -->
+    <div class="round"></div>
+         </div>
     <div>
 <!--     Shiukd be auto height -->
 <script>
@@ -491,7 +497,7 @@ skill.innerHTML = mySkills[0].innerHTML; //Print first value of array right away
 content.innerHTML = myContents[0].innerHTML;
 
 var body = document.body;
-var scroll_line = document.getElementById("scroll-line");
+var scroll_line = document.getElementById("scroll-line-over");
 
 var h = $( window ).innerHeight();
 var temp_h = h/myTitle.length/10;
@@ -506,18 +512,18 @@ var num = myTitle.length;
 var scroll_interval = parseInt(h/num);
 var scroll = parseInt(h/num);
 var s = parseInt(h/num);
-
+var current_project;
 
 var n = 0;
 
+var clicked_project;
+var clicked_top;
 
 var lastScrollTop = 0;
 
-// window.scrollBy({
-//   top: scroll_interval/4, // could be negative value
-//   left: 0,
-//   behavior: 'smooth'
-// });
+window.scrollBy({
+  top: scroll_interval + 'px', // could be negative value
+});
 
 var current_scroll;
 $('#project-switch-button').click(function() {
@@ -525,38 +531,49 @@ $('#project-switch-button').click(function() {
     $('#general-flex').toggleClass('open-layout');
     $('#project-switch-button').toggleClass('button-open');
     $('#project-switch-button').toggleClass('button-closed');
+    current_project = myIndex; //multiply scroll hight by current_project and assign
+});
+
+$('#resume-switch-button').click(function() {
+    $('#general-flex').toggleClass('front-layout');
+    $('#general-flex').toggleClass('default-layout');
+    $('#resume-switch-button').toggleClass('resume-button-closed');
+    $('#resume-switch-button').toggleClass('resume-button-open');
+  if ( $( '#general-flex' ).hasClass( "open-layout" ) ) {
+    addListenersLines();
+  }
 });
 
 
 
 
-    $(window).scroll(function(event){
-      if ( $( '#general-flex' ).hasClass( "default-layout" ) ) {
-      updateGradient();
-      scrollLine();
-      var page_offset = window.pageYOffset;
-      var st = $(this).scrollTop();
+$(window).scroll(function(event){
+  if ( $( '#general-flex' ).hasClass( "default-layout" ) ) {
+    updateGradient();
+    scrollLine();
+    var page_offset = window.pageYOffset;
+    var st = $(this).scrollTop();
 
-      if(st > lastScrollTop){
-        if( page_offset > scroll) {
-          n = myIndex;
-          nextProject();
-        }
+    if(st > lastScrollTop){
+      if( page_offset > scroll) {
+        n = myIndex;
+        nextProject();
       }
-      if (st < lastScrollTop){
-        if( page_offset < scroll){
-          n = myIndex;
-          prevProject();
-        }
-      }
-      lastScrollTop = st;
-      current_scroll = scroll;
     }
-    if ( $( '#general-flex' ).hasClass( "open-layout" ) ) {
-      updateGradient();
+    if (st < lastScrollTop){
+      if( page_offset < scroll){
+        n = myIndex;
+        prevProject();
+      }
+    }
+    lastScrollTop = st;
+    current_scroll = scroll;
+  }
+  if ( $( '#general-flex' ).hasClass( "open-layout" ) ) {
+    updateGradient();
 
-    }
-  });
+  }
+});
 
 $('.button-closed').click(function(){
   window.scrollTo(0, 0);
@@ -612,16 +629,19 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
   $('#project-switch-button').css({
     background: "-webkit-gradient(linear, left top, left bottom, from("+color1+"), to("+color2+"))"}).css({
     background: "-moz-linear-gradient(top, "+color1+" 0%, "+color2+" 100%)"});
+      $('#resume-switch-button').css({
+    background: "-webkit-gradient(linear, left top, left bottom, from("+color1+"), to("+color2+"))"}).css({
+    background: "-moz-linear-gradient(top, "+color1+" 0%, "+color2+" 100%)"});
 
-  step += gradientSpeed;
-  if ( step >= 1 )
-  {
-    step %= 1;
-    colorIndices[0] = colorIndices[1];
-    colorIndices[2] = colorIndices[3];
-    colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-    colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
-  }
+  // step += gradientSpeed;
+  // if ( step >= 1 )
+  // {
+  //   step %= 1;
+  //   colorIndices[0] = colorIndices[1];
+  //   colorIndices[2] = colorIndices[3];
+  //   colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+  //   colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+  // }
 
 
  $('#scroll-line-over').css({
@@ -640,62 +660,62 @@ var color2 = "rgb("+r2+","+g2+","+b2+")";
   }
 }
 
+var thisIndex = 0;
+var thisTitle = pro.querySelectorAll('.title');
+thisTitle.innerHTML = thisTitle[0].innerHTML;
 
 function makeLines() {
     var l_top = 0;
     while (n < num + 1){
 
-          var line = document.createElement("div");
-          line.className = 'hline';
-          var main = document.getElementById("main");
-          main.appendChild(line);
-          line.style.top = l_top  + "px";
-          line.style.height = scroll_interval + "px";
+      var line = document.createElement("div");
+      line.className = 'hline';
+      var main = document.getElementById("main");
+      main.appendChild(line);
+      line.style.top = l_top  + "px";
+      line.style.height = scroll_interval + "px";
 
-          line.setAttribute('top-data', l_top + scroll_interval );
-          line.setAttribute('ind', n+1 );
-          n++;
-          l_top = l_top + scroll_interval;
+      line.setAttribute('data-top', l_top + scroll_interval );
+      line.setAttribute('data-ind', n+1 );
+
+      n++;
+      l_top = l_top + scroll_interval;
 
     }
 }
 
-function adListenersLines(){
+function addListenersLines(){
+  var hrLineArray = document.getElementsByClassName("hline");
 
-var hrLineArray = document.getElementsByClassName("hline");
-  for (var i = 0; i < hrLineArray.length; i++) {
-      hrLineArray[i].addEventListener('click', function() {
-      var attribute = this.getAttribute("top-data");
-      var ind = this.getAttribute("ind");
-      scroll_line.style.top = attribute + "px";
+  $('.hline').click(function () {
+    clicked_project = $(this).data('ind');
+    clicked_top = $(this).data('top');
+    scroll_line.style.height = clicked_top - scroll_interval/2 + "px";
+    console.log(clicked_project);
+    console.log(myIndex);
+    if ( myIndex < clicked_project){
+      x = -(myIndex - clicked_project);
+      console.log(x);
 
-      // window.scrollTo({
-      //     top: attribute,
-      //     behavior: "smooth"
-      // });
+      i = 0;
 
-      if (ind>myIndex){
-        var l = 0;
-        var col = ind - myIndex;
-
-        while(l<=col){
-          nextProject();
-        }
-
+      while (i < x) {
+         i++;
+        nextProject();
       }
+    }
 
-      if (ind<myIndex){
-        var l = 0;
-        var col = myIndex - ind;
+    if ( myIndex > clicked_project){
+      x = myIndex - clicked_project;
+      console.log(x);
 
-        while(l<=col){
-          prevProject();
-        }
-
+      i = -1;
+      while (x > i) {
+         i++;
+        prevProject();
       }
-
-    });
-  }
+    }
+  });
 }
 
 function nextProject(){
@@ -712,19 +732,21 @@ function prevProject(){
   scroll = scroll - scroll_interval;
   title.innerHTML = myTitle[myIndex].innerHTML;
   skill.innerHTML = mySkills[myIndex].innerHTML;
-content.innerHTML = myContents[myIndex].innerHTML;
+  content.innerHTML = myContents[myIndex].innerHTML;
 }
 
 function scrollLine(){
     scroll_percentage = (body.scrollTop + element.scrollTop)/(element.scrollHeight - element.clientHeight);
     draw = h * scroll_percentage;
-    scroll_line.style.top = draw/h*100 + "vh";
+    scroll_line.style.height = draw/h*100 + "vh";
 }
 
 window.onload = function(){
     makeLines();
-    adListenersLines();
+    addListenersLines();
 }
+
+
 
 </script>
 
