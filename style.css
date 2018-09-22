@@ -240,9 +240,9 @@ body {
   -webkit-scroll-snap-destination: 100% 0%;
   -ms-scroll-snap-destination: 100% 0%;
   scroll-snap-destination: 100% 0%;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease; }
+  -webkit-transition: .2s ease;
+  -o-transition: .2s ease;
+  transition: .2s ease; }
 
 .hline {
   position: fixed;
@@ -449,3 +449,19 @@ body {
     -webkit-transition: .3s .3s ease;
     -o-transition: .3s .3s ease;
     transition: .3s .3s ease; }
+
+.title.start {
+  -webkit-animation: example ease-in .4s 1;
+  animation: example ease-in .4s 1; }
+
+@-webkit-keyframes example {
+  from {
+    color: lightgrey; }
+  to {
+    color: black; } }
+
+@keyframes example {
+  from {
+    color: lightgrey; }
+  to {
+    color: black; } }

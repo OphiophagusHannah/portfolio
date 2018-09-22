@@ -725,6 +725,12 @@ function nextProject(){
 
   myIndex = myIndex+1;
   scroll = scroll + scroll_interval;
+  $("#title").on(
+    "transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd",
+    function() {
+        $(this).removeClass("start");
+    }
+);
 }
 
 function prevProject(){
@@ -733,6 +739,12 @@ function prevProject(){
   title.innerHTML = myTitle[myIndex].innerHTML;
   skill.innerHTML = mySkills[myIndex].innerHTML;
   content.innerHTML = myContents[myIndex].innerHTML;
+  $("#title").on(
+    "transitionend MSTransitionEnd webkitTransitionEnd oTransitionEnd",
+    function() {
+        $(this).removeClass("start");
+    }
+);
 }
 
 function scrollLine(){
@@ -745,6 +757,8 @@ window.onload = function(){
     makeLines();
     addListenersLines();
 }
+
+
 
 
 

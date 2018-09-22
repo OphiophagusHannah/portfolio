@@ -229,7 +229,7 @@ body {
   scroll-snap-points-y: repeat(90px);
   scroll-snap-type: mandatory;
   scroll-snap-destination: 100% 0%;
-      transition: .5s ease;
+      transition: .2s ease;
 }
 
 .hline {
@@ -403,4 +403,13 @@ body {
     margin: auto;
     transition: .3s .3s ease;
   }
+}
+
+
+.title.start{animation:example ease-in .4s 1;}
+
+
+@keyframes example {
+    from {color: lightgrey;}
+    to {color: black;}
 }
