@@ -515,21 +515,20 @@ Object.entries(portfolio.projects).map(([key, value]) => {
     content.className = 'content';
     content.innerHTML = projects.content;
 
-
     var skills = document.createElement("div");
+
     skills.className = 'skills';
     Object.entries(projects.skills).map(([key, value]) => {
-        var keys = JSON.parse(JSON.stringify(value));
-        var keyword = document.createElement("span");
-        keyword.innerHTML = keys + " | ";
-        skills.appendChild(keyword);
+      var keys = JSON.parse(JSON.stringify(value));
+      var keyword = document.createElement("span");
+      keyword.innerHTML = keys + " | ";
+      skills.appendChild(keyword);
 
     })
 
     // var next = document.createElement("div");
     // next.className = 'button-next';
     // next.innerHTML = 'Next Project';
-
 
     var projects = document.getElementById("projects");
     projects.appendChild(project);
@@ -539,8 +538,6 @@ Object.entries(portfolio.projects).map(([key, value]) => {
     var descriptions = document.getElementById("descriptions");
     descriptions.appendChild(desc);
     desc.appendChild(content);
-    //content.appendChild(next);
-
 });
 
 
@@ -593,23 +590,23 @@ window.scrollBy({
 
 var current_scroll;
 $('#project-switch-button').click(function() {
-    $('#general-flex').toggleClass('default-layout');
-    $('#general-flex').toggleClass('open-layout');
-    $('#project-switch-button').toggleClass('button-open');
-    $('#project-switch-button').toggleClass('button-closed');
-    current_project = myIndex; //multiply scroll hight by current_project and assign
+  $('#general-flex').toggleClass('default-layout');
+  $('#general-flex').toggleClass('open-layout');
+  $('#project-switch-button').toggleClass('button-open');
+  $('#project-switch-button').toggleClass('button-closed');
+  current_project = myIndex; //multiply scroll hight by current_project and assign
 });
 
 $('#resume-switch-button').click(function() {
-    $('#general-flex').toggleClass('front-layout');
-    $('#general-flex').toggleClass('default-layout');
-    $('#resume-switch-button').toggleClass('resume-button-closed');
-    $('#resume-switch-button').toggleClass('resume-button-open');
+  $('#general-flex').toggleClass('front-layout');
+  $('#general-flex').toggleClass('default-layout');
+  $('#resume-switch-button').toggleClass('resume-button-closed');
+  $('#resume-switch-button').toggleClass('resume-button-open');
+
   if ( $( '#general-flex' ).hasClass( "open-layout" ) ) {
     addListenersLines();
   }
 });
-
 
 $(window).scroll(function(event){
 
@@ -634,9 +631,9 @@ $(window).scroll(function(event){
     lastScrollTop = st;
     current_scroll = scroll;
   }
+
   if ( $( '#general-flex' ).hasClass( "open-layout" ) ) {
     updateGradient();
-
   }
 });
 
@@ -738,7 +735,6 @@ function makeLines() {
 
     n++;
     l_top = l_top + scroll_interval;
-
   }
 }
 
@@ -751,10 +747,9 @@ function addListenersLines(){
     scroll_line.style.height = clicked_top - scroll_interval/2 + "px";
     if ( myIndex < clicked_project){
       x = -(myIndex - clicked_project);
-      console.log(x);
+      //console.log(x);
 
       i = 0;
-
       while (i < x) {
         i++;
         nextProject();
@@ -763,12 +758,12 @@ function addListenersLines(){
 
     if ( myIndex > clicked_project){
       x = myIndex - clicked_project;
-      console.log(x);
+      //console.log(x);
 
       i = -1;
       while (x > i) {
         prevProject();
-         i++;
+        i++;
       }
     }
   });
@@ -810,6 +805,7 @@ function prevProject(){
 }
 
 $('#button-next').on('click', function(){
+  runAnimate();
   myIndex = myIndex+1;
   title.innerHTML = myTitle[myIndex].innerHTML;
   skill.innerHTML = mySkills[myIndex].innerHTML;
@@ -817,13 +813,13 @@ $('#button-next').on('click', function(){
 })
 
 $('#button-prev').on('click', function(){
+  runAnimate();
   myIndex = myIndex-1;
   scroll = scroll - scroll_interval;
   title.innerHTML = myTitle[myIndex].innerHTML;
   skill.innerHTML = mySkills[myIndex].innerHTML;
   content.innerHTML = myContents[myIndex].innerHTML;
 })
-
 
 function scrollLine(){
   scroll_percentage = (body.scrollTop + element.scrollTop)/(element.scrollHeight - element.clientHeight);
@@ -855,8 +851,6 @@ function whichAnimationEvent(){
 }
 
 var animationEvent = whichAnimationEvent();
-
-
 
 
 //RESUME?????????????????????????????????????????????????????????????????????????????????????????????????????
