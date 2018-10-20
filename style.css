@@ -24,6 +24,24 @@ body {
   display: grid;
   grid-template-columns: 20% 50% 30%; }
 
+.default-layout #button-next {
+  border-radius: 50%;
+  top: 3rem;
+  position: fixed;
+  right: -5rem;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; }
+
+.default-layout #button-prev {
+  border-radius: 50%;
+  top: 3rem;
+  position: fixed;
+  right: -5rem;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; }
+
 .default-layout #resume {
   grid-column-start: 1;
   grid-column-end: 1;
@@ -59,32 +77,59 @@ body {
   grid-column-start: 3;
   grid-column-end: 4;
   margin-right: 0;
-  background: whitesmoke;
+  background: #888888;
+  opacity: 0.5;
+  -webkit-transition: all .3s .3s ease;
+  -o-transition: all .3s .3s ease;
+  transition: all .3s .3s ease;
+  -webkit-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease;
   height: 200vh;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease;
   display: grid;
   grid-template-columns: 100%; }
+  .default-layout #cont p, .default-layout #cont a {
+    display: none;
+    opacity: 0;
+    -webkit-transition: opacity .3s .5s ease;
+    -o-transition: opacity .3s .5s ease;
+    transition: opacity .3s .5s ease; }
+  .default-layout #cont img {
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    -webkit-transition: .3s .5s ease;
+    -o-transition: .3s .5s ease;
+    transition: .3s .5s ease; }
   .default-layout #cont .blind {
     display: none; }
-  .default-layout #cont .blind-bottom {
-    position: fixed;
-    top: 60vh;
-    height: 40vh;
-    width: 100%;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    background: -webkit-gradient(linear, left bottom, left top, from(whitesmoke), to(rgba(245, 245, 245, 0)));
-    background: -webkit-linear-gradient(bottom, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: -o-linear-gradient(bottom, whitesmoke 0%, rgba(245, 245, 245, 0) 100%);
-    background: linear-gradient(to top, whitesmoke 0%, rgba(245, 245, 245, 0) 100%); }
+
+.default-layout .blind-bottom {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(136, 136, 136, 0.5)), to(rgba(136, 136, 136, 0.5)));
+  background: -webkit-linear-gradient(bottom, rgba(136, 136, 136, 0.5) 0%, rgba(136, 136, 136, 0.5) 100%);
+  background: -o-linear-gradient(bottom, rgba(136, 136, 136, 0.5) 0%, rgba(136, 136, 136, 0.5) 100%);
+  background: linear-gradient(to top, rgba(136, 136, 136, 0.5) 0%, rgba(136, 136, 136, 0.5) 100%);
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; }
 
 .content {
   position: fixed;
-  top: 5%;
-  left: 75%;
-  width: 20%;
+  top: 0;
+  left: 70%;
+  width: 30%;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
@@ -95,6 +140,7 @@ body {
   position: fixed;
   top: 40%;
   left: 20%;
+  opacity: 0;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease;
@@ -108,9 +154,58 @@ body {
   top: 60%;
   left: 20%;
   width: 30%;
+  opacity: 0;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
+
+.open-layout #button-prev {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(crimson));
+  background: -webkit-linear-gradient(top, red, crimson);
+  background: -o-linear-gradient(top, red, crimson);
+  background: linear-gradient(to bottom, red, crimson);
+  position: fixed;
+  z-index: 30;
+  top: 3rem;
+  right: 3rem;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; }
+  .open-layout #button-prev:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease; }
+
+.open-layout #button-next {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(crimson));
+  background: -webkit-linear-gradient(top, red, crimson);
+  background: -o-linear-gradient(top, red, crimson);
+  background: linear-gradient(to bottom, red, crimson);
+  position: fixed;
+  z-index: 30;
+  bottom: 3rem;
+  right: 3rem;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; }
+  .open-layout #button-next:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease; }
 
 .open-layout #resume-switch-button {
   width: 3rem;
@@ -156,23 +251,52 @@ body {
   grid-column-start: 3;
   grid-column-end: 4;
   margin-right: 0;
-  background: white;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease; }
+  opacity: 1;
+  background: rgba(136, 136, 136, 0);
+  -webkit-transition: all .3s .3s ease;
+  -o-transition: all .3s .3s ease;
+  transition: all .3s .3s ease;
+  -webkit-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease; }
+  .open-layout #cont p, .open-layout #cont a {
+    display: initial;
+    opacity: 1;
+    -webkit-transition: opacity .3s .5s ease;
+    -o-transition: opacity .3s .5s ease;
+    transition: opacity .3s .5s ease; }
+  .open-layout #cont img {
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    -webkit-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    -webkit-transition: .3s .5s ease;
+    -o-transition: .3s .5s ease;
+    transition: .3s .5s ease; }
   .open-layout #cont .blind {
     position: fixed;
     top: 0;
     height: 20vh;
     left: 20%;
     width: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
-    background: -o-linear-gradient(top, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 3; }
-  .open-layout #cont .blind-bottom {
-    display: none; }
+
+.open-layout .blind-bottom {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(136, 136, 136, 0.5)), to(rgba(136, 136, 136, 0.5)));
+  background: -webkit-linear-gradient(top, rgba(136, 136, 136, 0.5) 0%, rgba(136, 136, 136, 0.5) 100%);
+  background: -o-linear-gradient(top, rgba(136, 136, 136, 0.5) 0%, rgba(136, 136, 136, 0.5) 100%);
+  background: linear-gradient(to bottom, rgba(136, 136, 136, 0.5) 0%, rgba(136, 136, 136, 0.5) 100%);
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; }
 
 .open-layout .content {
   position: absolute;
@@ -186,6 +310,9 @@ body {
 .open-layout .title {
   color: grey;
   position: fixed;
+  width: auto;
+  padding-right: 1rem;
+  background: white;
   z-index: 5;
   top: -2%;
   left: 7%;
@@ -231,9 +358,9 @@ body {
   z-index: 6;
   height: 0;
   height: 100vh;
-  -webkit-scroll-snap-points-y: repeat(90px);
-  -ms-scroll-snap-points-y: repeat(90px);
-  scroll-snap-points-y: repeat(90px);
+  -webkit-scroll-snap-points-y: repeat(50px);
+  -ms-scroll-snap-points-y: repeat(50px);
+  scroll-snap-points-y: repeat(50px);
   -webkit-scroll-snap-type: mandatory;
   -ms-scroll-snap-type: mandatory;
   scroll-snap-type: mandatory;
@@ -259,7 +386,7 @@ body {
     left: 0;
     z-index: 7;
     width: 15px;
-    height: 1px;
+    height: 0.05rem;
     background: black;
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
@@ -299,6 +426,15 @@ body {
   width: 100%;
   height: auto; }
 
+.front-layout #button-next {
+  border-radius: 50%;
+  top: 3rem;
+  position: fixed;
+  right: -5rem;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease; }
+
 .front-layout #resume {
   grid-column-start: 1;
   grid-column-end: 4;
@@ -327,8 +463,10 @@ body {
   -o-transition: .5s ease;
   transition: .5s ease; }
   #resume-switch-button:hover {
-    -webkit-box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4);
-    box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease; }
@@ -395,8 +533,10 @@ body {
   -o-transition: .5s ease;
   transition: .5s ease; }
   #project-switch-button:hover {
-    -webkit-box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4);
-    box-shadow: -1px 0px 20px 2px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-transition: .5s ease;
     -o-transition: .5s ease;
     transition: .5s ease; }
@@ -450,18 +590,42 @@ body {
     -o-transition: .3s .3s ease;
     transition: .3s .3s ease; }
 
-.title.start {
-  -webkit-animation: example ease-in .4s 1;
-  animation: example ease-in .4s 1; }
+a {
+  color: salmon;
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  text-transform: lowercase;
+  font-weight: 600;
+  padding-bottom: 2rem; }
+  a:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
 
-@-webkit-keyframes example {
-  from {
-    color: lightgrey; }
-  to {
-    color: black; } }
+.title.on {
+  -webkit-animation: cartbtnFade  0.6s linear;
+  animation: cartbtnFade  0.6s linear; }
 
-@keyframes example {
-  from {
-    color: lightgrey; }
-  to {
-    color: black; } }
+.skill.on {
+  -webkit-animation: cartbtnFade  0.6s linear;
+  animation: cartbtnFade  0.6s linear; }
+
+.content.on {
+  -webkit-animation: cartbtnFade  0.6s linear;
+  animation: cartbtnFade  0.6s linear; }
+
+@-webkit-keyframes cartbtnFade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes cartbtnFade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }

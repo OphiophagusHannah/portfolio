@@ -28,6 +28,22 @@ body {
 
 .default-layout {
 
+#button-next {
+  border-radius: 50%;
+  top: 3rem;
+  position: fixed;
+  right: -5rem;
+  transition: .5s ease;
+}
+
+#button-prev {
+  border-radius: 50%;
+  top: 3rem;
+  position: fixed;
+  right: -5rem;
+  transition: .5s ease;
+}
+
   #resume {
     grid-column-start: 1;
     grid-column-end: 1;
@@ -56,7 +72,22 @@ body {
     grid-column-start: 3;
     grid-column-end: 4;
     margin-right: 0;
-    background: whitesmoke;
+    background: rgba(136,136,136,1);
+    opacity: 0.5;
+    transition: all .3s .3s ease;
+        transition: background .3s ease;
+
+    p, a {
+      display: none;
+      opacity: 0;
+      transition: opacity .3s .5s ease;
+    }
+    img {
+      opacity: 0.5;
+      filter: grayscale(100%);
+      transition: opacity .5s ease;
+      transition:.3s .5s ease;
+    }
 
     height: 200vh;
     transition: .5s ease;
@@ -67,23 +98,27 @@ body {
       display: none;
     }
 
-    .blind-bottom {
+
+  }
+      .blind-bottom {
       position: fixed;
-      top: 60vh;
-      height: 40vh;
+      top: 0;
+      height: 100vh;
       width: 100%;
       grid-column-start: 1;
       grid-column-end: 2;
-      background: linear-gradient(to top, rgba(245,245,245,1) 0%, rgba(245,245,245,0) 100%);
+      background: linear-gradient(to top, rgba(136,136,136,.5) 0%, rgba(136,136,136,.5) 100%);
+      //opacity: 1;
+      transition: .5s ease;
     }
-  }
 }
 
 .content {
   position: fixed;
-  top: 5%;
-  left: 75%;
-  width: 20%;
+top: 0;
+    left: 70%;
+    width: 30%;
+
   transition: .5s ease
 }
 
@@ -93,8 +128,10 @@ body {
   position: fixed;
   top: 40%;
   left: 20%;
+    opacity: 0;
   transition: .5s ease;
   width: 100%;
+
 }
 
 .current-title {
@@ -106,10 +143,56 @@ body {
   top: 60%;
   left: 20%;
   width: 30%;
+      opacity: 0;
   transition: .5s ease;
+
 }
 
 .open-layout {
+
+#button-prev {
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, red, crimson);
+  position: fixed;
+  z-index: 30;
+  top: 3rem;
+
+
+
+  right: 3rem;
+    transition: .5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .5s ease;
+  }
+}
+
+  #button-next {
+
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, red, crimson);
+  position: fixed;
+  z-index: 30;
+  bottom: 3rem;
+
+
+
+  right: 3rem;
+    transition: .5s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: .5s ease;
+  }
+}
   #resume-switch-button {
     width: 3rem;
     height: 3rem;
@@ -149,8 +232,22 @@ body {
     grid-column-start: 3;
     grid-column-end: 4;
     margin-right: 0;
-    background: white;
-    transition: .5s ease;
+    opacity: 1;
+    background: rgba(136,136,136,0);
+
+    transition: all .3s .3s ease;
+        transition: background .3s ease;
+    p, a {
+      display: initial;
+      opacity: 1;
+      transition: opacity .3s .5s ease;
+    }
+    img {
+      opacity: 1;
+      filter: grayscale(0%);
+      transition: opacity .5s ease;
+      transition: .3s .5s ease;
+    }
 
     .blind {
       position: fixed;
@@ -158,16 +255,25 @@ body {
       height: 20vh;
       left: 20%;
       width: 100%;
-      background: linear-gradient(to bottom, rgba(255,255,255,.8) 0%,  rgba(255,255,255,0) 100%);
+
       //background: white;
       z-index: 3;
+
     }
 
-    .blind-bottom {
-      display: none;
-    }
+
   }
-
+    .blind-bottom {
+position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background: linear-gradient(to bottom, rgba(136,136,136,.5) 0%,  rgba(136,136,136,.5) 100%);
+            //opacity: 0;
+      transition:  .5s ease;
+    }
   .content {
     position: absolute;
     width: 55%;
@@ -179,6 +285,9 @@ body {
   .title {
     color: grey;
     position: fixed;
+    width: auto;
+    padding-right: 1rem;
+    background: white;
     z-index: 5;
     top: -2%;
     left: 7%;
@@ -226,7 +335,7 @@ body {
   height: 0;
   //background: linear-gradient(to bottom, purple, red, yellow, cyan, blue, violet);
   height: 100vh;
-  scroll-snap-points-y: repeat(90px);
+  scroll-snap-points-y: repeat(50px);
   scroll-snap-type: mandatory;
   scroll-snap-destination: 100% 0%;
       transition: .2s ease;
@@ -247,7 +356,7 @@ body {
     left: 0;
     z-index: 7;
     width: 15px;
-    height: 1px;
+    height: 0.05rem;
     background: black;
     transition: .5s ease;
   }
@@ -290,6 +399,13 @@ body {
 
 
 .front-layout {
+  #button-next {
+  border-radius: 50%;
+  top: 3rem;
+  position: fixed;
+  right: -5rem;
+  transition: .5s ease;
+}
   #resume {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -315,7 +431,11 @@ body {
   transition: .5s ease;
 
   &:hover {
-    box-shadow: -1px 0px 20px 2px rgba(0,0,0,0.4);
+    //box-shadow: -1px 0px 20px 2px rgba(0,0,0,0.4);
+    //width: 4rem;
+    //height: 4rem;
+    cursor: pointer;
+    transform: scale(1.1);
       transition: .5s ease;
   }
 }
@@ -365,7 +485,11 @@ body {
   transition: .5s ease;
 
   &:hover {
-    box-shadow: -1px 0px 20px 2px rgba(0,0,0,0.4);
+    //width: 6rem;
+    //height: 6rem;
+    //box-shadow: -1px 0px 20px 2px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transform: scale(1.1);
     transition: .5s ease;
   }
 }
@@ -406,10 +530,37 @@ body {
 }
 
 
-.title.start{animation:example ease-in .4s 1;}
+
+a {
+  color: salmon;
+  text-decoration: none;
+  transition: .3s ease;
+  text-transform: lowercase;
+  font-weight: 600;
+  padding-bottom: 2rem;
+  &:hover {
+    text-decoration: none;
+    color: cornflowerblue;
+    transition: .3s ease;
+  }
+}
 
 
-@keyframes example {
-    from {color: lightgrey;}
-    to {color: black;}
+.title.on {
+    animation: cartbtnFade  0.6s linear;
+  }
+.skill.on {
+    animation: cartbtnFade  0.6s linear;
+  }
+  .content.on {
+    animation: cartbtnFade  0.6s linear;
+  }
+@keyframes cartbtnFade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
