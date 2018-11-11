@@ -810,6 +810,11 @@ $('#button-next').on('click', function(){
   title.innerHTML = myTitle[myIndex].innerHTML;
   skill.innerHTML = mySkills[myIndex].innerHTML;
   content.innerHTML = myContents[myIndex].innerHTML;
+
+
+  if(myIndex == myIndex.length) {
+    $('#button-next').style.display = 'none';
+  }
 })
 
 $('#button-prev').on('click', function(){
@@ -819,6 +824,10 @@ $('#button-prev').on('click', function(){
   title.innerHTML = myTitle[myIndex].innerHTML;
   skill.innerHTML = mySkills[myIndex].innerHTML;
   content.innerHTML = myContents[myIndex].innerHTML;
+  if(myIndex == 0) {
+    $('#button-prev').style.display = 'none';
+  }
+
 })
 
 function scrollLine(){
