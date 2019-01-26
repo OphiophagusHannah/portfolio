@@ -4,6 +4,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Orbitron|Poiret+One|Radley|Reem+Kufi" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -443,7 +444,7 @@ var portfolioJSON = {
 
         <div id="resume">
             <section id="info">
-<!--             <div class="main">
+            <div class="main">
 <section id="basic">
   <div id="name"></div>
   <div id="label"></div>
@@ -459,7 +460,7 @@ var portfolioJSON = {
 <section id="skills">
   <h2 class="section-header">Skills</h2>
 </section>
-</div> -->
+</div>
             </section>
         </div>
 
@@ -863,105 +864,105 @@ var animationEvent = whichAnimationEvent();
 
 
 //RESUME?????????????????????????????????????????????????????????????????????????????????????????????????????
-// var obj = JSON.parse(JSON.stringify(resumeJSON));
+var obj = JSON.parse(JSON.stringify(resumeJSON));
 //Basic Info
-// document.getElementById("name").innerHTML =
-// obj.basics.first_name + " " + obj.basics.last_name;
-// document.getElementById("label").innerHTML = obj.basics.label;
-// document.getElementById("email").innerHTML = obj.basics.email;
+document.getElementById("name").innerHTML =
+obj.basics.first_name + " " + obj.basics.last_name;
+document.getElementById("label").innerHTML = obj.basics.label;
+document.getElementById("email").innerHTML = obj.basics.email;
 
 
 //Work info
 
-// count = 0;
-// Object.entries(obj.work).map(([key, value]) => {
-//   var work = JSON.parse(JSON.stringify(value));
-//   count++;
-//     var company = document.createElement("div");
-//     company.className = 'company';
-//     company.innerHTML = work.company;
+count = 0;
+Object.entries(obj.work).map(([key, value]) => {
+  var work = JSON.parse(JSON.stringify(value));
+  count++;
+    var company = document.createElement("div");
+    company.className = 'company';
+    company.innerHTML = work.company;
 
-//     var position = document.createElement("h3");
-//     position.className = 'position';
-//     position.innerHTML = work.position;
+    var position = document.createElement("h3");
+    position.className = 'position';
+    position.innerHTML = work.position;
 
-//     var time = document.createElement("span");
-//     time.className = 'time';
-//     time.innerHTML = work.startDate + " - " + work.endDate;
+    var time = document.createElement("span");
+    time.className = 'time';
+    time.innerHTML = work.startDate + " - " + work.endDate;
 
-//     var skills = document.createElement("div");
-//     skills.className = 'skills';
-//     Object.entries(work.skills).map(([key, value]) => {
-//         var keys = JSON.parse(JSON.stringify(value));
-//         var keyword = document.createElement("span");
-//         keyword.innerHTML = keys + " | ";
-//         skills.appendChild(keyword);
+    var skills = document.createElement("div");
+    skills.className = 'skills';
+    Object.entries(work.skills).map(([key, value]) => {
+        var keys = JSON.parse(JSON.stringify(value));
+        var keyword = document.createElement("span");
+        keyword.innerHTML = keys + " | ";
+        skills.appendChild(keyword);
 
-//     })
+    })
 
-//     var responsibilities = document.createElement("div");
-//     responsibilities.className = 'tab';
-//     var highlights = document.createElement("div");
-//     highlights.className = 'tab-content';
-//     Object.entries(work.highlights).map(([key, value]) => {
-//         var keys = JSON.parse(JSON.stringify(value));
-//         var keyword = document.createElement("div");
-//         keyword.innerHTML = "-" + keys;
-//         highlights.appendChild(keyword);
-//     });
+    var responsibilities = document.createElement("div");
+    responsibilities.className = 'tab';
+    var highlights = document.createElement("div");
+    highlights.className = 'tab-content';
+    Object.entries(work.highlights).map(([key, value]) => {
+        var keys = JSON.parse(JSON.stringify(value));
+        var keyword = document.createElement("div");
+        keyword.innerHTML = "-" + keys;
+        highlights.appendChild(keyword);
+    });
 
 
-//     var title = document.createElement("label");
-//     var check = document.createElement("input");
-//     title.innerHTML= "Responsibilities";
-//     check.setAttribute("type", "checkbox");
-//     check.setAttribute("id", 'tab-' + count);
-//     check.setAttribute("name", 'tabs');
-//     title.setAttribute("for", 'tab-' + count);
-//     responsibilities.appendChild(check);
-//     responsibilities.appendChild(title);
-//     responsibilities.appendChild(highlights);
-//     var workplace = document.getElementById("work").appendChild(document.createElement("div"));
-//     workplace.className = 'workplace';
+    var title = document.createElement("label");
+    var check = document.createElement("input");
+    title.innerHTML= "Responsibilities";
+    check.setAttribute("type", "checkbox");
+    check.setAttribute("id", 'tab-' + count);
+    check.setAttribute("name", 'tabs');
+    title.setAttribute("for", 'tab-' + count);
+    responsibilities.appendChild(check);
+    responsibilities.appendChild(title);
+    responsibilities.appendChild(highlights);
+    var workplace = document.getElementById("work").appendChild(document.createElement("div"));
+    workplace.className = 'workplace';
 
-//     workplace.appendChild(position);
-//     workplace.appendChild(time);
-//     workplace.appendChild(company);
-//     workplace.appendChild(skills);
-//     workplace.appendChild(responsibilities);
-// });
+    workplace.appendChild(position);
+    workplace.appendChild(time);
+    workplace.appendChild(company);
+    workplace.appendChild(skills);
+    workplace.appendChild(responsibilities);
+});
 
 
 //Education
 
-// Object.entries(obj.education).map(([key, value]) => {
-//     var education = JSON.parse(JSON.stringify(value));
-//     var institution = document.createElement("div");
-//     var area = document.createElement("div");
-//     var time = document.createElement("div");
-//     institution.innerHTML = education.institution;
-//     area.innerHTML = education.area;
-//     time.innerHTML = education.startDate + " - " + education.endDate;
-//     document.getElementById("education").appendChild(institution).appendChild(area).appendChild(time);
-// })
+Object.entries(obj.education).map(([key, value]) => {
+    var education = JSON.parse(JSON.stringify(value));
+    var institution = document.createElement("div");
+    var area = document.createElement("div");
+    var time = document.createElement("div");
+    institution.innerHTML = education.institution;
+    area.innerHTML = education.area;
+    time.innerHTML = education.startDate + " - " + education.endDate;
+    document.getElementById("education").appendChild(institution).appendChild(area).appendChild(time);
+})
 
 //Skills Info
 
-// Object.entries(obj.skills).map(([key, value]) => {
-//     var skills = JSON.parse(JSON.stringify(value));
-//     var div = document.createElement("div");
-//     div.innerHTML = skills.name + ": ";
-//     document.getElementById("skills").appendChild(div);
+Object.entries(obj.skills).map(([key, value]) => {
+    var skills = JSON.parse(JSON.stringify(value));
+    var div = document.createElement("div");
+    div.innerHTML = skills.name + ": ";
+    document.getElementById("skills").appendChild(div);
 
-//     Object.entries(skills.keywords).map(([key, value]) => {
+    Object.entries(skills.keywords).map(([key, value]) => {
 
-//         var keys = JSON.parse(JSON.stringify(value));
-//         var keyword = document.createElement("span");
-//         keyword.innerHTML = keys + " | ";
-//         div.appendChild(keyword);
+        var keys = JSON.parse(JSON.stringify(value));
+        var keyword = document.createElement("span");
+        keyword.innerHTML = keys + " | ";
+        div.appendChild(keyword);
 
-//     })
-// })
+    })
+})
 
 
 
