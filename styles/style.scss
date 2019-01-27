@@ -39,9 +39,28 @@ body {
     position: absolute;
     width: 55%;
     left: 10%;
-    top: 10vh;
+    top: 15vh;
     opacity: 1;
-    transition: .3s ease;
+    transition: .8s ease;
+
+    .more-fixed {
+      position: fixed;
+    right: 14%;
+    bottom: 10vh;
+    font-family: 'Reem Kufi', sans-serif;
+    color: salmon;
+        transition: .8s ease;
+
+    }
+    .pdf-fixed{
+      position: fixed;
+    right: 11%;
+    bottom: 10vh;
+    font-family: 'Reem Kufi', sans-serif;
+    color: salmon;
+        transition: .8s ease;
+
+    }
   }
 
 .default-layout {
@@ -52,6 +71,15 @@ body {
     opacity: 0;
     height: 200vh;
     transition: .3s ease;
+
+        .more-fixed {
+right: 60vw;
+    transition: .3s ease;
+    }
+    .pdf-fixed{
+right: 60vw;
+    transition: .3s ease;
+    }
   }
 
   #button-next {
@@ -59,6 +87,9 @@ body {
     top: 3rem;
     position: fixed;
     right: -5rem;
+    p {
+      font-family: 'Reem Kufi', sans-serif;
+    }
     transition: .5s ease;
   }
 
@@ -68,6 +99,10 @@ body {
     position: fixed;
     right: -5rem;
     color: white;
+    p {
+
+      font-family: 'Reem Kufi', sans-serif;
+    }
     transition: .5s ease;
   }
 
@@ -201,6 +236,10 @@ body {
     font-size: 13px;
     color: white;
     transition: .5s ease;
+        p {
+      
+      font-family: 'Reem Kufi', sans-serif;
+    }
 
     &:hover {
       transform: scale(1.1);
@@ -225,6 +264,10 @@ body {
     align-items: center;
     font-size: 13px;
     transition: .5s ease;
+        p {
+      
+      font-family: 'Reem Kufi', sans-serif;
+    }
 
     &:hover {
       transform: scale(1.1);
@@ -475,8 +518,9 @@ body {
   transition: .5s ease;
     .button-copy {
     display: initial;
-    margin-left: 1rem;
-margin-top: 12px;
+    margin-left: 1.05rem;
+    font-family: 'Reem Kufi', sans-serif;
+    margin-top: 15px;
   }
 
   &:hover {
@@ -494,6 +538,7 @@ margin-top: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Reem Kufi', sans-serif;
   transition: .5s ease;
     .button-copy {
     display: none !important;
@@ -508,10 +553,16 @@ margin-top: 12px;
 
     border-radius: 50%;
     margin: auto;
-
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+font-family: 'Reem Kufi', sans-serif;
     transition: .3s .3s ease;
-
+                span {
+                  //margin-top: -3px;
+        color: grey;
+        display: flex;
+      }
 
   }
 }
@@ -521,6 +572,7 @@ margin-top: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Reem Kufi', sans-serif;
   transition: .5s ease;
 
   .round {
@@ -530,7 +582,7 @@ margin-top: 12px;
     border-radius: 50%;
     margin: auto;
 
-    transition: .3s .3s ease;
+    //transition: .3s .3s ease;
         span {
       display: none !important;
     }
@@ -554,7 +606,7 @@ margin-top: 12px;
   .button-copy {
     display: initial;
     margin-left: 1.5rem;
-
+font-family: 'Reem Kufi', sans-serif;
   }
 
   &:hover {
@@ -567,6 +619,7 @@ margin-top: 12px;
 
       .button-copy {
 font-weight: 500;
+font-family: 'Reem Kufi', sans-serif;
 transition: .5s ease;
   }
   }
@@ -594,6 +647,7 @@ transition: .5s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Reem Kufi', sans-serif;
                 span {
         color: grey;
         display: flex;
@@ -607,6 +661,7 @@ transition: .5s ease;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Reem Kufi', sans-serif;
   transition: .5s ease;
 
 
@@ -616,7 +671,7 @@ transition: .5s ease;
     height: 0;
     border-radius: 50%;
     margin: auto;
-    transition: .3s .3s ease;
+    //transition: .3s .3s ease;
                 span {
 
         display: none;

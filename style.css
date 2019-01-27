@@ -37,11 +37,29 @@ body {
   position: absolute;
   width: 55%;
   left: 10%;
-  top: 10vh;
+  top: 15vh;
   opacity: 1;
-  -webkit-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease; }
+  -webkit-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease; }
+  .main-resume .more-fixed {
+    position: fixed;
+    right: 14%;
+    bottom: 10vh;
+    font-family: 'Reem Kufi', sans-serif;
+    color: salmon;
+    -webkit-transition: .8s ease;
+    -o-transition: .8s ease;
+    transition: .8s ease; }
+  .main-resume .pdf-fixed {
+    position: fixed;
+    right: 11%;
+    bottom: 10vh;
+    font-family: 'Reem Kufi', sans-serif;
+    color: salmon;
+    -webkit-transition: .8s ease;
+    -o-transition: .8s ease;
+    transition: .8s ease; }
 
 .default-layout .main-resume {
   width: 30vw;
@@ -51,6 +69,16 @@ body {
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease; }
+  .default-layout .main-resume .more-fixed {
+    right: 60vw;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+  .default-layout .main-resume .pdf-fixed {
+    right: 60vw;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
 
 .default-layout #button-next {
   border-radius: 50%;
@@ -60,6 +88,8 @@ body {
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
+  .default-layout #button-next p {
+    font-family: 'Reem Kufi', sans-serif; }
 
 .default-layout #button-prev {
   border-radius: 50%;
@@ -70,6 +100,8 @@ body {
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
+  .default-layout #button-prev p {
+    font-family: 'Reem Kufi', sans-serif; }
 
 .default-layout #resume {
   -ms-grid-column: 1;
@@ -236,6 +268,8 @@ body {
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
+  .open-layout #button-prev p {
+    font-family: 'Reem Kufi', sans-serif; }
   .open-layout #button-prev:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -271,6 +305,8 @@ body {
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
+  .open-layout #button-next p {
+    font-family: 'Reem Kufi', sans-serif; }
   .open-layout #button-next:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -559,8 +595,9 @@ body {
   transition: .5s ease; }
   #resume-switch-button .button-copy {
     display: initial;
-    margin-left: 1rem;
-    margin-top: 12px; }
+    margin-left: 1.05rem;
+    font-family: 'Reem Kufi', sans-serif;
+    margin-top: 15px; }
   #resume-switch-button:hover {
     cursor: pointer;
     -webkit-transform: scale(1.1);
@@ -581,6 +618,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: 'Reem Kufi', sans-serif;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
@@ -592,9 +630,24 @@ body {
     height: 1rem;
     border-radius: 50%;
     margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: 'Reem Kufi', sans-serif;
     -webkit-transition: .3s .3s ease;
     -o-transition: .3s .3s ease;
     transition: .3s .3s ease; }
+    .resume-button-open .round span {
+      color: grey;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
 
 .resume-button-closed {
   right: 40%;
@@ -607,6 +660,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: 'Reem Kufi', sans-serif;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
@@ -615,10 +669,7 @@ body {
     width: 0;
     height: 0;
     border-radius: 50%;
-    margin: auto;
-    -webkit-transition: .3s .3s ease;
-    -o-transition: .3s .3s ease;
-    transition: .3s .3s ease; }
+    margin: auto; }
     .resume-button-closed .round span {
       display: none !important; }
 
@@ -647,7 +698,8 @@ body {
   align-items: center; }
   #project-switch-button .button-copy {
     display: initial;
-    margin-left: 1.5rem; }
+    margin-left: 1.5rem;
+    font-family: 'Reem Kufi', sans-serif; }
   #project-switch-button:hover {
     cursor: pointer;
     -webkit-transform: scale(1.1);
@@ -658,6 +710,7 @@ body {
     transition: .5s ease; }
     #project-switch-button:hover .button-copy {
       font-weight: 500;
+      font-family: 'Reem Kufi', sans-serif;
       -webkit-transition: .5s ease;
       -o-transition: .5s ease;
       transition: .5s ease; }
@@ -694,6 +747,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    font-family: 'Reem Kufi', sans-serif;
     -webkit-transition: .3s .3s ease;
     -o-transition: .3s .3s ease;
     transition: .3s .3s ease; }
@@ -714,6 +768,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-family: 'Reem Kufi', sans-serif;
   -webkit-transition: .5s ease;
   -o-transition: .5s ease;
   transition: .5s ease; }
@@ -722,10 +777,7 @@ body {
     width: 0;
     height: 0;
     border-radius: 50%;
-    margin: auto;
-    -webkit-transition: .3s .3s ease;
-    -o-transition: .3s .3s ease;
-    transition: .3s .3s ease; }
+    margin: auto; }
     .button-closed .round span {
       display: none; }
 
