@@ -7,11 +7,11 @@ function Footer() {
             <div class="footer-inner">
                 <ul>
                     <Link to="/home" className="nav-link"><li>gallery</li></Link>
-                    <Link to="https://www.instagram.com/hannahavgust/" className="nav-link" ><li>instagram</li></Link>
-                    <Link to="https://twitter.com/hannahavgust" className="nav-link" ><li>twitter</li></Link>
+                    <Link to="https://github.com/OphiophagusHannah" className="nav-link" ><li>github</li></Link>
+
                 </ul>
                 <ul>
-                    <Link to="https://twitter.com/hannahavgust" className="nav-link" ><li>art</li></Link>
+                    <Link to="https://twitter.com/hannahavgust" className="nav-link" ><li>art portfolio</li></Link>
                 </ul>
 
             </div>
