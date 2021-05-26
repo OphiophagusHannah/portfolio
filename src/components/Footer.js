@@ -11,7 +11,7 @@ function Footer() {
 
                 </ul>
                 <ul>
-                    <Link to="https://twitter.com/hannahavgust" className="nav-link" target="_blank"><li>art</li></Link>
+                    <Link to="https://twitter.com/hannahavgust" className="nav-link"><li>art</li></Link>
                 </ul>
             </div>
 
