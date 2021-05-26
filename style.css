@@ -1,0 +1,297 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.site-wrapper {
+  padding-top: 1rem;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.site-header {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  /* position: sticky;
+  top: 0;
+  background: white; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #8f00ff;
+}
+
+
+.site {
+  background: #8f00ff;
+  transition: 1.5s linear;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer {
+  background: #8f00ff;
+  transition: 1.5s linear;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  height: 5rem;
+}
+
+footer p,
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer a,
+footer li {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  transition: 1.5s linear;
+}
+
+
+.site p,
+.site h1,
+.site h2,
+.site h3,
+.site h4,
+.site h5,
+.site a {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  transition: 1.5s linear;
+}
+
+.scrolled {
+  background: white;
+  transition: 1.5s linear;
+}
+
+.site.scrolled p,
+.site.scrolled h1,
+.site.scrolled h2,
+.site.scrolled h3,
+.site.scrolled h4,
+.site.scrolled h5,
+.site.scrolled a {
+  font-family: "Montserrat", sans-serif;
+  color: #8f00ff;
+  transition: 1.5s linear;
+}
+
+a {
+  color: #8f00ff;
+}
+
+.anchor {
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #34dddd;
+}
+
+nav li {
+  list-style-type: none;
+  padding-right: 1rem;
+}
+
+nav li a {
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #34dddd;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav .cv {
+  padding: 1rem;
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 1rem;
+  text-decoration: none;
+  border: 1px solid #34dddd;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+h1 {
+  visibility: hidden;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+}
+
+.intro .cv {
+  padding: 1.5rem;
+  border: 1px solid #34dddd;
+}
+
+.intro h2 {
+  padding-top: 5rem;
+  width: 80%;
+  font-size: 3.8rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+#projects h2 {
+  padding-top: 5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 3rem;;
+}
+
+
+
+.keys {
+  display: flex;
+  padding-bottom: 3rem;
+  justify-content: space-between;
+}
+
+.keys > div {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  /* padding-right: 3rem; */
+}
+
+.keys > div h3 {
+  padding-top: 1.5rem;
+  margin-bottom: 0;
+  border-top: 1px solid #34dddd;
+}
+
+.skills ul {
+  padding-left: 0;
+}
+
+.skills ul li {
+  list-style-type: none;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.skills > div h3 {
+  padding-top: 1.5rem;
+  /* border-top: 1px solid #34dddd; */
+}
+
+.projects-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.projects-item a {
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #34dddd;
+}
+
+.projects-item .half {
+  width: 48%;
+  border-top: 1px solid #34dddd;
+}
+
+.projects-item .third {
+  width: 32%;
+  border-top: 1px solid #34dddd;
+}
+
+.projects-item .two-third {
+  width: 65%;
+  border-top: 1px solid #34dddd;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer ul {
+  padding-left: 0;
+  display: flex;
+  padding-top: 1rem;
+}
+
+footer ul li {
+  list-style-type: none;
+  padding-right: 1rem;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.talents,
+.proficiency,
+.competence {
+  width: 100%;
+  color: #8f00ff;
+  padding-bottom: 3rem;
+
+}
+
+.competence ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.competence li {
+  padding-right: 3rem;
+}
+
+.proficiency {
+  display: flex;
+  justify-content: space-between;
+}
+
+.proficiency ul,
+.proficiency h3 {
+  margin-top: 0;
+}
+
+.proficiency > div {
+  border-top: 1px solid #34dddd;
+  width: 30%;
+}
