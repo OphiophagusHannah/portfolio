@@ -5,10 +5,9 @@ function About() {
     return (
         <div>
             <section id="about" class="about">
-                <h1>hannah</h1>
                 <div class="intro">
-                    <h2>I am an interactive designer</h2>
-                    <a class="cv" target="_blank" href="https://docs.google.com/document/d/1OqvVU_pG3Ui-l3RRB3iG6FvP8MlVD8Ee3qoPP-Vqup8/edit?usp=sharing">cv</a>
+                    <h2>Inspired by the fusion of design with technology, and believe that it is a key to uncovering and exploring the potentials of our world and elevating human experiences.</h2>
+                    <p>I am a front end engineer with an interactive design degree and artistic background.</p>
                 </div>
             </section>
             <div class="skills" id="skills">
@@ -54,15 +53,34 @@ function About() {
                     </div>
                 </div>
 
-                <div class="talents">
-                    <h3>Talents</h3>
-                    <ul>
-                        <li>Ambitious Learner</li>
-                        <li>Motivated Collaborator</li>
-                        <li>Open-minded Experimenter</li>
-                        <li>Improvement Oriented Enthusiast</li>
-                        <li>Not afraid to be wrong</li>
-                    </ul>
+                <div class="proficiency">
+                    <div>
+                        <h3>Talents</h3>
+                        <ul>
+                            <li>Ambitious Learner</li>
+                            <li>Motivated Collaborator</li>
+                            <li>Open-minded Experimenter</li>
+                            <li>Improvement Oriented Enthusiast</li>
+                            <li>Not afraid to be wrong</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h3>Curently Learning</h3>
+                            <li>GraphQL</li>
+                            <li>New designing technique</li>
+                            <li>Motion 4D</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h3>Other interests:</h3>
+                            <li>Architecture</li>
+                            <li>Holography</li>
+                            <li>Visual Art</li>
+                            <li>Linguistics</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

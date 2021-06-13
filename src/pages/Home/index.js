@@ -66,19 +66,15 @@ function Home() {
                 <h2>Projects</h2>
                 <div class="projects-item">
                     <div class="third">
-                        <h3>Refract</h3>
-                        <a href="">Link</a>
+                        <a href=""> <h3>Refract</h3></a>
+                        <p>2018</p>
                     </div>
                     <div class="third">
                         <h3>UX Engeneer and interactive Designer</h3>
-                        <p>Responsibilities and About</p>
+                        <p><b>Responsible for:</b> Interface Design and Information Architecture, Front End Development</p>
                     </div>
                     <div class="third">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
-                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
-                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
-                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
-                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
+                        <p>I was involved in three main phases of the project: Research and Ideation, Design and Prototyping, and Development and played a role in each part of the iterative process while working closely with a team to create a collaborative web application for the community of students and organizations.
                         </p>
 
                     </div>
@@ -87,18 +83,15 @@ function Home() {
                 <div class="projects-item">
                     <div class="third">
                         <h3>MVMJSON</h3>
-                        <a href="">Link</a>
+                        <p>2017</p>
+
                     </div>
                     <div class="third">
-                        <h3>UX Engeneer and interactive Designer</h3>
-                        <p>Responsibilities and About</p>
+                        <h3>Concept and Interactive Designer</h3>
+                        <p> Designed Physical Environment and Projected interface.</p>
                     </div>
                     <div class="third">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
-                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
-                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
-                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
-                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
+                        <p>This interactive projected interface was designed to the solar system in a comprehensive way and create an interactive environment to engage people in accessible learning without intimidation.
                         </p>
                     </div>
                 </div>
@@ -106,40 +99,35 @@ function Home() {
                 <div class="projects-item">
                     <div class="third">
                         <h3>IA-multidimension</h3>
-                        <a href="">Link</a>
+                        <p>2018 - ongoing</p>
+
                     </div>
                     <div class="third">
-                        <h3>UX Engeneer and interactive Designer</h3>
-                        <p>Responsibilities and About</p>
+                        <h3>Personal Project</h3>
                         <h3>Information architector</h3>
+                        <p>Purpose</p>
+
                     </div>
                     <div class="third">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
-                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
-                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
-                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
-                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
+                        <p>This study is dedicated to exploring the informational architecture of the human brain as a model and analyzing how memories and associations are stored and retrieved. It has been influenced by my long lasting enthusiasm about architecture (tangible) and my life changing interest in holographic experiments and information storage.
+
                         </p>
                     </div>
                 </div>
 
                 <div class="projects-item">
                     <div class="third">
-                        <h3>Workplace</h3>
-                        <p>Physical Interface</p>
+                        <h3>Workplace - 2017</h3>
+                        <p>Physical Interface - Exploring physical interface as embodyment</p>
                         <a href="">Link</a>
                     </div>
                     <div class="third">
-                        <h3>UX Engeneer and interactive Designer</h3>
-                        <p>Responsibilities and About</p>
-                        <h3>Information architector</h3>
+                        <h3>Experience and Interface Design, Product Research</h3>
+                        <p></p>
+
                     </div>
                     <div class="third">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
-                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
-                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
-                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
-                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
+                        <p>With the ambition to improve the working or creative environments, i aspired to design a smart desk for wariety of activities to improve not only momentary experience, but with thought of caring about long term physical wellbeing.
                         </p>
                     </div>
                 </div>
@@ -190,6 +178,27 @@ function Home() {
                     <div class="third">
                         <h3>Various Prototypes</h3>
                         <p>Identity Design, Wireframing and Prototyping</p>
+                        <a href="">Link</a>
+                    </div>
+                    <div class="third">
+                        <h3>UX Engeneer and interactive Designer</h3>
+                        <p>Responsibilities and About</p>
+                        <h3>Information architector</h3>
+                    </div>
+                    <div class="third">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
+                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
+                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
+                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
+                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="projects-item">
+                    <div class="third">
+                        <h3>Visualiyation Experiments</h3>
+                        <p>testing and trzing</p>
                         <a href="">Link</a>
                     </div>
                     <div class="third">
