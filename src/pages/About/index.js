@@ -6,8 +6,7 @@ function About() {
         <div>
             <section id="about" class="about">
                 <div class="intro">
-                    <h2>Inspired by the fusion of design with technology, and believe that it is a key to uncovering and exploring the potentials of our world and elevating human experiences.</h2>
-                    <p>I am a front end engineer with an interactive design degree and artistic background.</p>
+                    <h2>I am a front end engineer with an interactive design degree and artistic background.</h2>
                 </div>
             </section>
             <div class="skills" id="skills">

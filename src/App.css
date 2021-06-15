@@ -90,6 +90,14 @@ footer li {
 
 a {
   color: #8f00ff;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #34dddd;
+}
+
+a:hover {
+  color: #34dddd;
 }
 
 .anchor {
@@ -101,6 +109,7 @@ a {
 
 nav a {
   text-decoration: none;
+  border-bottom: none;
 }
 
 nav .nav-link li {
@@ -141,7 +150,7 @@ h1 {
 }
 
 .intro {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 3rem;
@@ -241,6 +250,7 @@ h1 {
 
 footer a {
   text-decoration: none;
+  border-bottom: none;
 }
 
 footer ul {
@@ -251,7 +261,7 @@ footer ul {
 
 footer ul li {
   list-style-type: none;
-  padding-right: 1rem;
+  margin-right: 1rem;
 }
 
 .footer-inner {

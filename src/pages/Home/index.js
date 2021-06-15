@@ -6,8 +6,7 @@ function Home() {
         <div>
             <section className="about">
                 <div class="intro">
-                    <h2>With diffusion of art, design, and technologies, I aspire to create meaningful and enjoyable
-                        experiences for everyone</h2>
+                    <h2>Inspired by the fusion of design with technology, and believe that it is a key to uncovering and exploring the potentials of our world and elevating human experiences.</h2>
                 </div>
                 <div class="keys">
                     <div>
@@ -38,12 +37,12 @@ function Home() {
                 <h2>Agency Experience</h2>
                 <div class="projects-item">
                     <div class="third">
-                        <h3><a href="">Gulo</a></h3>
+                        <h3><a href="https://www.gulosolutions.com/" target="_blank">Gulo</a></h3>
                         <h4>Front-End Developer and UX Engineer</h4>
                         <p>2017 - Present</p>
                     </div>
                     <div class="two-third">
-                        <h3>Responsibilities and About</h3>
+                        <h3>Responsibilities and Achievements</h3>
 
                         <p>Developed, launched and supported 15+ responsive cross-browser websites and web
                             applications using the latest front-end technologies.</p>
@@ -66,7 +65,7 @@ function Home() {
                 <h2>Projects</h2>
                 <div class="projects-item">
                     <div class="third">
-                        <a href=""> <h3>Refract</h3></a>
+                        <a href=""><h3>Refract</h3></a>
                         <p>2018</p>
                     </div>
                     <div class="third">
@@ -79,23 +78,6 @@ function Home() {
 
                     </div>
                 </div>
-
-                <div class="projects-item">
-                    <div class="third">
-                        <h3>MVMJSON</h3>
-                        <p>2017</p>
-
-                    </div>
-                    <div class="third">
-                        <h3>Concept and Interactive Designer</h3>
-                        <p> Designed Physical Environment and Projected interface.</p>
-                    </div>
-                    <div class="third">
-                        <p>This interactive projected interface was designed to the solar system in a comprehensive way and create an interactive environment to engage people in accessible learning without intimidation.
-                        </p>
-                    </div>
-                </div>
-
                 <div class="projects-item">
                     <div class="third">
                         <h3>IA-multidimension</h3>
@@ -117,9 +99,27 @@ function Home() {
 
                 <div class="projects-item">
                     <div class="third">
-                        <h3>Workplace - 2017</h3>
+                        <h3>MVMJSON</h3>
+                        <p>2017</p>
+
+                    </div>
+                    <div class="third">
+                        <h3>Concept and Interactive Designer</h3>
+                        <p> Designed Physical Environment and Projected interface.</p>
+                    </div>
+                    <div class="third">
+                        <p>This interactive projected interface was designed to the solar system in a comprehensive way and create an interactive environment to engage people in accessible learning without intimidation.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <div class="projects-item">
+                    <div class="third">
+                        <a href=""><h3>Workplace</h3></a>
+                        <p>2017</p>
                         <p>Physical Interface - Exploring physical interface as embodyment</p>
-                        <a href="">Link</a>
                     </div>
                     <div class="third">
                         <h3>Experience and Interface Design, Product Research</h3>
@@ -136,19 +136,15 @@ function Home() {
                     <div class="third">
                         <h3>Gallerz Ink</h3>
                         <p>WebGL</p>
-                        <a href="">Link</a>
+                        <a href="https://streamelements.com/overlay/600c9244b69c8942aa87c6de/-iSsWWqPRMKwEPUACt1wrUIAi3ZSZLWyxIuKTaa5FgZAvHTZ">Link</a>
                     </div>
                     <div class="third">
                         <h3>UX Engeneer and interactive Designer</h3>
-                        <p>Responsibilities and About</p>
+                        <p>Precision of virtual environment experience in virtual space. Mobility</p>
                         <h3>Information architector</h3>
                     </div>
                     <div class="third">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
-                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
-                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
-                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
-                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
+                        <p>Originally the idea was created as a potential prototype for Web Virtual Reality Gallery, which led towards two paths of possible interactions: 1st Path:Full AR/ VR gallery with gesture control. 2nd Path: Experience with the gallery using mobile phone as controller (main goal within this path is accessibility from anywhere).
                         </p>
                     </div>
                 </div>
