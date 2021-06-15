@@ -65,7 +65,7 @@ function Home() {
                 <h2>Projects</h2>
                 <div class="projects-item">
                     <div class="third">
-                        <a href=""><h3>Refract</h3></a>
+                        <a target="_blank" href="http://refract-overview.net/"><h3>Refract</h3></a>
                         <p>2018</p>
                     </div>
                     <div class="third">
@@ -134,9 +134,8 @@ function Home() {
 
                 <div class="projects-item">
                     <div class="third">
-                        <h3>Gallerz Ink</h3>
+                        <a target="_blank" href="http://illust-ink.com/"><h3>Gallerz Ink</h3></a>
                         <p>WebGL</p>
-                        <a href="https://streamelements.com/overlay/600c9244b69c8942aa87c6de/-iSsWWqPRMKwEPUACt1wrUIAi3ZSZLWyxIuKTaa5FgZAvHTZ">Link</a>
                     </div>
                     <div class="third">
                         <h3>UX Engeneer and interactive Designer</h3>
