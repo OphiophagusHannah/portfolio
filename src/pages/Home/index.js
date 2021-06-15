@@ -80,7 +80,7 @@ function Home() {
                 </div>
                 <div class="projects-item">
                     <div class="third">
-                        <h3>IA-multidimension</h3>
+                        <a target="_blank" href="http://flexible-multidimension-doc.net/"><h3>IA-multidimension</h3></a>
                         <p>2018 - ongoing</p>
 
                     </div>
@@ -117,7 +117,7 @@ function Home() {
 
                 <div class="projects-item">
                     <div class="third">
-                        <a href=""><h3>Workplace</h3></a>
+                        <a target="_blank" href="http://workspace-study.net/"><h3>Workplace</h3></a>
                         <p>2017</p>
                         <p>Physical Interface - Exploring physical interface as embodyment</p>
                     </div>
