@@ -1,6 +1,5 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import React, { useState } from 'react';
-import classnames from 'classnames';
 import ProgressBar from "react-scroll-progress-bar";
 import Main from './components/MainComponent';
 import Nav from './components/Nav';
