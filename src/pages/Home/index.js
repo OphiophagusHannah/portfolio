@@ -5,6 +5,7 @@ function Home() {
     return (
         <div>
             <section className="about">
+
                 <div class="intro">
                     <h2>Inspired by the fusion of design with technology, and believe that it is a key to uncovering and exploring the potentials of our world and elevating human experiences.</h2>
                 </div>
@@ -34,7 +35,7 @@ function Home() {
             </section>
             <section id="projects">
 
-                <h2>Agency Experience</h2>
+                <h2>Currently</h2>
                 <div class="projects-item">
                     <div class="third">
                         <h3><a href="https://www.gulosolutions.com/" target="_blank">Gulo</a></h3>
@@ -50,8 +51,7 @@ function Home() {
                         development issues. Initiating and advocating the usage of new techniques in order to
                         improve quality of the product and projects workflow.
                         </p>
-                        <p>Responsible for implementing custom user interfaces (UIs) to the best UX and SEO
-                        practices.
+                        <p>Responsible for implementing custom user interfaces (UIs) to the best UX and SEO practices.
                         </p>
                         <p>Collaborating closely with the design and strategy team and developing meaningful
                         information architecture and user interface and ensuring flawless transition from design
@@ -62,7 +62,7 @@ function Home() {
                     </div>
                 </div>
 
-                <h2>Projects</h2>
+                <h2>Projects & Studies</h2>
                 <div class="projects-item">
                     <div class="third">
                         <a target="_blank" href="http://refract-overview.net/"><h3>Refract</h3></a>
@@ -70,7 +70,7 @@ function Home() {
                     </div>
                     <div class="third">
                         <h3>UX Engeneer and interactive Designer</h3>
-                        <p><b>Responsible for:</b> Interface Design and Information Architecture, Front End Development</p>
+                        <p><b>Responsible for:</b> Interface Design and Information Architecture, Prototyping, Front End Development</p>
                     </div>
                     <div class="third">
                         <p>I was involved in three main phases of the project: Research and Ideation, Design and Prototyping, and Development and played a role in each part of the iterative process while working closely with a team to create a collaborative web application for the community of students and organizations.
@@ -119,11 +119,11 @@ function Home() {
                     <div class="third">
                         <a target="_blank" href="http://workspace-study.net/"><h3>Workplace</h3></a>
                         <p>2017</p>
-                        <p>Physical Interface - Exploring physical interface as embodyment</p>
+                        <p>Physical Interface Prototype </p>
                     </div>
                     <div class="third">
                         <h3>Experience and Interface Design, Product Research</h3>
-                        <p></p>
+                        <p>Exploring physical interface as Embodyment and separating concerns between digital and physical controls</p>
 
                     </div>
                     <div class="third">
@@ -140,7 +140,6 @@ function Home() {
                     <div class="third">
                         <h3>UX Engeneer and interactive Designer</h3>
                         <p>Precision of virtual environment experience in virtual space. Mobility</p>
-                        <h3>Information architector</h3>
                     </div>
                     <div class="third">
                         <p>Originally the idea was created as a potential prototype for Web Virtual Reality Gallery, which led towards two paths of possible interactions: 1st Path:Full AR/ VR gallery with gesture control. 2nd Path: Experience with the gallery using mobile phone as controller (main goal within this path is accessibility from anywhere).
@@ -151,62 +150,31 @@ function Home() {
                 <div class="projects-item">
                     <div class="third">
                         <h3>Orbit</h3>
-                        <p>D3 Graphic Visualization</p>
-                        <a href="">Link</a>
+                        <p>D3</p>
                     </div>
                     <div class="third">
-                        <h3>UX Engeneer and interactive Designer</h3>
-                        <p>Responsibilities and About</p>
-                        <h3>Information architector</h3>
+                        <h3>Data Visualization and D3 Development</h3>
                     </div>
                     <div class="third">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
-                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
-                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
-                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
-                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
+                        <p>I was working on exloring and learning new techniques of data visualization and information presentation
                         </p>
                     </div>
                 </div>
 
                 <div class="projects-item">
                     <div class="third">
-                        <h3>Various Prototypes</h3>
-                        <p>Identity Design, Wireframing and Prototyping</p>
-                        <a href="">Link</a>
+                        <h3>Visualization Experiments</h3>
+                        <p>testing and teasing</p>
                     </div>
                     <div class="third">
-                        <h3>UX Engeneer and interactive Designer</h3>
-                        <p>Responsibilities and About</p>
-                        <h3>Information architector</h3>
-                    </div>
-                    <div class="third">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
-                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
-                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
-                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
-                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
-                        </p>
-                    </div>
-                </div>
+                        <h3>Creative Development</h3>
+                        <p>Canvas</p>
+                        <p>Processing</p>
+                        <p>CSS</p>
 
-                <div class="projects-item">
-                    <div class="third">
-                        <h3>Visualiyation Experiments</h3>
-                        <p>testing and trzing</p>
-                        <a href="">Link</a>
                     </div>
                     <div class="third">
-                        <h3>UX Engeneer and interactive Designer</h3>
-                        <p>Responsibilities and About</p>
-                        <h3>Information architector</h3>
-                    </div>
-                    <div class="third">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dignissim vulputate elit,
-                        in viverra enim malesuada at. Nam nunc mauris, ultrices non faucibus ac, dignissim eget
-                        felis. Nullam laoreet lacus magna, sit amet porta mauris pulvinar eu. In tincidunt risus
-                        ipsum, quis pretium arcu eleifend nec. Sed eget lectus non quam luctus ornare. Donec ut
-                        gravida lectus, nec eleifend dolor. Donec et venenatis ex. Ut volutpat maximus vehicula.
+                        <p>All Visual
                         </p>
                     </div>
                 </div>

@@ -8,6 +8,7 @@ function Footer() {
                 <ul>
                     <Link to="/home" className="nav-link"><li>work</li></Link>
                     <Link to="https://github.com/OphiophagusHannah" className="nav-link" ><li>github</li></Link>
+                    <Link to="https://codepen.io/ophiophagushannah" className="nav-link" ><li>codepen</li></Link>
 
                 </ul>
                 <ul>

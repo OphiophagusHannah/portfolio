@@ -1,3 +1,7 @@
+$line-color: #34dddd;
+
+$line-color: lightgrey;
+
 .site-wrapper {
   padding-top: 1rem;
   max-width: 1300px;
@@ -11,8 +15,6 @@
 .site-header {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /* position: sticky;
   top: 0;
@@ -41,21 +43,18 @@ h5 {
 .site {
   background: #8f00ff;
   background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%);
-  -webkit-transition: 1.5s linear;
   transition: 1.5s linear;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-}
 
-.site .progress div {
-  background: white !important;
+  .progress div {
+    background: white !important;
+  }
 }
 
 footer {
   background: #8f00ff;
   background-image: linear-gradient(340deg, #ff4500 0%, #dd0088 100%);
-  -webkit-transition: 1.5s linear;
   transition: 1.5s linear;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -72,7 +71,6 @@ footer a,
 footer li {
   font-family: "Montserrat", sans-serif;
   color: white;
-  -webkit-transition: 1.5s linear;
   transition: 1.5s linear;
   -webkit-background-clip: text;
   -webkit-text-fill-color: white;
@@ -81,21 +79,22 @@ footer li {
   transition: 1.5s linear;
 }
 
-.site p,
-.site h1,
-.site h2,
-.site h3,
-.site h4,
-.site h5,
-.site a,
-.site li {
-  font-family: "Montserrat", sans-serif;
-  color: white;
+.site {
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  a,
+  li {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+  }
 }
 
 .scrolled {
   background: white;
-  -webkit-transition: 1.5s linear;
   transition: 1.5s linear;
 }
 
@@ -108,7 +107,6 @@ footer li {
 .site.scrolled a {
   font-family: "Montserrat", sans-serif;
   color: #8f00ff;
-  -webkit-transition: 1.5s linear;
   transition: 1.5s linear;
 }
 
@@ -117,7 +115,7 @@ a {
   font-weight: 500;
   text-decoration: none;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid $line-color;
 }
 
 a:hover {
@@ -128,7 +126,7 @@ a:hover {
   font-weight: 500;
   text-decoration: none;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid $line-color;
 }
 
 nav a {
@@ -144,7 +142,7 @@ nav .nav-link-preend li {
   font-weight: 500;
   text-decoration: none;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid $line-color;
 }
 
 nav a.nav-link-preend {
@@ -163,13 +161,9 @@ nav a:last-child() {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   /* width: 100%; */
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 nav .cv {
@@ -180,16 +174,12 @@ nav .cv {
   font-size: 20px;
   line-height: 20px;
   text-decoration: none;
-  border: 1px solid lightgrey;
+  border: 1px solid $line-color;
 }
 
 nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
   padding-left: 0;
   width: 100%;
 }
@@ -200,18 +190,14 @@ h1 {
 
 .intro {
   display: block;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   padding-bottom: 3rem;
 }
 
 .intro .cv {
   padding: 1.5rem;
-  border: 1px solid lightgrey;
+  border: 1px solid $line-color;
 }
 
 .intro h2 {
@@ -234,33 +220,23 @@ h1 {
 }
 
 .keys {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-bottom: 3rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .keys > div {
   width: 23%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   /* padding-right: 3rem; */
 }
 
 .keys > div h3 {
   padding-top: 1.5rem;
   margin-bottom: 0;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid $line-color;
 }
 
 .skills ul {
@@ -272,14 +248,9 @@ h1 {
 }
 
 .skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .skills > div h3 {
@@ -288,14 +259,9 @@ h1 {
 }
 
 .projects-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: space-between;
   margin-bottom: 3rem;
 }
 
@@ -303,27 +269,27 @@ h1 {
   font-weight: 500;
   text-decoration: none;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid $line-color;
 }
 
 .projects-item .half {
   width: 46%;
   margin-right: 2%;
   padding-right: 5rem;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid $line-color;
 }
 
 .projects-item .third {
   width: 31%;
   padding-right: 5rem;
   margin-right: 2%;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid $line-color;
 }
 
 .projects-item .two-third {
   width: 65%;
   padding-right: 5rem;
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid $line-color;
 }
 
 footer a {
@@ -333,8 +299,6 @@ footer a {
 
 footer ul {
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 1rem;
 }
@@ -345,12 +309,8 @@ footer ul li {
 }
 
 .footer-inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
@@ -367,12 +327,8 @@ footer ul li {
 }
 
 .competence ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .competence li {
@@ -380,14 +336,9 @@ footer ul li {
 }
 
 .proficiency {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .proficiency ul,
@@ -396,7 +347,7 @@ footer ul li {
 }
 
 .proficiency > div {
-  border-top: 1px solid lightgrey;
+  border-top: 1px solid $line-color;
   width: 30%;
 }
 
@@ -404,12 +355,14 @@ footer ul li {
   .intro {
     display: block;
   }
+
   .intro h2 {
     width: 100%;
     font-size: 2.6rem;
     font-weight: 300;
     margin-bottom: 0;
   }
+
   .intro h2 {
     padding-top: 0;
     padding-bottom: 0;
@@ -418,6 +371,7 @@ footer ul li {
     font-weight: 300;
     margin-bottom: 0;
   }
+
   #projects h2 {
     padding-top: 0;
     padding-bottom: 1.5rem;
@@ -426,34 +380,35 @@ footer ul li {
     font-weight: 300;
     margin-bottom: 0;
   }
+
   .projects-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .projects-item > div {
     width: 100%;
   }
+
   .projects-item .third {
     width: 100%;
     padding-right: 0;
     border-top: none;
   }
+
   .projects-item .two-third {
     width: 100%;
     border-top: none;
   }
+
   .keys > div {
     width: 100%;
   }
+
   .proficiency > div {
     width: 100%;
   }
+
   .projects-item .third-opening {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -467,7 +422,5 @@ footer ul li {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
-/*# sourceMappingURL=App.css.map */
