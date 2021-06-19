@@ -4,14 +4,14 @@ import React from 'react';
 function About() {
     return (
         <div>
-            <section id="about" class="about">
-                <div class="intro">
+            <section id="about" className="about">
+                <div className="intro">
                     <h2>I am a front end engineer with an interactive design degree and artistic background.</h2>
                 </div>
             </section>
-            <div class="skills" id="skills">
+            <div className="skills" id="skills">
 
-                <div class="proficiency">
+                <div className="proficiency">
 
                     <div>
                         <ul>
@@ -52,7 +52,7 @@ function About() {
                     </div>
                 </div>
 
-                <div class="proficiency">
+                <div className="proficiency">
                     <div>
                         <h3>Talents</h3>
                         <ul>

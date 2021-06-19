@@ -4,15 +4,9 @@ import About from '../pages/About';
 import Home from '../pages/Home';
 
 class Main extends Component {
-    state = { isActive: false };
-
-    hToggle = () => {
-        this.setState({ isActive: !this.state.isActive });
-    };
 
     render() {
 
-        const isActive = this.state.isActive;
         const HomePage = () => {
             return (
                 <Home />
