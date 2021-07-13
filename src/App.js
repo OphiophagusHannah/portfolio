@@ -16,15 +16,15 @@ function App() {
     setActive(!isActive);
   };
 
-
-
   return (
-    <div className={!isActive ? "site" : "gradient-text"}>
+    <div className={!isActive ? "site" : "site gradient-text"}>
       <Router>
         <div className="progress">
           <ProgressBar />
         </div>
-        <button onClick={handleToggle}>Toggle class</button>
+        <div className="magic-button" onClick={handleToggle}></div>
+        <div className="magic-button-2" onClick={handleToggle}></div>
+        <div className="magic-button-3" onClick={handleToggle}></div>
         <Nav />
         <Main />
         <Footer />

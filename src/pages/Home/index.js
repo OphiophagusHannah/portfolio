@@ -38,7 +38,7 @@ function Home() {
                 <h2>Currently</h2>
                 <div className="projects-item">
                     <div className="third">
-                        <h3><a href="https://www.gulosolutions.com/" target="_blank" rel="noreferrer">Gulo</a></h3>
+                        <a href="https://www.gulosolutions.com/" target="_blank" rel="noreferrer"><h3>Gulo</h3></a>
                         <h4>Front-End Developer and UX Engineer</h4>
                         <p>2017 - Present</p>
                     </div>
@@ -48,16 +48,16 @@ function Home() {
                         <p>Developed, launched and supported 15+ responsive cross-browser websites and web
                             applications using the latest front-end technologies.</p>
                         <p>Leading production development and implementing versatile front-end solutions to web
-                        development issues. Initiating and advocating the usage of new techniques in order to
-                        improve quality of the product and projects workflow.
+                            development issues. Initiating and advocating the usage of new techniques in order to
+                            improve quality of the product and projects workflow.
                         </p>
                         <p>Responsible for implementing custom user interfaces (UIs) to the best UX and SEO practices.
                         </p>
                         <p>Collaborating closely with the design and strategy team and developing meaningful
-                        information architecture and user interface and ensuring flawless transition from design
+                            information architecture and user interface and ensuring flawless transition from design
                             to development.</p>
                         <p>Working closely with clients, guiding them through the developed product and providing
-                        technical support.
+                            technical support.
                         </p>
                     </div>
                 </div>
@@ -66,10 +66,12 @@ function Home() {
                 <div className="projects-item">
                     <div className="third">
                         <a target="_blank" rel="noreferrer" href="http://refract-overview.net/"><h3>Refract</h3></a>
+                        <h4>Web Application</h4>
                         <p>2018</p>
+
                     </div>
                     <div className="third">
-                        <h3>UX Engeneer and interactive Designer</h3>
+                        <h3>UX Engeneering and interactive Design, Web Development</h3>
                         <p><b>Responsible for:</b> Interface Design and Information Architecture, Prototyping, Front End Development</p>
                     </div>
                     <div className="third">
@@ -81,12 +83,12 @@ function Home() {
                 <div className="projects-item">
                     <div className="third">
                         <a target="_blank" rel="noreferrer" href="http://flexible-multidimension-doc.net/"><h3>IA-multidimension</h3></a>
+                        <h4>Personal Project/Study</h4>
                         <p>2018 - ongoing</p>
 
                     </div>
                     <div className="third">
-                        <h3>Personal Project</h3>
-                        <h3>Information architector</h3>
+                        <h3>Information Architecture</h3>
                         <p>Purpose</p>
 
                     </div>
@@ -100,11 +102,12 @@ function Home() {
                 <div className="projects-item">
                     <div className="third">
                         <h3>MVMJSON</h3>
+                        <h4>Interactive Installation, Projected Interface</h4>
                         <p>2017</p>
 
                     </div>
                     <div className="third">
-                        <h3>Concept and Interactive Designer</h3>
+                        <h3>Concept and Interactive Design</h3>
                         <p> Designed Physical Environment and Projected interface.</p>
                     </div>
                     <div className="third">
@@ -118,8 +121,9 @@ function Home() {
                 <div className="projects-item">
                     <div className="third">
                         <a target="_blank" rel="noreferrer" href="http://workspace-study.net/"><h3>Workplace</h3></a>
+                        <h4>Physical Interface Prototype</h4>
                         <p>2017</p>
-                        <p>Physical Interface Prototype </p>
+
                     </div>
                     <div className="third">
                         <h3>Experience and Interface Design, Product Research</h3>
@@ -135,10 +139,11 @@ function Home() {
                 <div className="projects-item">
                     <div className="third">
                         <a target="_blank" rel="noreferrer" rel="noreferrer" href="http://illust-ink.com/"><h3>Gallerz Ink</h3></a>
+                        <h4>Interactive Web Gallery</h4>
                         <p>WebGL</p>
                     </div>
                     <div className="third">
-                        <h3>UX Engeneer and interactive Designer</h3>
+                        <h3>Web Develpment</h3>
                         <p>Precision of virtual environment experience in virtual space. Mobility</p>
                     </div>
                     <div className="third">
@@ -150,6 +155,7 @@ function Home() {
                 <div className="projects-item">
                     <div className="third">
                         <h3>Orbit</h3>
+                        <h4>Data Visualization</h4>
                         <p>D3</p>
                     </div>
                     <div className="third">

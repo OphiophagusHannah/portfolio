@@ -39,17 +39,26 @@ h5 {
 }
 
 .site {
-  background: #8f00ff;
   background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%);
-  -webkit-transition: 1.5s linear;
-  transition: 1.5s linear;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
 .site .progress div {
   background: white !important;
+}
+
+.site.gradient-text {
+  background-image: linear-gradient(340deg, #ff4500 10%, #aa00ff 67%, #dd0088 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
 }
 
 footer {
@@ -112,18 +121,6 @@ footer li {
   transition: 1.5s linear;
 }
 
-a {
-  color: #8f00ff;
-  font-weight: 500;
-  text-decoration: none;
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid lightgrey;
-}
-
-a:hover {
-  color: #34dddd;
-}
-
 .anchor {
   font-weight: 500;
   text-decoration: none;
@@ -144,7 +141,40 @@ nav .nav-link-preend li {
   font-weight: 500;
   text-decoration: none;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid lightgrey;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 0.3rem;
+  display: block;
+  margin-bottom: 0;
+}
+
+nav .nav-link li:after,
+nav .nav-link-end li:after,
+nav .nav-link-preend li:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: lightgrey;
+  position: relative;
+  top: 0.2rem;
+  left: -2%;
+  width: 104%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+nav .nav-link li:hover:after,
+nav .nav-link-end li:hover:after,
+nav .nav-link-preend li:hover:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%);
+  width: 104%;
+  position: relative;
+  top: -0.5rem;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 nav a.nav-link-preend {
@@ -302,8 +332,44 @@ h1 {
 .projects-item a {
   font-weight: 500;
   text-decoration: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding-bottom: 0.7rem;
+}
+
+a h3 {
+  font-weight: 500;
+  text-decoration: none;
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid lightgrey;
+  display: block;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+a h3:after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: lightgrey;
+  position: relative;
+  top: 0.2rem;
+  left: -2%;
+  width: 104%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+a h3:hover:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%);
+  width: 104%;
+  position: relative;
+  top: -0.65rem;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .projects-item .half {
@@ -444,6 +510,7 @@ footer ul li {
   .projects-item .two-third {
     width: 100%;
     border-top: none;
+    padding-right: 0;
   }
   .keys > div {
     width: 100%;
@@ -458,16 +525,49 @@ footer ul li {
   }
 }
 
-.gradient-text {
-  background-color: #dd0088;
-  background-image: linear-gradient(340deg, #ff4500 10%, #aa00ff 67%, #dd0088 100%);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+.magic-button {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  position: fixed;
+  top: 10rem;
+  left: 26rem;
+}
+
+.magic-button-2 {
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  border: 4px solid black;
+  cursor: pointer;
+  position: fixed;
+  top: 5rem;
+  left: 70%;
+}
+
+.magic-button-3 {
+  height: 12px;
+  width: 12px;
+  background: black;
+  cursor: pointer;
+  position: fixed;
+  top: 80%;
+  left: 45%;
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+}
+
+.site.gradient-text .magic-button {
+  background: #a2db03;
+}
+
+.site.gradient-text .magic-button-2 {
+  border: 4px solid #a2db03;
+}
+
+.site.gradient-text .magic-button-3 {
+  background: #a2db03;
 }
 /*# sourceMappingURL=App.css.map */
