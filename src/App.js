@@ -1,11 +1,9 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import React, { useState, Component } from 'react';
-import ReactDOM from 'react-dom';
 import { View, Dimensions, StyleSheet, Animated} from 'react-native';
 import ProgressBar from "react-scroll-progress-bar";
 import Main from './components/MainComponent';
 import Nav from './components/Nav';
-import Anim from './components/Anim';
 import Footer from './components/Footer';
 import './App.css';
 
