@@ -138,7 +138,7 @@ function Home() {
 
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" rel="noreferrer" href="http://illust-ink.com/"><h3>Gallerz Ink</h3></a>
+                        <a target="_blank" rel="noreferrer" rel="noreferrer" href="http://illust-ink.com/"><h3>Gallery Ink</h3></a>
                         <h4>Interactive Web Gallery</h4>
                         <p>WebGL</p>
                     </div>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap");
 .site-wrapper {
   padding-top: 1rem;
   max-width: 1300px;
@@ -34,10 +35,6 @@ h5 {
   color: #8f00ff;
 }
 
-.progress div {
-  background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%) !important;
-}
-
 .site {
   background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%);
   font-family: "Montserrat", sans-serif;
@@ -49,16 +46,22 @@ h5 {
   background: white !important;
 }
 
-.site.gradient-text {
+.gradient-text {
   background-image: linear-gradient(340deg, #ff4500 10%, #aa00ff 67%, #dd0088 100%);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: repeat;
+  background-clip: text;
+  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-transition: 1s linear;
   transition: 1s linear;
+}
+
+.gradient-text .progress div {
+  background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%) !important;
 }
 
 footer {
@@ -386,6 +389,10 @@ a h3:hover:after {
   border-top: 1px solid lightgrey;
 }
 
+.projects-item .third a {
+  height: 2rem;
+}
+
 .projects-item .two-third {
   width: 65%;
   padding-right: 5rem;
@@ -525,7 +532,7 @@ footer ul li {
   }
 }
 
-.magic-button {
+#animatedComponent {
   height: 18px;
   width: 18px;
   border-radius: 50%;
@@ -569,5 +576,182 @@ footer ul li {
 
 .site.gradient-text .magic-button-3 {
   background: #a2db03;
+}
+
+.navigation-wrapper {
+  height: 2rem;
+}
+
+.wrapper {
+  height: 0;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.contact-page {
+  min-height: 75vh;
+}
+
+form {
+  margin-top: 20px;
+  width: 50%;
+  background: var(--dark);
+  margin-bottom: 5rem;
+}
+
+.formRow {
+  margin: 10px 0 20px 0;
+}
+
+.formInput {
+  padding: 15px 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  color: white;
+}
+
+.flexRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flexRow .col-6 {
+  width: 47%;
+}
+
+.flexRow .col-6 .formInput {
+  width: 100%;
+}
+
+.formTextArea {
+  height: 10rem;
+}
+
+.col-12 .formInput {
+  width: 100%;
+}
+
+.formInput:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.formInput::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+}
+
+.formInput:-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+}
+
+.formInput::-ms-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+}
+
+.formInput::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+}
+
+.formInput:focus::-webkit-input-placeholder {
+  color: var(--light);
+  opacity: 1;
+}
+
+.formInput:focus:-ms-input-placeholder {
+  color: var(--light);
+  opacity: 1;
+}
+
+.formInput:focus::-ms-input-placeholder {
+  color: var(--light);
+  opacity: 1;
+}
+
+.formInput:focus::placeholder {
+  color: var(--light);
+  opacity: 1;
+}
+
+.errorMessage {
+  color: #f45532;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+#notifyToast {
+  color: #fff;
+  border-radius: 6px;
+  width: 200px;
+  margin-left: 75px;
+  background-color: var(--green);
+}
+
+.submit-btn {
+  background-color: white;
+  color: var(--green) !important;
+  padding: 15px 50px;
+  border: 2px solid white;
+  margin-bottom: 25px;
+}
+
+.gradient-text .submit-btn,
+.gradient-text .formInput {
+  border: 2px solid #dd0088;
+}
+
+.gradient-text .submit-btn {
+  color: #dd0088;
+}
+
+.gradient-text .formInput::-webkit-input-placeholder {
+  color: #dd0088;
+}
+
+.gradient-text .formInput:-ms-input-placeholder {
+  color: #dd0088;
+}
+
+.gradient-text .formInput::-ms-input-placeholder {
+  color: #dd0088;
+}
+
+.gradient-text .formInput::placeholder {
+  color: #dd0088;
+}
+
+.submit-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--dark) !important;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.submit-btn:disabled:hover {
+  background-color: var(--dark);
+  color: var(--green) !important;
+  cursor: wait;
+}
+
+@media (max-width: 768px) {
+  .submit-message {
+    width: 125px;
+    margin-left: 200px;
+  }
 }
 /*# sourceMappingURL=App.css.map */

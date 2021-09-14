@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap');
+
 $line-color: #34dddd;
 
 $line-color: lightgrey;
@@ -36,9 +38,8 @@ h5 {
   color: #8f00ff;
 }
 
-.progress div {
-  background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%) !important;
-}
+
+
 
 .site {
   // background: #8f00ff;
@@ -53,21 +54,29 @@ h5 {
     background: white !important;
   }
 
-  &.gradient-text {
-    // background-color: #dd0088;
-    background-image: linear-gradient(340deg, #ff4500 10%, #aa00ff 67%, #dd0088 100%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-    transition: 1s linear;
-  }
+  
 
   // a:hover {
   //   opacity: 0.7;
   // }
+}
+
+.gradient-text {
+  // background-color: #dd0088;
+  background-image: linear-gradient(340deg, #ff4500 10%, #aa00ff 67%, #dd0088 100%);
+  background-size: 100% 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  transition: 1s linear;
+}
+
+.gradient-text .progress div {
+  background: linear-gradient(340deg, #ff4500 0%, #dd0088 47%, #aa00ff 100%) !important;
 }
 
 footer {
@@ -365,6 +374,10 @@ a h3 {
   padding-right: 5rem;
   margin-right: 2%;
   border-top: 1px solid $line-color;
+
+  a {
+    height: 2rem;
+  }
 }
 
 .projects-item .two-third {
@@ -564,7 +577,7 @@ footer ul li {
   // }
 }
 
-.magic-button {
+#animatedComponent {
   height: 18px;
   width: 18px;
 
@@ -612,5 +625,143 @@ footer ul li {
 
   .magic-button-3 {
     background: rgb(162, 219, 3);
+  }
+}
+
+.navigation-wrapper {
+  height: 2rem;
+}
+
+.wrapper {
+  height: 0; 
+  width: 100vw; 
+  position: fixed;
+  // z-index: -1; 
+  top: 0; 
+  left: 0;
+}
+
+.contact-page {
+  // height: 70vh;
+  min-height: 75vh;
+}
+
+form {
+  margin-top: 20px;
+  width: 50%;
+  background: var(--dark);
+  margin-bottom: 5rem;
+}
+
+.formRow {
+  margin: 10px 0 20px 0;
+  
+
+}
+
+.formInput {
+  padding: 15px 10px;
+  background-color: rgba(white,0);
+  border: 2px solid white;
+  color: white;
+}
+
+
+
+.flexRow {
+  display: flex;
+  justify-content: space-between;
+  .col-6 {
+    width: 47%;
+    .formInput {
+      width: 100%;
+    }
+  }
+}
+
+.formTextArea {
+  height: 10rem;
+  
+}
+
+.col-12 .formInput {
+  width: 100%;
+}
+
+
+
+.formInput:focus {
+  background-color: rgba(white,.1);
+  outline: none;
+  border: 2px solid rgba(white,.8);
+  color: rgba(white,.8);
+}
+
+.formInput::placeholder {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  opacity: 1;
+}
+
+.formInput:focus::placeholder {
+
+  color: var(--light);
+  opacity: 1;
+}
+
+.errorMessage {
+  color: #f45532;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+#notifyToast {
+  color: #fff;
+  border-radius: 6px;
+  width: 200px;
+  margin-left: 75px;
+  background-color: var(--green);
+}
+
+.submit-btn {
+  background-color: white;
+  color: var(--green) !important;
+  padding: 15px 50px;
+  border: 2px solid white;
+  margin-bottom: 25px;
+}
+
+
+.gradient-text .submit-btn,
+.gradient-text .formInput  {
+  border: 2px solid #dd0088;
+ 
+}
+
+.gradient-text .submit-btn {
+  color: #dd0088;
+}
+
+.gradient-text .formInput::placeholder {
+  color: #dd0088;
+}
+
+.submit-btn:hover {
+  background-color: rgba(white,.8);
+  color: var(--dark) !important;
+  border: 2px solid rgba(white,.8);
+}
+
+.submit-btn:disabled:hover {
+  background-color: var(--dark);
+  color: var(--green) !important;
+  cursor: wait;
+}
+
+@media (max-width: 768px) {
+  .submit-message {
+    width: 125px;
+    margin-left: 200px;
   }
 }
