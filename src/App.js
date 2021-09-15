@@ -1,11 +1,12 @@
 import { BrowserRouter as Router } from 'react-router-dom';
-import React, { useState, Component } from 'react';
-import { View, Dimensions, StyleSheet, Animated} from 'react-native';
+import React, { Component } from 'react';
+import { Dimensions,Animated} from 'react-native';
 import ProgressBar from "react-scroll-progress-bar";
 import Main from './components/MainComponent';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import './App.css';
+
 
 let {width:W,height:H} = Dimensions.get("window");
 
@@ -27,7 +28,8 @@ class App extends Component {
       let des = {x:W*Math.random(), y:Math.random()*H};
       Animated.timing(this.state.pos, {
           toValue: des,
-          duration: 7000
+          duration: 7000,
+          useNativeDriver: false
       }).start(()=>{
           this._loopAnimation();
       });
@@ -35,6 +37,7 @@ class App extends Component {
 
   componentDidMount(){
       this._loopAnimation();
+    
   }
   
   render() {

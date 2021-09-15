@@ -65,7 +65,24 @@ function Home() {
                 <h2>Projects & Studies</h2>
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" href="http://refract-overview.net/"><h3>Refract</h3></a>
+                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-artgallery.herokuapp.com/"><h3>Hannah Avgust Art gallery</h3></a>
+                        <h4>Personal Web store</h4>
+                        <p>2021</p>
+
+                    </div>
+                    <div className="third">
+                        <h3>Shoping experience</h3>
+                        <p>integrated Commerce.js</p>
+                        <p>Ux/Ui and everything else</p>
+                    </div>
+                    <div className="third">
+                        <p>Fully personal project. I am also an artist</p>
+
+                    </div>
+                </div>
+                <div className="projects-item">
+                    <div className="third">
+                        <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/refract/"><h3>Refract</h3></a>
                         <h4>Web Application</h4>
                         <p>2018</p>
 
@@ -82,7 +99,7 @@ function Home() {
                 </div>
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" href="http://flexible-multidimension-doc.net/"><h3>IA-multidimension</h3></a>
+                        <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/flexible-multi-dimension/"><h3>IA-multidimension</h3></a>
                         <h4>Personal Project/Study</h4>
                         <p>2018 - ongoing</p>
 
@@ -120,7 +137,7 @@ function Home() {
 
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" href="http://workspace-study.net/"><h3>Workplace</h3></a>
+                        <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/workspace/"><h3>Workplace</h3></a>
                         <h4>Physical Interface Prototype</h4>
                         <p>2017</p>
 
@@ -138,7 +155,7 @@ function Home() {
 
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" rel="noreferrer" href="http://illust-ink.com/"><h3>Gallery Ink</h3></a>
+                        <a target="_blank" rel="noreferrer" rel="noreferrer" href="https://ophiophagushannah.github.io/gallery/"><h3>Gallery Ink</h3></a>
                         <h4>Interactive Web Gallery</h4>
                         <p>WebGL</p>
                     </div>
@@ -154,7 +171,8 @@ function Home() {
 
                 <div className="projects-item">
                     <div className="third">
-                        <h3>Orbit</h3>
+                    <a target="_blank" rel="noreferrer" rel="noreferrer" href="https://ophiophagushannah.github.io/solar-system/"><h3>Orbit</h3></a>
+                        
                         <h4>Data Visualization</h4>
                         <p>D3</p>
                     </div>
