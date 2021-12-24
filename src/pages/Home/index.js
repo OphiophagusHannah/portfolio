@@ -11,7 +11,7 @@ function Home() {
                 </div>
                 <div className="keys">
                     <div>
-                        <h3>Web Development & Frontend</h3>
+                        <h3>Web Development & Frontend UI Engineering</h3>
                         <p>Implementing functional and responsive websites and web applications according to latest
                             frontend techniques</p>
                     </div>
@@ -20,12 +20,12 @@ function Home() {
                         <p>Designing meaningful interactive experiences using various UX research techniques </p>
                     </div>
                     <div>
-                        <h3>Information Architecture & UI Engineering</h3>
+                        <h3>Information Architecture & </h3>
                         <p>Developing cohesive IA structures for </p>
                     </div>
                     <div>
                         <h3>Rapid Prototyping</h3>
-                        <p>Using variety of prototyping tools and techniques to create </p>
+                        <p>Using variety of prototyping tools and techniques to create comprehensive prototypes for interactive Media</p>
                     </div>
 
 
@@ -65,18 +65,37 @@ function Home() {
                 <h2>Projects & Studies</h2>
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-artgallery.herokuapp.com/"><h3>Hannah Avgust Art gallery</h3></a>
-                        <h4>Personal Web store</h4>
-                        <p>2021</p>
+                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Hannah Avgust Art Gallery</h3></a>
+                        <h4>Personal Art Shop</h4>
+                        <p>2021 (ongoing)</p>
 
                     </div>
                     <div className="third">
-                        <h3>Shoping experience</h3>
+                        <h3>Interactive Gallery and Online Shoping</h3>
                         <p>integrated Commerce.js</p>
                         <p>Ux/Ui and everything else</p>
+                        <p>Interactive visualisation gallery</p>
                     </div>
                     <div className="third">
-                        <p>Fully personal project. I am also an artist</p>
+                        <p>Fully personal project. I create art </p>
+
+                    </div>
+                </div>
+                <div className="projects-item">
+                    <div className="third">
+                        <a target="_blank" rel="noreferrer" href=""><h3>Geometry of the City</h3></a>
+                        <h4>Online Journal</h4>
+                        <p>2020 (ongoing)</p>
+
+                    </div>
+                    <div className="third">
+                        <p>Use google maps api to generate map</p>
+                        <p>Reorganized history of worlds architecture</p>
+                        <p>Great cities of the world</p>
+                        <p>Data Visualization with D3.js</p>
+                    </div>
+                    <div className="third">
+                        <p>Fully personal project. I create art </p>
 
                     </div>
                 </div>
