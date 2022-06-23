@@ -7,25 +7,25 @@ function Home() {
             <section className="about">
 
                 <div className="intro">
-                    <h2>Inspired by the fusion of design with technology, and believe that it is a key to uncovering and exploring the potentials of our world and elevating human experiences.</h2>
+                    {/* <h2>Inspired by the fusion of design with technology, and believe that it is a key to uncovering and exploring the potentials of our world and elevating human experiences.</h2> */}
+                    <h2>Good Statement</h2>
                 </div>
                 <div className="keys">
                     <div>
-                        <h3>Web Development & Frontend UI Engineering</h3>
-                        <p>Implementing functional and responsive websites and web applications according to latest
-                            frontend techniques</p>
+                        <h3>Frontend Engineering & Web Development</h3>
+                        <p>Implementing functional and responsive websites and web applications according to latest frontend techniques</p>
                     </div>
                     <div>
-                        <h3>Interactive Design & UX Research</h3>
-                        <p>Designing meaningful interactive experiences using various UX research techniques </p>
+                        <h3>Interactive Design & Emersive Technologies Design </h3>
+                        <p>Designing meaningful interactive experiences. Exploring Artificial Intellegence and Machine Learning technologies</p>
                     </div>
                     <div>
-                        <h3>Information Architecture & </h3>
-                        <p>Developing cohesive IA structures for </p>
+                        <h3>Rapid Prototyping & UI/UX Research </h3>
+                        <p>Using variety of prototyping tools and UX research techniques to create comprehensive prototypes for interactive media.</p>
                     </div>
                     <div>
-                        <h3>Rapid Prototyping</h3>
-                        <p>Using variety of prototyping tools and techniques to create comprehensive prototypes for interactive Media</p>
+                        <h3>Information Architecture & Data Manipulation</h3>
+                        <p>Developing and manipulating cohesive IA structures.</p>
                     </div>
 
 
@@ -63,21 +63,63 @@ function Home() {
                 </div>
 
                 <h2>Projects & Studies</h2>
+
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Hannah Avgust Art Gallery</h3></a>
-                        <h4>Personal Art Shop</h4>
+                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Create. Enjoy. Destroy.</h3></a>
+                        <h4>Personal Interactive Gallery</h4>
                         <p>2021 (ongoing)</p>
+                        <p className="mono">is_ongoing: true</p>
 
                     </div>
                     <div className="third">
-                        <h3>Interactive Gallery and Online Shoping</h3>
+                        <h3>Creative development and vizualisation</h3>
+                        <p>PIXI</p>
+                        <p>WebGL</p>
+                        <p>Various JS Frameworks</p>
+                    </div>
+                    <div className="third">
+                        <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
+
+                    </div>
+                </div>
+
+                <div className="projects-item">
+                    <div className="third">
+                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Experiments</h3></a>
+                        <h4>Interactive Sketches</h4>
+                        <p>2021 (ongoing)</p>
+                        <p className="mono">is_ongoing: true</p>
+
+                    </div>
+                    <div className="third">
+                        <h3>Creative and Visual Development</h3>
+                        <p>Canvas-Sketch</p>
+                        <p>Processing</p>
+                        <p>Various JS Frameworks</p>
+                    </div>
+                    <div className="third">
+                        <p></p>
+
+                    </div>
+                </div>
+
+                <div className="projects-item">
+                    <div className="third">
+                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Hannah Avgust Art Shop</h3></a>
+                        <h4>Personal Art Store</h4>
+                        <p>2021 (ongoing)</p>
+                        <p>is_ongoing: false</p>
+
+                    </div>
+                    <div className="third">
+                        <h3>Online Shoping and eCommerce</h3>
                         <p>integrated Commerce.js</p>
                         <p>Ux/Ui and everything else</p>
                         <p>Interactive visualisation gallery</p>
                     </div>
                     <div className="third">
-                        <p>Fully personal project. I create art </p>
+                        <p>Store</p>
 
                     </div>
                 </div>
@@ -95,10 +137,31 @@ function Home() {
                         <p>Data Visualization with D3.js</p>
                     </div>
                     <div className="third">
-                        <p>Fully personal project. I create art </p>
+                        <p>Inspired by my love to architecture and ergonomics, this project is a journal and</p>
 
                     </div>
                 </div>
+
+                <div className="projects-item">
+                    <div className="third">
+                        <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/flexible-multi-dimension/"><h3>Multidimension</h3></a>
+                        <h4>Personal Project/Study</h4>
+                        <p>2018 - ongoing</p>
+                        <p>is_ongoing: true</p>
+
+                    </div>
+                    <div className="third">
+                        <h3>Information Architecture</h3>
+                        <p>Purpose</p>
+
+                    </div>
+                    <div className="third">
+                        <p>This study is dedicated to exploring the informational architecture of the human brain as a model and analyzing how memories and associations are stored and retrieved. It has been influenced by my long lasting enthusiasm about architecture (tangible) and my life changing interest in holographic experiments and information storage.
+
+                        </p>
+                    </div>
+                </div>
+
                 <div className="projects-item">
                     <div className="third">
                         <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/refract/"><h3>Refract</h3></a>
@@ -116,24 +179,7 @@ function Home() {
 
                     </div>
                 </div>
-                <div className="projects-item">
-                    <div className="third">
-                        <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/flexible-multi-dimension/"><h3>IA-multidimension</h3></a>
-                        <h4>Personal Project/Study</h4>
-                        <p>2018 - ongoing</p>
 
-                    </div>
-                    <div className="third">
-                        <h3>Information Architecture</h3>
-                        <p>Purpose</p>
-
-                    </div>
-                    <div className="third">
-                        <p>This study is dedicated to exploring the informational architecture of the human brain as a model and analyzing how memories and associations are stored and retrieved. It has been influenced by my long lasting enthusiasm about architecture (tangible) and my life changing interest in holographic experiments and information storage.
-
-                        </p>
-                    </div>
-                </div>
 
                 <div className="projects-item">
                     <div className="third">
@@ -152,6 +198,21 @@ function Home() {
                     </div>
                 </div>
 
+                <div className="projects-item">
+                    <div className="third">
+                    <a target="_blank" rel="noreferrer"  href="https://ophiophagushannah.github.io/solar-system/"><h3>Orbit</h3></a>
+                        
+                        <h4>Data Visualization</h4>
+                        <p>D3</p>
+                    </div>
+                    <div className="third">
+                        <h3>Data Visualization and D3 Development</h3>
+                    </div>
+                    <div className="third">
+                        <p>I was working on exloring and learning new techniques of data visualization and information presentation
+                        </p>
+                    </div>
+                </div>
 
 
                 <div className="projects-item">
@@ -174,7 +235,7 @@ function Home() {
 
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" rel="noreferrer" href="https://ophiophagushannah.github.io/gallery/"><h3>Gallery Ink</h3></a>
+                        <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/gallery/"><h3>Gallery Ink</h3></a>
                         <h4>Interactive Web Gallery</h4>
                         <p>WebGL</p>
                     </div>
@@ -188,39 +249,6 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="projects-item">
-                    <div className="third">
-                    <a target="_blank" rel="noreferrer" rel="noreferrer" href="https://ophiophagushannah.github.io/solar-system/"><h3>Orbit</h3></a>
-                        
-                        <h4>Data Visualization</h4>
-                        <p>D3</p>
-                    </div>
-                    <div className="third">
-                        <h3>Data Visualization and D3 Development</h3>
-                    </div>
-                    <div className="third">
-                        <p>I was working on exloring and learning new techniques of data visualization and information presentation
-                        </p>
-                    </div>
-                </div>
-
-                <div className="projects-item">
-                    <div className="third">
-                        <h3>Visualization Experiments</h3>
-                        <p>testing and teasing</p>
-                    </div>
-                    <div className="third">
-                        <h3>Creative Development</h3>
-                        <p>Canvas</p>
-                        <p>Processing</p>
-                        <p>CSS</p>
-
-                    </div>
-                    <div className="third">
-                        <p>All Visual
-                        </p>
-                    </div>
-                </div>
             </section>
         </div>
 

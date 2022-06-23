@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import About from '../pages/About';
 import Home from '../pages/Home';
-import Contact from '../pages/Contact';
 
 class Main extends Component {
 
@@ -28,7 +27,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/about' component={AboutPage} />
-                    <Route path='/contact' component={Contact} />
+                
                     <Redirect to="/home" />
                 </Switch>
             </div>
