@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import About from '../pages/About';
 import Home from '../pages/Home';
+import Dev from '../pages/Dev';
 
 class Main extends Component {
 
@@ -19,6 +20,12 @@ class Main extends Component {
             );
         }
 
+        const DevPage = () => {
+            return (
+                <Dev />
+            );
+        }
+
         return (
 
 
@@ -27,6 +34,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/about' component={AboutPage} />
+                    <Route exact path='/dev' component={DevPage} />
                 
                     <Redirect to="/home" />
                 </Switch>

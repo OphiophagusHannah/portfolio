@@ -7,17 +7,20 @@ function Home() {
             <section className="about">
 
                 <div className="intro">
+                    <h3>Hello, I am Hannah</h3>
                     {/* <h2>Inspired by the fusion of design with technology, and believe that it is a key to uncovering and exploring the potentials of our world and elevating human experiences.</h2> */}
-                    <h2>Good Statement</h2>
+                    <h2>I believe that the fusion of design and technologies is a key to uncovering potentials of our world</h2>
                 </div>
                 <div className="keys">
+
+                <h3>proficiency</h3>
                     <div>
                         <h3>Frontend Engineering & Web Development</h3>
                         <p>Implementing functional and responsive websites and web applications according to latest frontend techniques</p>
                     </div>
                     <div>
-                        <h3>Interactive Design & Emersive Technologies Design </h3>
-                        <p>Designing meaningful interactive experiences. Exploring Artificial Intellegence and Machine Learning technologies</p>
+                        <h3>Interactive & Emersive Technologies Design </h3>
+                        <p>Designing meaningful interactive experiences. Exploring Augmented Reality and Machine Learning</p>
                     </div>
                     <div>
                         <h3>Rapid Prototyping & UI/UX Research </h3>
@@ -66,23 +69,25 @@ function Home() {
 
                 <div className="projects-item">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Create. Enjoy. Destroy.</h3></a>
-                        <h4>Personal Interactive Gallery</h4>
-                        <p>2021 (ongoing)</p>
-                        <p className="mono">is_ongoing: true</p>
+                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Miphic</h3></a>
+                        <h4>Website</h4>
+                        <p>2022</p>
+                        <p className="mono">is_ongoing: false</p>
 
                     </div>
                     <div className="third">
-                        <h3>Creative development and vizualisation</h3>
-                        <p>PIXI</p>
-                        <p>WebGL</p>
-                        <p>Various JS Frameworks</p>
+                        <h3>Visual Design and Development</h3>
+                        <p>GraphCMS</p>
+                        <p>React</p>
+                        
                     </div>
                     <div className="third">
                         <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
-
                     </div>
                 </div>
+
+
+   
 
                 <div className="projects-item">
                     <div className="third">
@@ -104,6 +109,43 @@ function Home() {
                     </div>
                 </div>
 
+                <div className="projects-item">
+                    <div className="third">
+                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Interferance</h3></a>
+                        <h4>Interactive Installation</h4>
+                        <p>2022 (ongoing)</p>
+                        <p className="mono">is_ongoing: true</p>
+
+                    </div>
+                    <div className="third">
+                        <h3>Interactive Design</h3>
+                        <p>Emmersive and Spatial Experience</p>
+                        <p>Holography and Lasers</p>
+                        <p></p>
+                    </div>
+                    <div className="third">
+                        <p></p>
+
+                    </div>
+                </div>
+                <div className="projects-item">
+                    <div className="third">
+                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Create. Enjoy. Destroy.</h3></a>
+                        <h4>Personal Interactive Gallery</h4>
+                        <p>2021 (ongoing)</p>
+                        <p className="mono">is_ongoing: true</p>
+
+                    </div>
+                    <div className="third">
+                        <h3>Creative development and vizualisation</h3>
+                        <p>PIXI</p>
+                        <p>WebGL</p>
+                        <p>Various JS Frameworks</p>
+                    </div>
+                    <div className="third">
+                        <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
+                    </div>
+                </div>
                 <div className="projects-item">
                     <div className="third">
                         <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Hannah Avgust Art Shop</h3></a>

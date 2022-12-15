@@ -154,6 +154,7 @@ nav .nav-link-preend li {
   padding-bottom: 0.3rem;
   display: block;
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 nav .nav-link li:after,
@@ -252,10 +253,19 @@ h1 {
   border: 1px solid lightgrey;
 }
 
-.intro h2 {
-  padding-top: 5rem;
+.intro h3 {
+  padding-top: 10rem;
   width: 80%;
-  font-size: 3.8rem;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.intro h2 {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  width: 80%;
+  font-size: 4.4rem;
   font-weight: 300;
   margin-bottom: 0;
 }
@@ -283,6 +293,15 @@ h1 {
           justify-content: space-between;
 }
 
+.keys > h3 {
+  padding-top: 2.5rem;
+  width: 80%;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-bottom: 1rem;
+}
+
 .keys > div {
   width: 23%;
   display: -webkit-box;
@@ -298,7 +317,12 @@ h1 {
 .keys > div h3 {
   padding-top: 1.5rem;
   margin-bottom: 0;
+  font-size: 22px;
   border-top: 1px solid lightgrey;
+}
+
+.keys > div p {
+  font-size: 18px;
 }
 
 .skills ul {
