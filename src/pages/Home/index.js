@@ -8,8 +8,9 @@ function Home() {
 
                 <div className="intro">
                     <h3>Hello, I am Hannah</h3>
+                    <h2>I enjoy interactive design and code. I combine them. It is magic, but it's real.</h2>
                     {/* <h2>Inspired by the fusion of design with technology, and believe that it is a key to uncovering and exploring the potentials of our world and elevating human experiences.</h2> */}
-                    <h2>I believe that the fusion of design and technologies is a key to uncovering potentials of our world</h2>
+                    {/* <h2>I believe that the fusion of design and technologies is a key to uncovering potentials of our world</h2> */}
                 </div>
                 <div className="keys">
 

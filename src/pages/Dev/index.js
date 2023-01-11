@@ -52,10 +52,10 @@ function Dev() {
                 </div>
 
                 <h3>Projects at Gulo</h3>
-
-                <div className="projects-item">
+<div className="project-items">
+                <a className="projects-item-card" target="_blank" rel="noreferrer" href="">
                     <div className="third">
-                        <a target="_blank" rel="noreferrer" href="https://hannah-avgust-art.herokuapp.com/"><h3>Azo</h3></a>
+                       <h3>Estroven</h3>
                         <h4>Ecommerce Store Website</h4>
                         <p>Wordpress, Shopify, ShopWP, JS, PHP, SCSS</p>
                          
@@ -64,18 +64,65 @@ function Dev() {
                         <h3>Role</h3>
                         <p>Frontend Developer</p>
                         <h3>Responsibilities</h3>
-                        <p>Developed and guided development process fron the begining to the end of the project</p>
-                        <p>Integrated and connected WP frontend with CMS of the Shopify</p>
-                        <p>Worked Closely with Design team to create and implement comprehensive frontend, and easy managable administative tools</p>
+                    </div>
+                </a>
+
+                <a className="projects-item-card" target="_blank" rel="noreferrer" href="">
+                    <div className="third">
+                        <h3>Azo</h3>
+                        <h4>Ecommerce Store Website</h4>
+                        <p>Wordpress, Shopify, ShopWP, JS, PHP, SCSS</p>
+                         
                     </div>
                     <div className="third">
-                        
-                       
-                        
+                        <h3>Role</h3>
+                        <p>Frontend Developer</p>
+                        <h3>Responsibilities</h3>
                     </div>
-                </div>
+                </a>
 
+                <a className="projects-item-card" target="_blank" rel="noreferrer" href="">
+                    <div className="third">
+                        <h3>Earthborn</h3>
+                        <h4>Ecommerce Store Website</h4>
+                        <p>Wordpress, Shopify, ShopWP, JS, PHP, SCSS</p>
+                         
+                    </div>
+                    <div className="third">
+                        <h3>Role</h3>
+                        <p>Frontend Developer</p>
+                        <h3>Responsibilities</h3>
+                    </div>
+                </a>
 
+                <a className="projects-item-card" target="_blank" rel="noreferrer" href="">
+                    <div className="third">
+                       <h3>up4</h3>
+                        <h4>Ecommerce Store Website</h4>
+                        <p>Wordpress, Shopify, ShopWP, JS, PHP, SCSS</p>
+                         
+                    </div>
+                    <div className="third">
+                        <h3>Role</h3>
+                        <p>Frontend Developer</p>
+                        <h3>Responsibilities</h3>
+                    </div>
+                </a>
+
+                <a className="projects-item-card" target="_blank" rel="noreferrer" href="">
+                    <div className="third">
+                       <h3>Clearcut</h3>
+                        <h4>Ecommerce Store Website</h4>
+                        <p>Wordpress, Shopify, ShopWP, JS, PHP, SCSS</p>
+                         
+                    </div>
+                    <div className="third">
+                        <h3>Role</h3>
+                        <p>Frontend Developer</p>
+                        <h3>Responsibilities</h3>
+                    </div>
+                </a>
+ </div>
             </section>
 
             <div className="skills" id="skills">
