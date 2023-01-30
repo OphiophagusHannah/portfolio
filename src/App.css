@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap");
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .site-wrapper {
   padding-top: 1rem;
   max-width: 1300px;
@@ -264,7 +269,7 @@ h1 {
 .intro h2 {
   padding-top: 1rem;
   margin-top: 1rem;
-  width: 55%;
+  width: 86%;
   font-size: 4.4rem;
   font-weight: 300;
   margin-bottom: 0;
@@ -303,7 +308,7 @@ h1 {
 }
 
 .keys > div {
-  width: 23%;
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,6 +328,7 @@ h1 {
 
 .keys > div p {
   font-size: 18px;
+  line-height: 1.5;
 }
 
 .skills ul {
@@ -435,6 +441,13 @@ a h3:hover:after {
   padding-right: 5rem;
   margin-right: 2%;
   border-top: 1px solid lightgrey;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.projects-item .third p {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .projects-item .third a {

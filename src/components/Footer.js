@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 function Footer() {
     return (
         <footer>
+
+
             <div className="footer-inner">
+
                 <ul>
                     {/* <Link to="/home" className="nav-link"><li>work</li></Link> */}
                     <Link to="/dev" className="nav-link"><li>dev</li></Link>
