@@ -6,12 +6,18 @@ function Nav() {
 
     return (
 
-        <nav className="site-wrapper">
-            <ul className="navigation-wrapper">
-                <Link to="/home" className="nav-link"><li>hannah bogdanova</li></Link>
+        <nav className="nav-wrapper">
+            <div className="main-heading">
+                <h1>Hi, I am Hannah</h1>
+                <h2>Interactive Designer & Developer</h2>
+            </div>
+
+            <ul className="nav-list-wrapper">
+                <Link to="/home" className="nav-link"><li>home</li></Link>
+                <Link to="/expertise" className="nav-link"><li>expertise</li></Link>
+                <Link to="/projects" className="nav-link"><li>projects</li></Link>
                 <Link to="/about" className="nav-link"><li>about</li></Link>
-                <Link to="/hannah-b-resume-design-developement.pdf" target="_blank" rel="nonrefferer" className="nav-link-preend"><li>cv</li></Link>
-                <a href="mailto:bogdanovahannah@gmail.com" className="nav-link-end"><li>contact</li></a>
+                <a href="#contact" className="nav-link"><li>contact</li></a>
             </ul>
         </nav>
 

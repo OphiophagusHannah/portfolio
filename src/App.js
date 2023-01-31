@@ -37,9 +37,9 @@ class App extends Component {
 
   componentDidMount(){
       this._loopAnimation();
-    
+
   }
-  
+
   render() {
 
   const { isOff } = this.state;
@@ -50,26 +50,15 @@ class App extends Component {
         <div className="progress">
           <ProgressBar />
         </div>
-        <div className="wrapper">
-        <Animated.View  onClick={this.handleClick} style={{
-            width:30,
-            height:30,
-            borderRadius:25,
-            backgroundColor:"rgba(162, 219, 3, .9)",
-            border:"15px solid rgb(162, 219, 3, 0)",
-            position:"absolute",
-            zIndex: 999,
-            cursor: "pointer",
-            left:this.state.pos.x,
-            top:this.state.pos.y,
-           
-            
-        }} /></div>
-
-        <Nav />
-        <Main />
-        <Footer />
-
+        <div className="site-wrapper">
+            <div className="left-side">
+                <Nav />
+                <Footer />
+            </div>
+            <div className="right-side">
+                <Main />
+            </div>
+        </div>
       </Router>
     </div>
   )
