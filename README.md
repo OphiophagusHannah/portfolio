@@ -1,17 +1,22 @@
+# ToDo
+
+- link all of the projects and icons
+- update project overview
+- update elements and details
+- setup transition
+- add Gulo to about page
+- dev page
+
+----------------------------------------------
+
+
 # Table of Content
 
 ### Home:
-- Mission Statement
-- Currently
-- Projects and Studies
 
-### About 
+### About
 
-- Who I Am
-- Skills
-- Personal
-
-### CV 
+### CV
 
 -rendered
 -download
@@ -23,17 +28,3 @@
 - work
 - github
 - codepen
-
-- i also do art (later)
-
-----------------------------------------------
-
-# ToDo
-
-- use transitions on load (AOS?)
-- smooth scroll for "work"
-- configure canvas animation
-- include and clean up copy
-- develop Contact Form
-- check all links
-- cv style

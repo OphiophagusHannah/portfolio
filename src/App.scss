@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap');
+
 @font-face {
   font-family: "Neue-Thin";
   src: local("Neue-Thin"), url("./fonts/PPNeueMontreal-Thin.otf") format("truetype");
@@ -12,6 +14,36 @@
 
 * {
   font-family: "Neue-Thin";
+
+}
+
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  color: black;
+  text-decoration:none;
+  padding-bottom: .1rem;
+  font-family: "Neue-Medium";
+  border-bottom: 2px solid black;
+}
+
+
+.about-intro {
+  //width: 30%;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .site-wrapper {
@@ -25,7 +57,7 @@
   position: fixed;
 
   .left-side {
-    width: 30%;
+    width: 20%;
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -34,7 +66,7 @@
   .right-side {
     text-align: right;
     padding-right: 1.5rem;
-    width: 70%;
+    width: 80%;
     padding-left: 5%;
     overflow-y: scroll;
   }
@@ -48,6 +80,8 @@
 
   }
   h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight:300;
     font-size: 15px;
     margin-top: 5px;
   }
@@ -80,6 +114,19 @@
 .footer-wrapper {
   margin-top: auto;
   margin-bottom: 0;
+
+  ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    li, a {
+      color: black;
+      text-decoration: none;
+    }
+
+    a {
+      margin-right: .5rem;
+    }
+  }
 }
 
 .main-wrapper {
@@ -101,10 +148,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  // padding-top: calc(50vh - 2.5rem);
-  // height: calc(50vh - 1.5rem);
-  // margin-bottom: 0;
 }
 
 
@@ -114,14 +157,55 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
 }
 
 .expertise {
-  padding-left: 20%;
+  padding-left: 50%;
+
+  h2 {
+    font-size: 16px;
+    font-family: "Neue-Medium";
+  }
+
+  h3 {
+    font-size: 35px;
+    margin-bottom: 0rem;
+  }
+
+  p {
+    margin-top: .5rem;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-left: 5%;
+    margin-bottom: 0rem;
+  }
 }
 
 #projects {
-  padding-top: 10rem;
+  padding-top: 7rem;
+  h2 {
+    font-size: 16px;
+    font-family: "Neue-Medium";
+    margin-bottom: 3rem;
+  }
+}
+
+#about {
+  padding-top: 7rem;
+  h2 {
+    font-size: 16px;
+    font-family: "Neue-Medium";
+    margin-bottom: 3rem;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  li {
+    list-style-type: none;
+  }
 }
 
 .projects-item {
@@ -134,20 +218,43 @@
     h3 {
       margin-left: 10px;
       text-align: right;
-      font-size: 36px;
+      font-size: 50px;
       margin-top: 0px;
       margin-bottom: 0px;
       white-space: nowrap;
       transition: 0.3s linear;
     }
 
-    span {
+    h4 {
       white-space: nowrap;
       font-family: "Neue-Medium";
     }
   }
 
   .project-content {
+    display: flex;
+    justify-content: flex-end;
+
+    .project-tab-inner {
+      width: 60%;
+      font-size: 18px;
+      line-height: 1.6;
+      padding-right: 2rem;
+      padding-bottom: 0.5rem;
+      border-right: 2px solid black;
+
+      p:nth-child(1) {
+        margin-top: 0;
+      }
+    }
+
+    a {
+      color: black;
+      text-decoration:none;
+      padding-bottom: .3rem;
+      font-family: "Neue-Medium";
+      border-bottom: 2px solid black;
+    }
   }
 
   &:hover {
@@ -213,6 +320,9 @@ input:checked {
     }
   }
   ~ .tab-content {
+    margin-top: 1rem;
     max-height: 100vh;
+    margin-bottom: 3rem;
+    padding-bottom: .5rem;
   }
 }

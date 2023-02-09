@@ -5,7 +5,7 @@ function Work() {
     return (
         <div>
                 <section className="expertise" id="keys">
-                    <h2>expertise</h2>
+                    <h2>expertise & competence</h2>
                     <div>
                         <h3>Frontend Engineering & Web Development</h3>
                         <p>Implementing functional and responsive websites and web applications in mind with information architecture and user experience and according to latest frontend techniques.</p>

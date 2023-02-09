@@ -47,15 +47,16 @@ class App extends Component {
   return (
     <div className={this.state.isOff ? "gradient-text"  :  "site"}>
       <Router>
-        <div className="progress">
-          <ProgressBar />
-        </div>
+
         <div className="site-wrapper">
             <div className="left-side">
                 <Nav />
                 <Footer />
             </div>
             <div className="right-side">
+                <div className="progress">
+                    <ProgressBar />
+                </div>
                 <Main />
             </div>
         </div>

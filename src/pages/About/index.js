@@ -5,9 +5,12 @@ function About() {
     return (
         <div>
             <section id="about" className="about">
+                {/* <h2>about</h2> */}
                 <div className="intro">
-                    <h2>I am a front end engineer with artistic and interactive design background.</h2>
-                    <div className="intro-item">
+                     <div className="intro-item">
+                        <div className="flex-end">
+                    <p className="about-intro">Currently working as a Front-end Engineer<br></br> and Web Developer at <a href="gulosolutions.com">Gulo</a></p>
+                    </div>
                     <h3>Story</h3>
 
 </div>
@@ -34,7 +37,7 @@ Current Explorations (Glitch Art, Holography)</p>
                             <p></p>
                             </div> */}
                 </div>
-            </section>
+
             <div className="skills intro-item" id="skills">
             <h3>Competence and Skills</h3>
                 <div className="proficiency">
@@ -100,7 +103,7 @@ Current Explorations (Glitch Art, Holography)</p>
 
                 <div><a href="">View Dev Experience</a></div>
             </section>
-
+            </section>
         </div>
 
 
