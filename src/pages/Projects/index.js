@@ -1,5 +1,5 @@
 import React from 'react';
-
+import FadeIn from 'react-fade-in';
 
 function Projects() {
     return (
@@ -7,6 +7,7 @@ function Projects() {
 
             <section className="tabs" id="projects">
                 {/* <h2>projects & studies</h2> */}
+                <FadeIn>
                 <div className="tab projects-item">
                     <input type="radio" id="miphic" name="projects"/>
                     <label class="tab-label project-title" for="miphic">
@@ -16,6 +17,11 @@ function Projects() {
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
                         <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
+                        <div className="project-tags">
+                            <span>React</span>
+                            <span>GraphCMS</span>
+                            <span>UX/UI Design</span>
+                        </div>
                         <div className="project-links">
                             <a target="_blank" href="https://www.miphic.co/">visit site</a>
                             <a target="_blank" href="https://github.com/OphiophagusHannah/miphic">github</a>
@@ -33,10 +39,15 @@ function Projects() {
                     </label>
                     <div className="tab-content project-content">
                     <div className="project-tab-inner">
-                        <p>Canvas-Sketch</p>
-                        <p>Processing</p>
-                        <p>Various JS Frameworks</p>
-                        <p>more...</p>
+                        <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
+                        <div className="project-tags">
+                            <span>Various JS Frameworks</span>
+                            <span>canvas-sketch</span>
+                            <span>Processing</span>
+                            <span>WebGl</span>
+                            <span>and more</span>
+
+                        </div>
                         <div className="project-links">
                             <a target="_blank" href="https://github.com/OphiophagusHannah/experiments">github</a>
                             <a target="_blank" href="https://ophiophagushannah.github.io/experiments/">visit site</a>
@@ -181,7 +192,7 @@ function Projects() {
                     </div>
                     </div>
                 </div>
-
+                </FadeIn>
             </section>
         </div>
 

@@ -22,6 +22,7 @@ p {
 
 .dots {
   padding-top: 1rem;
+  display: block;
 }
 
 .dot {
@@ -54,7 +55,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: black;
   border: 1px solid darkgrey;
   height: calc(100vh - 3rem);
   width: calc(100vw - 3rem);
@@ -130,7 +130,7 @@ a {
 
 .footer-wrapper {
   margin-top: auto;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 .footer-wrapper ul {
@@ -139,6 +139,8 @@ a {
 }
 
 .footer-wrapper ul li, .footer-wrapper ul a {
+  border-bottom: none;
+  padding-bottom: 0;
   text-decoration: none;
 }
 
@@ -192,10 +194,7 @@ a {
           justify-content: flex-end;
 }
 
-.expertise .competence-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.expertise .competence-wrapper > div {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -203,6 +202,15 @@ a {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: .5rem;
+}
+
+.expertise .competence-wrapper > div > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .expertise h2 {
@@ -219,8 +227,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-right: 15px;
-  width: 33%;
-  max-width: 17rem;
+  max-width: 25rem;
 }
 
 .expertise .competence label {
@@ -245,7 +252,12 @@ a {
   margin-bottom: 0rem;
 }
 
-.expertise .competence:hover h3, .expertise .competence:hover p {
+.expertise .competence .expertise-tags span {
+  margin-left: .7rem;
+  margin-right: 0;
+}
+
+.expertise .competence:hover h3 {
   color: grey;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -308,7 +320,7 @@ a {
 }
 
 .projects-item .project-title h3 {
-  margin-top: 1rem;
+  margin-top: .7rem;
   margin-bottom: 0;
   text-align: right;
   font-size: 55px;
@@ -357,6 +369,17 @@ a {
 
 .projects-item .project-content .project-tab-inner p:nth-child(1) {
   margin-top: 0;
+}
+
+.projects-item .project-content .project-tags {
+  line-break: unset;
+  margin-bottom: 1.5rem;
+}
+
+.projects-item .project-content .project-tags span {
+  margin-left: 1rem;
+  margin-right: 0;
+  line-break: unset;
 }
 
 .projects-item .project-content .project-links a {
@@ -438,19 +461,27 @@ input:checked ~ .tab-content {
   padding-bottom: .5rem;
 }
 
+input:checked ~ .tab-content.competence-content {
+  margin-bottom: 0;
+}
+
+.dark-theme {
+  height: 0;
+}
+
 .dark-theme .dot {
   background: white;
   border-color: white;
 }
 
 .dark-theme .dot--red:hover {
-  background: #ca3a29;
+  background: #cb3929;
   border-color: #ca3a29;
 }
 
 .dark-theme .dot--border:hover {
   border-color: #ca3a29;
-  background: #222222;
+  background: rgba(0, 0, 0, 0);
 }
 
 .dark-theme a, .dark-theme p, .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme ul, .dark-theme li, .dark-theme .nav-list-wrapper a li {
@@ -466,7 +497,7 @@ input:checked ~ .tab-content {
 }
 
 .dark-theme .site-wrapper {
-  background: #222222;
+  background: rgba(0, 0, 0, 0.8);
   border: 1px solid darkgrey;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -474,6 +505,15 @@ input:checked ~ .tab-content {
 
 .dark-theme .project-tab-inner {
   border-color: white !important;
+}
+
+.dark-theme .project-tags span,
+.dark-theme .expertise-tags span {
+  color: white;
+}
+
+.light-theme {
+  height: 0;
 }
 
 .light-theme .dot {
@@ -505,7 +545,7 @@ input:checked ~ .tab-content {
 }
 
 .light-theme .site-wrapper {
-  background: white;
+  background: rgba(253, 253, 247, 0.6);
   border: 1px solid lightgrey;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -513,6 +553,11 @@ input:checked ~ .tab-content {
 
 .light-theme .project-tab-inner {
   border-color: black;
+}
+
+.light-theme .project-tags span,
+.light-theme .expertise-tags span {
+  color: black;
 }
 
 .center-all-content .main-heading {
@@ -528,6 +573,20 @@ input:checked ~ .tab-content {
           align-items: flex-end;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
+}
+
+.center-all-content .left-side > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
 }
 
 .center-all-content .right-side {
@@ -567,16 +626,6 @@ input:checked ~ .tab-content {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-
-.center-all-content .projects-item .project-title h3 {
-  margin-top: 1rem;
-  margin-bottom: 0;
-  text-align: right;
-  font-size: 55px;
-  white-space: nowrap;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
@@ -623,6 +672,11 @@ input:checked ~ .tab-content {
   margin-top: 0;
 }
 
+.center-all-content .projects-item .project-content .project-tags span {
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
 .center-all-content .projects-item .project-content .project-links a {
   margin-right: 1rem;
   margin-left: 0;
@@ -655,6 +709,19 @@ input:checked ~ .tab-content {
           justify-content: flex-start;
 }
 
+.center-all-content .expertise .competence-wrapper > div {
+  display: block;
+}
+
+.center-all-content .expertise .competence-wrapper .competence {
+  max-width: 25rem;
+}
+
+.center-all-content .expertise .competence-wrapper .competence .expertise-tags span {
+  margin-right: .7rem;
+  margin-left: 0;
+}
+
 .center-all-content #about {
   text-align: left;
 }
@@ -670,5 +737,29 @@ input:checked ~ .tab-content {
 
 .center-all-content #about h3, .center-all-content #about h3 {
   text-align: left;
+}
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+.svg-icon-email {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.svg-icon-cv {
+  width: 1.9rem;
+  height: 1.9rem;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: white;
+}
+
+.svg-icon circle {
+  stroke: white;
+  stroke-width: 1;
 }
 /*# sourceMappingURL=App.css.map */

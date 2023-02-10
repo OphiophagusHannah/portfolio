@@ -6,6 +6,8 @@ import Main from './components/MainComponent';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import './App.css';
+import FadeIn from 'react-fade-in';
+import Canvas from './components/Canvas'
 
 
 // let {width:W,height:H} = Dimensions.get("window");
@@ -38,27 +40,32 @@ class App extends Component {
 
   return (
     // <div className="light-theme">
+
+
     <div className={this.state.isLight ? "dark-theme"  :  "light-theme"}>
+        <Canvas />
       <Router>
         <div className={this.state.isOff ? "site-wrapper"  :  "site-wrapper center-all-content"}>
         {/* <div className="site-wrapper center-all-content"> */}
 
             <div className="left-side">
-
+            <FadeIn>
                 <Nav />
+
                 <dev className="dots">
                 <div className="dot dot--border" onClick={this.handleClick}></div>
                 <div className="dot dot--red" onClick={this.handleColor}></div>
                 {/* <div className="dot" onClick={this.handleColor}></div> */}
                 </dev>
+                </FadeIn>
                 <Footer />
             </div>
-            <div className="right-side">
-                <div className="progress">
-                    <ProgressBar />
-                </div>
+
+            <div className="right-side" >
+
                 <Main />
             </div>
+
         </div>
       </Router>
     </div>
