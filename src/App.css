@@ -453,9 +453,9 @@ a {
   cursor: pointer;
 }
 
-input:checked + .tab-label::after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+input:checked + .tab-label.competence-label h3 {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid;
 }
 
 input:checked ~ .tab-content {
@@ -467,6 +467,8 @@ input:checked ~ .tab-content {
 
 input:checked ~ .tab-content.competence-content {
   margin-bottom: 0;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .dark-theme {
@@ -517,6 +519,7 @@ input:checked ~ .tab-content.competence-content {
   transition: 0.3s linear;
 }
 
+.dark-theme input:checked + .tab-label.competence-label h3,
 .dark-theme .project-tab-inner {
   border-color: white !important;
 }
@@ -575,6 +578,7 @@ input:checked ~ .tab-content.competence-content {
   transition: 0.3s linear;
 }
 
+.light-theme input:checked + .tab-label.competence-label h3,
 .light-theme .project-tab-inner {
   border-color: black;
 }

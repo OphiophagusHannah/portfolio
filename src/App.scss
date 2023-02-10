@@ -206,6 +206,7 @@ a {
     flex-direction: column;
     padding-right: 15px;
     max-width: 25rem;
+
     label {
       display: flex;
       flex-direction: column;
@@ -413,10 +414,13 @@ a {
 // :checked
 input:checked {
   + .tab-label {
-    &::after {
-      transform: rotate(90deg);
-    }
   }
+
+  + .tab-label.competence-label h3 {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid;
+  }
+
   ~ .tab-content {
     margin-top: 1rem;
     max-height: 100vh;
@@ -426,6 +430,9 @@ input:checked {
 
   ~ .tab-content.competence-content {
     margin-bottom: 0;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    // border-top: 1px solid;
   }
 }
 
@@ -478,6 +485,7 @@ input:checked {
     transition: 0.3s linear;
   }
 
+  input:checked + .tab-label.competence-label h3,
   .project-tab-inner {
     border-color: white !important;
   }
@@ -538,6 +546,7 @@ input:checked {
     transition: 0.3s linear;
   }
 
+  input:checked + .tab-label.competence-label h3,
   .project-tab-inner {
     border-color: black;
   }
