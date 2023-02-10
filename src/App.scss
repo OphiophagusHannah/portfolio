@@ -709,6 +709,9 @@ SVG Icons - svgicons.sparkk.fr
 
   .mobile-wrapper {
     display: initial;
+    canvas {
+      display: initial;
+    }
   }
 
   .dots {
@@ -783,14 +786,15 @@ SVG Icons - svgicons.sparkk.fr
   }
 
   .home-mission {
-    margin-top: 40vh;
+    margin-top: 20vh;
     padding-bottom: 5rem;
-    margin-right: 0.3rem;
+    margin-right: 0.2rem;
     border-right: 2px solid black;
     h2 {
       font-size: 30px;
       text-align: right;
       padding-right: 1rem;
+      margin-top: 0;
     }
   }
 
@@ -848,12 +852,18 @@ SVG Icons - svgicons.sparkk.fr
   input:checked {
     ~ .tab-content {
       margin-bottom: 0.5rem;
-      padding-bottom: 0.5rem;
+      padding-bottom: 2rem;
     }
   }
 
   #about {
     padding-top: 0;
     text-align: left;
+  }
+
+  .dark-theme {
+    .home-mission {
+      border-right: 2px solid white;
+    }
   }
 }

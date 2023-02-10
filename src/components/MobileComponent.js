@@ -5,6 +5,7 @@ import Home from '../pages/Home';
 import Dev from '../pages/Dev';
 import Work from '../pages/Work';
 import Projects from '../pages/Projects';
+import CanvasMobile from './CanvasMobile'
 
 
 class Mobile extends Component {
@@ -13,6 +14,7 @@ class Mobile extends Component {
 
         return (
             <div className="mobile-wrapper">
+                <CanvasMobile />
                 <Home />
                 <h2 className="mobile-title">expertise</h2>
                 <Work />
