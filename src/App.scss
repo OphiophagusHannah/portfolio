@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap');
+// Global
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap");
 
 @font-face {
   font-family: "Neue-Thin";
@@ -14,13 +16,18 @@
 
 * {
   font-family: "Neue-Thin";
-
 }
 
 $text-color: white;
 $text-hover: grey;
 $background-color: black;
 $border-color: darkgrey;
+
+// Elements
+
+::-webkit-scrollbar {
+  display: none;
+}
 
 p {
   font-family: "Montserrat", sans-serif;
@@ -43,18 +50,14 @@ p {
   border: 3px solid;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 a {
   text-decoration: none;
-  padding-bottom: .1rem;
+  padding-bottom: 0.1rem;
   font-family: "Neue-Medium";
   border-bottom: 2px solid $text-color;
 }
 
-
+// Structure
 
 .site-wrapper {
   display: flex;
@@ -96,7 +99,7 @@ a {
   }
   h2 {
     font-family: "Montserrat", sans-serif;
-    font-weight:300;
+    font-weight: 300;
     font-size: 15px;
     margin-top: 5px;
     transition: 0.3s linear;
@@ -118,20 +121,21 @@ a {
   }
 
   li {
-    padding-top: .3rem;
-    padding-bottom: .3rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
     font-family: "Neue-Medium";
   }
 }
 
 .footer-wrapper {
   margin-top: auto;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 
   ul {
     padding-left: 0;
     margin-bottom: 0;
-    li, a {
+    li,
+    a {
       // color: $text-color;
       border-bottom: none;
       padding-bottom: 0;
@@ -139,7 +143,7 @@ a {
     }
 
     a {
-      margin-right: .5rem;
+      margin-right: 0.5rem;
     }
   }
 }
@@ -153,6 +157,8 @@ a {
   }
 }
 
+// Home
+
 .home-mission {
   h2 {
     margin-top: 10px;
@@ -160,6 +166,10 @@ a {
     margin-bottom: 0px;
   }
 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -167,24 +177,18 @@ a {
   transition: 0.3s linear;
 }
 
+// Expertise
 
-.home-mission,
 .expertise {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
-}
-
-.expertise {
-  // padding-left: 50%;
-
-  .competence-wrapper > div  {
-    // display: flex;
+  .competence-wrapper > div {
     align-items: flex-end;
     justify-content: flex-end;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 
     > div {
       display: flex;
@@ -197,12 +201,10 @@ a {
     font-family: "Neue-Medium";
   }
 
-  .competence  {
+  .competence {
     display: flex;
     flex-direction: column;
     padding-right: 15px;
-    // width: 33%;
-    // max-width: 17rem;
     max-width: 25rem;
     label {
       display: flex;
@@ -215,35 +217,27 @@ a {
     }
 
     p {
-      margin-top: .5rem;
+      margin-top: 0.5rem;
       font-size: 15px;
       line-height: 1.5;
-      // padding-left: 5%;
       margin-bottom: 0rem;
     }
 
     .expertise-tags span {
-      margin-left: .7rem;
-      margin-right: 0;
+      margin-right: 0.7rem;
+      margin-left: 0;
     }
 
     &:hover {
-        h3 {
-          color: $text-hover;
-          transition: 0.3s linear;
-        }
+      h3 {
+        color: $text-hover;
+        transition: 0.3s linear;
       }
+    }
   }
 }
 
-#projects {
-  padding-top: 7rem;
-  h2 {
-    font-size: 16px;
-    font-family: "Neue-Medium";
-    margin-bottom: 3rem;
-  }
-}
+// About
 
 #about {
   padding-top: 7rem;
@@ -256,7 +250,6 @@ a {
 
   .about-inner {
     max-width: 30rem;
-
   }
 
   h2 {
@@ -274,6 +267,17 @@ a {
   }
 }
 
+// Projects
+
+#projects {
+  padding-top: 7rem;
+  h2 {
+    font-size: 16px;
+    font-family: "Neue-Medium";
+    margin-bottom: 3rem;
+  }
+}
+
 .projects-item {
   .project-title {
     display: flex;
@@ -282,7 +286,7 @@ a {
     transition: 0.3s linear;
 
     h3 {
-      margin-top: .7rem;
+      margin-top: 0.7rem;
       margin-bottom: 0;
       text-align: right;
       font-size: 55px;
@@ -335,25 +339,25 @@ a {
         margin-left: 1rem;
         margin-right: 0;
         // color: $text-color;
-        text-decoration:none;
-        padding-bottom: .3rem;
+        text-decoration: none;
+        padding-bottom: 0.3rem;
         font-family: "Neue-Medium";
         // border-bottom: 2px solid $text-color;
-        transition: .3s linear;
+        transition: 0.3s linear;
 
         &:hover {
           color: $text-hover;
           border-bottom: 2px solid $text-hover;
-          transition: .3s linear;
+          transition: 0.3s linear;
         }
       }
     }
-
   }
 
   &:hover {
     .project-title {
-      h3, h4 {
+      h3,
+      h4 {
         color: $text-hover;
         transition: 0.3s linear;
       }
@@ -361,7 +365,8 @@ a {
   }
 }
 
-/* Accordion styles */
+// Tabs Styles
+
 .tabs {
   overflow: hidden;
   input {
@@ -381,7 +386,6 @@ a {
     cursor: pointer;
     /* Icon */
     &:hover {
-
     }
     // &::after {
     //   content: "\276F";
@@ -402,7 +406,6 @@ a {
 
     cursor: pointer;
     &:hover {
-
     }
   }
 }
@@ -418,7 +421,7 @@ input:checked {
     margin-top: 1rem;
     max-height: 100vh;
     margin-bottom: 3rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
   }
 
   ~ .tab-content.competence-content {
@@ -426,9 +429,7 @@ input:checked {
   }
 }
 
-
-
-
+// Dark Color Layout
 
 .dark-theme {
   height: 0;
@@ -449,12 +450,22 @@ input:checked {
     }
   }
 
-  a, p, h1, h2, h3, h4, h5, ul, li, .nav-list-wrapper a li {
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  li,
+  .nav-list-wrapper a li {
     color: white;
     transition: 0.3s linear;
   }
 
-  a, .nav-list-wrapper a li {
+  a,
+  .nav-list-wrapper a li {
     &:hover {
       color: grey;
       transition: 0.3s linear;
@@ -477,6 +488,7 @@ input:checked {
   }
 }
 
+// Light Color Layout
 
 .light-theme {
   height: 0;
@@ -486,7 +498,7 @@ input:checked {
     &--border {
       &:hover {
         border-color: rgb(202, 58, 41);
-        background:white;
+        background: white;
       }
     }
     &--red {
@@ -497,13 +509,23 @@ input:checked {
     }
   }
 
-  a, p, h1, h2, h3, h4, h5, ul, li, .nav-list-wrapper a li {
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  li,
+  .nav-list-wrapper a li {
     color: black;
     border-color: black;
     transition: 0.3s linear;
   }
 
-  a, .nav-list-wrapper a li {
+  a,
+  .nav-list-wrapper a li {
     &:hover {
       color: grey;
       transition: 0.3s linear;
@@ -517,7 +539,7 @@ input:checked {
   }
 
   .project-tab-inner {
-    border-color:  black;
+    border-color: black;
   }
 
   .project-tags span,
@@ -526,7 +548,7 @@ input:checked {
   }
 }
 
-
+// Centered Layout
 
 .center-all-content {
   .main-heading {
@@ -566,29 +588,11 @@ input:checked {
 
   .projects-item {
     .project-title {
-
       display: flex;
       flex-direction: row-reverse;
       justify-content: flex-end;
       align-items: baseline;
       transition: 0.3s linear;
-
-
-      // h3 {
-      //   margin-top: .5rem;
-      //   margin-bottom: 0;
-      //   text-align: right;
-      //   font-size: 55px;
-      //   white-space: nowrap;
-      //   transition: 0.3s linear;
-      // }
-
-      h4 {
-        white-space: nowrap;
-        font-family: "Neue-Medium";
-        margin: 10px;
-        transition: 0.3s linear;
-      }
     }
 
     .project-content {
@@ -620,21 +624,20 @@ input:checked {
       }
 
       .project-links {
-
         a {
           margin-right: 1rem;
           margin-left: 0;
           // color: $text-color;
-          text-decoration:none;
-          padding-bottom: .3rem;
+          text-decoration: none;
+          padding-bottom: 0.3rem;
           font-family: "Neue-Medium";
           // border-bottom: 2px solid $text-color;
-          transition: .3s linear;
+          transition: 0.3s linear;
 
           &:hover {
             color: $text-hover;
             border-bottom: 2px solid $text-hover;
-            transition: .3s linear;
+            transition: 0.3s linear;
           }
         }
       }
@@ -642,7 +645,8 @@ input:checked {
 
     &:hover {
       .project-title {
-        h3, h4 {
+        h3,
+        h4 {
           color: $text-hover;
           transition: 0.3s linear;
         }
@@ -661,10 +665,6 @@ input:checked {
 
       .competence {
         max-width: 25rem;
-        .expertise-tags span {
-          margin-right: .7rem;
-          margin-left: 0;
-        }
       }
     }
   }
@@ -674,12 +674,12 @@ input:checked {
       display: flex;
       justify-content: flex-start;
     }
-    h3, h3 {
+    h3,
+    h3 {
       text-align: left;
     }
     text-align: left;
   }
-
 }
 
 /* -----

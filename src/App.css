@@ -15,6 +15,10 @@
   font-family: "Neue-Thin";
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -37,13 +41,9 @@ p {
   border: 3px solid;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 a {
   text-decoration: none;
-  padding-bottom: .1rem;
+  padding-bottom: 0.1rem;
   font-family: "Neue-Medium";
   border-bottom: 2px solid white;
 }
@@ -123,14 +123,14 @@ a {
 }
 
 .nav-list-wrapper li {
-  padding-top: .3rem;
-  padding-bottom: .3rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
   font-family: "Neue-Medium";
 }
 
 .footer-wrapper {
   margin-top: auto;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-wrapper ul {
@@ -138,14 +138,15 @@ a {
   margin-bottom: 0;
 }
 
-.footer-wrapper ul li, .footer-wrapper ul a {
+.footer-wrapper ul li,
+.footer-wrapper ul a {
   border-bottom: none;
   padding-bottom: 0;
   text-decoration: none;
 }
 
 .footer-wrapper ul a {
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .main-wrapper {
@@ -158,6 +159,7 @@ a {
 }
 
 .home-mission {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -168,6 +170,9 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   text-align: right;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -179,7 +184,6 @@ a {
   margin-bottom: 0px;
 }
 
-.home-mission,
 .expertise {
   height: 100%;
   display: -webkit-box;
@@ -201,7 +205,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .expertise .competence-wrapper > div > div {
@@ -246,31 +250,21 @@ a {
 }
 
 .expertise .competence p {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 0rem;
 }
 
 .expertise .competence .expertise-tags span {
-  margin-left: .7rem;
-  margin-right: 0;
+  margin-right: 0.7rem;
+  margin-left: 0;
 }
 
 .expertise .competence:hover h3 {
   color: grey;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
-}
-
-#projects {
-  padding-top: 7rem;
-}
-
-#projects h2 {
-  font-size: 16px;
-  font-family: "Neue-Medium";
-  margin-bottom: 3rem;
 }
 
 #about {
@@ -305,6 +299,16 @@ a {
   list-style-type: none;
 }
 
+#projects {
+  padding-top: 7rem;
+}
+
+#projects h2 {
+  font-size: 16px;
+  font-family: "Neue-Medium";
+  margin-bottom: 3rem;
+}
+
 .projects-item .project-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +324,7 @@ a {
 }
 
 .projects-item .project-title h3 {
-  margin-top: .7rem;
+  margin-top: 0.7rem;
   margin-bottom: 0;
   text-align: right;
   font-size: 55px;
@@ -386,26 +390,26 @@ a {
   margin-left: 1rem;
   margin-right: 0;
   text-decoration: none;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
   font-family: "Neue-Medium";
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .projects-item .project-content .project-links a:hover {
   color: grey;
   border-bottom: 2px solid grey;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-.projects-item:hover .project-title h3, .projects-item:hover .project-title h4 {
+.projects-item:hover .project-title h3,
+.projects-item:hover .project-title h4 {
   color: grey;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-/* Accordion styles */
 .tabs {
   overflow: hidden;
 }
@@ -458,7 +462,7 @@ input:checked ~ .tab-content {
   margin-top: 1rem;
   max-height: 100vh;
   margin-bottom: 3rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 input:checked ~ .tab-content.competence-content {
@@ -484,13 +488,23 @@ input:checked ~ .tab-content.competence-content {
   background: rgba(0, 0, 0, 0);
 }
 
-.dark-theme a, .dark-theme p, .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme ul, .dark-theme li, .dark-theme .nav-list-wrapper a li {
+.dark-theme a,
+.dark-theme p,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme h4,
+.dark-theme h5,
+.dark-theme ul,
+.dark-theme li,
+.dark-theme .nav-list-wrapper a li {
   color: white;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-.dark-theme a:hover, .dark-theme .nav-list-wrapper a li:hover {
+.dark-theme a:hover,
+.dark-theme .nav-list-wrapper a li:hover {
   color: grey;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -531,14 +545,24 @@ input:checked ~ .tab-content.competence-content {
   background: #ca3a29;
 }
 
-.light-theme a, .light-theme p, .light-theme h1, .light-theme h2, .light-theme h3, .light-theme h4, .light-theme h5, .light-theme ul, .light-theme li, .light-theme .nav-list-wrapper a li {
+.light-theme a,
+.light-theme p,
+.light-theme h1,
+.light-theme h2,
+.light-theme h3,
+.light-theme h4,
+.light-theme h5,
+.light-theme ul,
+.light-theme li,
+.light-theme .nav-list-wrapper a li {
   color: black;
   border-color: black;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
 
-.light-theme a:hover, .light-theme .nav-list-wrapper a li:hover {
+.light-theme a:hover,
+.light-theme .nav-list-wrapper a li:hover {
   color: grey;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -630,14 +654,6 @@ input:checked ~ .tab-content.competence-content {
   transition: 0.3s linear;
 }
 
-.center-all-content .projects-item .project-title h4 {
-  white-space: nowrap;
-  font-family: "Neue-Medium";
-  margin: 10px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-
 .center-all-content .projects-item .project-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,20 +697,21 @@ input:checked ~ .tab-content.competence-content {
   margin-right: 1rem;
   margin-left: 0;
   text-decoration: none;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
   font-family: "Neue-Medium";
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .center-all-content .projects-item .project-content .project-links a:hover {
   color: grey;
   border-bottom: 2px solid grey;
-  -webkit-transition: .3s linear;
-  transition: .3s linear;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
-.center-all-content .projects-item:hover .project-title h3, .center-all-content .projects-item:hover .project-title h4 {
+.center-all-content .projects-item:hover .project-title h3,
+.center-all-content .projects-item:hover .project-title h4 {
   color: grey;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -717,11 +734,6 @@ input:checked ~ .tab-content.competence-content {
   max-width: 25rem;
 }
 
-.center-all-content .expertise .competence-wrapper .competence .expertise-tags span {
-  margin-right: .7rem;
-  margin-left: 0;
-}
-
 .center-all-content #about {
   text-align: left;
 }
@@ -735,7 +747,8 @@ input:checked ~ .tab-content.competence-content {
           justify-content: flex-start;
 }
 
-.center-all-content #about h3, .center-all-content #about h3 {
+.center-all-content #about h3,
+.center-all-content #about h3 {
   text-align: left;
 }
 

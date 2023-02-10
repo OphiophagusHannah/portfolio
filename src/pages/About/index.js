@@ -6,14 +6,12 @@ function About() {
         <div>
             <section id="about" className="about">
                 {/* <h2>about</h2> */}
-
                 <div className="intro">
                 <FadeIn>
                      <div className="intro-item">
                         <div className="flex-end">
                             <p className="about-intro">Currently working as a Front-end Engineer<br></br> and Web Developer at <a href="gulosolutions.com">Gulo</a></p>
                         </div>
-
                     </div>
                     <div className="intro-item">
                         <div className="flex-end">
@@ -24,14 +22,10 @@ function About() {
                             </div>
                         </div>
                     </div>
-                    </FadeIn>
+                </FadeIn>
                 </div>
-
             </section>
         </div>
-
-
-
     )
 }
 
