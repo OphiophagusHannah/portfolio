@@ -241,7 +241,7 @@ a {
 // About
 
 #about {
-  padding-top: 7rem;
+  padding-top: 7.2rem;
   text-align: right;
 
   .flex-end {
@@ -271,7 +271,7 @@ a {
 // Projects
 
 #projects {
-  padding-top: 7rem;
+  padding-top: 7.2rem;
   h2 {
     font-size: 16px;
     font-family: "Neue-Medium";
@@ -620,11 +620,8 @@ input:checked {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
-        p:nth-child(1) {
-          margin-top: 0;
-        }
       }
+
       .project-tags {
         span {
           margin-right: 1rem;
@@ -636,27 +633,6 @@ input:checked {
         a {
           margin-right: 1rem;
           margin-left: 0;
-          // color: $text-color;
-          text-decoration: none;
-          padding-bottom: 0.3rem;
-          font-family: "Neue-Medium";
-          // border-bottom: 2px solid $text-color;
-          transition: 0.3s linear;
-
-          &:hover {
-            color: $text-hover;
-            border-bottom: 2px solid $text-hover;
-            transition: 0.3s linear;
-          }
-        }
-      }
-    }
-
-    &:hover {
-      .project-title {
-        h3,
-        h4 {
-          color: $text-hover;
           transition: 0.3s linear;
         }
       }

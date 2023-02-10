@@ -124,7 +124,7 @@ function Projects() {
                         <div className="project-tab-inner">
                             <p>This study is dedicated to exploring the informational architecture of the human brain as a model and analyzing how memories and associations are stored and retrieved. It has been influenced by my long lasting enthusiasm about architecture (tangible) and my life changing interest in holographic experiments and information storage.
                             </p>
-                            <a href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
+                            <a target="_blank" href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@ function Projects() {
                             <p>I was involved in three main phases of the project: Research and Ideation, Design and Prototyping, and Development and played a role in each part of the iterative process while working closely with a team to create a collaborative web application for the community of students and organizations.
                             </p>
                             <div className="project-links">
-                                <a href="https://ophiophagushannah.github.io/refract/documentation/index.html">documentation</a>
+                                <a target="_blank" href="https://ophiophagushannah.github.io/refract/documentation/index.html">documentation</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +160,7 @@ function Projects() {
                             <p>This interactive projected interface was designed to the solar system in a comprehensive way and create an interactive environment to engage people in accessible learning without intimidation.
                             </p>
                             <div className="project-links">
-                                <a href="#">visit site</a>
+                                <a target="_blank" href="#">visit site</a>
                             </div>
                         </div>
                     </div>
@@ -177,8 +177,8 @@ function Projects() {
                             <p>I was working on exloring and learning new techniques of data visualization and information presentation
                             </p>
                             <div className="project-links">
-                                <a href="https://ophiophagushannah.github.io/the-orbit/concept">concept</a>
-                                <a href="https://ophiophagushannah.github.io/the-orbit/">preview</a>
+                                <a target="_blank" href="https://ophiophagushannah.github.io/the-orbit/concept">concept</a>
+                                <a target="_blank"href="https://ophiophagushannah.github.io/the-orbit/">preview</a>
                             </div>
                         </div>
                     </div>
