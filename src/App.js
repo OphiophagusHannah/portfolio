@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { Dimensions,Animated} from 'react-native';
 import ProgressBar from "react-scroll-progress-bar";
 import Main from './components/MainComponent';
+import Mobile from './components/MobileComponent';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import './App.css';
@@ -56,6 +57,7 @@ class App extends Component {
                 </div>
                 <div className="right-side" >
                     <Main />
+                    <Mobile />
                 </div>
             </div>
         </Router>
