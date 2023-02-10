@@ -35,42 +35,33 @@ class App extends Component {
 
   render() {
 
-  const { isOff } = this.state;
-  const { isLight } = this.state;
+    const { isOff } = this.state;
+    const { isLight } = this.state;
 
-  return (
-    // <div className="light-theme">
-
-
-    <div className={this.state.isLight ? "dark-theme"  :  "light-theme"}>
+    return (
+        <div className={this.state.isLight ? "dark-theme"  :  "light-theme"}>
         <Canvas />
-      <Router>
-        <div className={this.state.isOff ? "site-wrapper"  :  "site-wrapper center-all-content"}>
-        {/* <div className="site-wrapper center-all-content"> */}
-
-            <div className="left-side">
-            <FadeIn>
-                <Nav />
-
-                <dev className="dots">
-                <div className="dot dot--border" onClick={this.handleClick}></div>
-                <div className="dot dot--red" onClick={this.handleColor}></div>
-                {/* <div className="dot" onClick={this.handleColor}></div> */}
-                </dev>
-                </FadeIn>
-                <Footer />
+        <Router>
+            <div className={this.state.isOff ? "site-wrapper center-all-content"  :  "site-wrapper"}>
+                <div className="left-side">
+                    <FadeIn>
+                        <Nav />
+                        <dev className="dots">
+                            <div className="dot dot--border" onClick={this.handleClick}></div>
+                            <div className="dot dot--red" onClick={this.handleColor}></div>
+                            {/* <div className="dot" onClick={this.handleColor}></div> */}
+                        </dev>
+                    </FadeIn>
+                    <Footer />
+                </div>
+                <div className="right-side" >
+                    <Main />
+                </div>
             </div>
-
-            <div className="right-side" >
-
-                <Main />
-            </div>
-
+        </Router>
         </div>
-      </Router>
-    </div>
-  )
-      }
+    )
+  }
 }
 
 export default App;
