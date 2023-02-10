@@ -11,17 +11,21 @@ function About() {
                         <div className="flex-end">
                     <p className="about-intro">Currently working as a Front-end Engineer<br></br> and Web Developer at <a href="gulosolutions.com">Gulo</a></p>
                     </div>
-                    <h3>Story</h3>
+                    {/* <h3>Story</h3> */}
 
 </div>
 <div className="intro-item">
+<div className="flex-end">
+    <div className="about-inner">
                     <h3>Inspiration</h3>
                     <p>What do I think about: technology and spirituality
 Current Explorations (Glitch Art, Holography)</p>
                     <p>Nature, Nature of life and metamorphosis, translation and transition between mediums </p>
                     </div>
-<div className="intro-item">
-                    <h3>Other Interests</h3>
+                    </div>
+                    </div>
+{/* <div className="intro-item"> */}
+                    {/* <h3>Other Interests</h3> */}
                     {/* <p>Architecture</p>
                     <p>Holography</p>
                     <p>Visual Art</p>
@@ -29,16 +33,16 @@ Current Explorations (Glitch Art, Holography)</p>
                     </div>
 
 
-                    <div className="intro-item"><h3>Education</h3></div>
+                    {/* <div className="intro-item"><h3>Education</h3></div> */}
                     {/* <div className="intro-item">
                     <h3>Curently Learning</h3>
                             <p>GraphQL</p>
                             <p>Glitch art</p>
                             <p></p>
                             </div> */}
-                </div>
+                {/* </div> */}
 
-            <div className="skills intro-item" id="skills">
+            {/* <div className="skills intro-item" id="skills">
             <h3>Competence and Skills</h3>
                 <div className="proficiency">
 
@@ -102,7 +106,7 @@ Current Explorations (Glitch Art, Holography)</p>
                 <div><a href="">CV</a><a href="">Linkedin</a></div>
 
                 <div><a href="">View Dev Experience</a></div>
-            </section>
+            </section> */}
             </section>
         </div>
 

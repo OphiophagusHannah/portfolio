@@ -8,15 +8,15 @@ import Footer from './components/Footer';
 import './App.css';
 
 
-let {width:W,height:H} = Dimensions.get("window");
+// let {width:W,height:H} = Dimensions.get("window");
 
 class App extends Component {
 
   constructor(props){
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.handleColor = this.handleColor.bind(this);
     this.state={
-      pos: new Animated.ValueXY
     }
   }
 
@@ -24,33 +24,33 @@ class App extends Component {
     this.setState({isOff:!this.state.isOff});
   }
 
-  _loopAnimation(){
-      let des = {x:W*Math.random(), y:Math.random()*H};
-      Animated.timing(this.state.pos, {
-          toValue: des,
-          duration: 7000,
-          useNativeDriver: false
-      }).start(()=>{
-          this._loopAnimation();
-      });
+  handleColor() {
+    this.setState({isLight:!this.state.isLight});
   }
 
   componentDidMount(){
-      this._loopAnimation();
-
   }
 
   render() {
 
   const { isOff } = this.state;
+  const { isLight } = this.state;
 
   return (
-    <div className={this.state.isOff ? "gradient-text"  :  "site"}>
+    // <div className="light-theme">
+    <div className={this.state.isLight ? "dark-theme"  :  "light-theme"}>
       <Router>
+        <div className={this.state.isOff ? "site-wrapper"  :  "site-wrapper center-all-content"}>
+        {/* <div className="site-wrapper center-all-content"> */}
 
-        <div className="site-wrapper">
             <div className="left-side">
+
                 <Nav />
+                <dev className="dots">
+                <div className="dot dot--border" onClick={this.handleClick}></div>
+                <div className="dot dot--red" onClick={this.handleColor}></div>
+                {/* <div className="dot" onClick={this.handleColor}></div> */}
+                </dev>
                 <Footer />
             </div>
             <div className="right-side">

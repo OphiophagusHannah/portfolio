@@ -6,8 +6,8 @@ function Footer() {
         <footer className="footer-wrapper">
             <ul>
                 <a href="mailto:bogdanovahannah@gmail.com">email</a>
-                <a href="mailto:bogdanovahannah@gmail.com">github</a>
-                <a href="mailto:bogdanovahannah@gmail.com">cv</a>
+                {/* <a href="https://github.com/OphiophagusHannah">github</a> */}
+                <a target="_blank" href="/hannahb-resume.pdf">cv</a>
             </ul>
         </footer>
     );

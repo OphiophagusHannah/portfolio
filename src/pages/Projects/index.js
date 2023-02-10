@@ -6,7 +6,7 @@ function Projects() {
         <div>
 
             <section className="tabs" id="projects">
-                <h2>projects & studies</h2>
+                {/* <h2>projects & studies</h2> */}
                 <div className="tab projects-item">
                     <input type="radio" id="miphic" name="projects"/>
                     <label class="tab-label project-title" for="miphic">
@@ -16,7 +16,10 @@ function Projects() {
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
                         <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
-                        <a href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
+                        <div className="project-links">
+                            <a target="_blank" href="https://www.miphic.co/">visit site</a>
+                            <a target="_blank" href="https://github.com/OphiophagusHannah/miphic">github</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -34,7 +37,11 @@ function Projects() {
                         <p>Processing</p>
                         <p>Various JS Frameworks</p>
                         <p>more...</p>
-                        <a href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
+                        <div className="project-links">
+                            <a target="_blank" href="https://github.com/OphiophagusHannah/experiments">github</a>
+                            <a target="_blank" href="https://ophiophagushannah.github.io/experiments/">visit site</a>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -49,7 +56,10 @@ function Projects() {
                     <div className="project-tab-inner">
                     <p>Emmersive Experience</p>
                         <p>Holography and Lasers</p>
-                        <a href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
+                        <div className="project-links">
+                        <a target="_blank" href="https://github.com/OphiophagusHannah/interference">github</a>
+                        <a target="_blank" href="https://in-interference.herokuapp.com/">visit site</a>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -69,7 +79,10 @@ function Projects() {
                         <p>Great cities of the world</p>
                         <p>Data Visualization with D3.js</p>
 
-                        <a href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
+                        <div className="project-links">
+                            <a target="_blank" href="#">documentation</a>
+                            <a target="_blank" href="#">prototype</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +98,10 @@ function Projects() {
                     <p>Precision of virtual environment experience in virtual space. Mobility</p>
                     <p>Originally the idea was created as a potential prototype for Web Virtual Reality Gallery, which led towards two paths of possible interactions: 1st Path:Full AR/ VR gallery with gesture control. 2nd Path: Experience with the gallery using mobile phone as controller (main goal within this path is accessibility from anywhere).
                         </p>
-                        <a href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
+                        <div className="project-links">
+                        <a target="_blank" href="https://github.com/OphiophagusHannah/gallery">github</a>
+                        <a target="_blank" href="https://ophiophagushannah.github.io/gallery/">visit site</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +135,11 @@ function Projects() {
                         <p><b>Responsible for:</b> Interface Design and Information Architecture, Prototyping, Front End Development</p>
                     <p>I was involved in three main phases of the project: Research and Ideation, Design and Prototyping, and Development and played a role in each part of the iterative process while working closely with a team to create a collaborative web application for the community of students and organizations.
                         </p>
-                        <a href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
+
+                        <div className="project-links">
+                        <a href="https://ophiophagushannah.github.io/refract/documentation/index.html">documentation</a>
+                        </div>
+
                         </div>
                     </div>
                 </div>
@@ -152,7 +172,12 @@ function Projects() {
                     <div className="project-tab-inner">
                     <p>I was working on exloring and learning new techniques of data visualization and information presentation
                         </p>
-                        <a href="https://hannah-avgust-art.herokuapp.com/">visit site</a>
+
+                        <div className="project-links">
+                        <a href="https://ophiophagushannah.github.io/the-orbit/concept">concept</a>
+                        <a href="https://ophiophagushannah.github.io/the-orbit/">preview</a>
+                        </div>
+
                     </div>
                     </div>
                 </div>
