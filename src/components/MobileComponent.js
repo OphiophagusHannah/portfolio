@@ -14,7 +14,7 @@ class Mobile extends Component {
 
         return (
             <div className="mobile-wrapper">
-                <CanvasMobile />
+                {/* <CanvasMobile /> */}
                 <Home />
                 <h2 className="mobile-title">expertise</h2>
                 <Work />
