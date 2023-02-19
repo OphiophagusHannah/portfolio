@@ -46,13 +46,13 @@ class Main extends Component {
             <div className="main-wrapper">
 
                 <Switch>
-                    <Route exact path='/' component={HomePage} />
+                    <Route exact path='/home' component={HomePage} />
                     <Route exact path='/expertise' component={WorkPage} />
                     <Route exact path='/projects' component={ProjectsPage} />
                     <Route exact path='/about' component={AboutPage} />
                     <Route exact path='/dev' component={DevPage} />
 
-                    <Redirect to="/" />
+                    <Redirect to="/home" />
                 </Switch>
             </div>
 

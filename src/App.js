@@ -11,6 +11,7 @@ import FadeIn from 'react-fade-in';
 import Canvas from './components/Canvas'
 
 
+
 // let {width:W,height:H} = Dimensions.get("window");
 
 class App extends Component {
@@ -19,7 +20,8 @@ class App extends Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.handleColor = this.handleColor.bind(this);
-    this.state={
+    this.state = {
+
     }
   }
 
@@ -47,11 +49,13 @@ class App extends Component {
                 <div className="left-side">
                     <FadeIn>
                         <Nav />
-                        <dev className="dots">
+                        <div className="dots">
+
                             <div className="dot dot--border" onClick={this.handleClick}></div>
                             <div className="dot dot--red" onClick={this.handleColor}></div>
                             {/* <div className="dot" onClick={this.handleColor}></div> */}
-                        </dev>
+
+                        </div>
                     </FadeIn>
                     <Footer />
                 </div>

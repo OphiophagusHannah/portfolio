@@ -10,7 +10,7 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="miphic" name="projects"/>
-                    <label class="tab-label project-title" for="miphic">
+                    <label className="tab-label project-title" htmlFor="miphic">
                         <h4>Website / Design / Development</h4>
                         <h3>Miphic</h3>
                     </label>
@@ -32,8 +32,8 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="experiments" name="projects"/>
-                    <label class="tab-label project-title" for="experiments">
-                        <h4>Interactive Sketches / Visual Development</h4>
+                    <label className="tab-label project-title" htmlFor="experiments">
+                        <h4>Interactive Sketches / Development</h4>
                         <h3>Experiments</h3>
                     </label>
                     <div className="tab-content project-content">
@@ -56,13 +56,13 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="interference" name="projects"/>
-                    <label class="tab-label project-title" for="interference">
+                    <label className="tab-label project-title" htmlFor="interference">
                         <h4>Exhibition / Interactive Design</h4>
                         <h3>Interference</h3>
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
-                            <p>Emmersive Experience</p>
+                            <p>The exhibition contains four main installations each of which describes different activities and philosophyc ideas and through representation of holographic concepts and interactive experiences. Since this exhibit covers physical, visual and philosophical aspects, each segment of the audience can find the most enjoyable way to experience the presented information either separately or as a whole</p>
                             <p>Holography and Lasers</p>
                             <div className="project-links">
                                 <a target="_blank" href="https://github.com/OphiophagusHannah/interference">github</a>
@@ -74,12 +74,13 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="geo" name="projects"/>
-                    <label class="tab-label project-title" for="geo">
+                    <label className="tab-label project-title" htmlFor="geo">
                         <h4>Prototype/ UX/Ui Design / Identity</h4>
-                        <h3>Geometry of the City</h3>
+                        <h3>Geometry</h3>
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
+                            <h3>Geometry of the City</h3>
                             <p>Inspired by my love to architecture and ergonomics, this project is a journal and</p>
                             <h3>Achievements</h3>
                             <p>Use google maps api to generate map</p>
@@ -97,7 +98,7 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="ink" name="projects"/>
-                    <label class="tab-label project-title" for="ink">
+                    <label className="tab-label project-title" htmlFor="ink">
                         <h4>Interactive Web Gallery / Development</h4>
                         <h3>Gallery Ink</h3>
                     </label>
@@ -116,7 +117,7 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="multidimension" name="projects"/>
-                    <label class="tab-label project-title" for="multidimension">
+                    <label className="tab-label project-title" htmlFor="multidimension">
                         <h4>Information Architecture Study</h4>
                         <h3>Multidimension</h3>
                     </label>
@@ -131,7 +132,7 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="refract" name="projects"/>
-                    <label class="tab-label project-title" for="refract">
+                    <label className="tab-label project-title" htmlFor="refract">
                         <h4>Website, UX/UI Design, Development</h4>
                         <h3>Refract</h3>
                     </label>
@@ -150,7 +151,7 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="MVMJSON" name="projects"/>
-                    <label class="tab-label project-title" for="MVMJSON">
+                    <label className="tab-label project-title" htmlFor="MVMJSON">
                         <h4>Interactive Installation, Projected Interface</h4>
                         <h3>MVMJSON</h3>
                     </label>
@@ -168,7 +169,7 @@ function Projects() {
 
                 <div className="tab projects-item">
                     <input type="radio" id="orbit" name="projects"/>
-                    <label class="tab-label project-title" for="orbit">
+                    <label className="tab-label project-title" htmlFor="orbit">
                         <h4>Data Visualization / D3 Development</h4>
                         <h3>Orbit</h3>
                     </label>
@@ -182,6 +183,10 @@ function Projects() {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="codepen-projects">
+                    <h3><a target="_blank" href="https://codepen.io/hannahavgust/pens/public">codepen</a></h3>
                 </div>
                 </FadeIn>
             </section>

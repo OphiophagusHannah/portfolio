@@ -11,7 +11,7 @@ function Work() {
                     <FadeIn>
                         <div className="tab competence">
                             <input type="checkbox" id="front-dev" />
-                            <label class="tab-label competence-label" for="front-dev">
+                            <label className="tab-label competence-label" htmlFor="front-dev">
                                 <h3>Frontend & Web Development</h3>
                                 <p>Implementing functional and responsive websites and web applications in mind with information architecture and user experience.</p>
                             </label>
@@ -31,7 +31,7 @@ function Work() {
                         </div>
                         <div className="tab competence">
                             <input type="checkbox" id="interactive-design" />
-                            <label class="tab-label competence-label" for="interactive-design">
+                            <label className="tab-label competence-label" htmlFor="interactive-design">
                                 <h3>Tangible Experience Design</h3>
                                 <p>Designing interactive and immersive experiences and interfaces. Exploring Augmented Reality and Machine Learning concepts.</p>
                             </label>
@@ -47,7 +47,7 @@ function Work() {
                         </div>
                         <div className="tab competence">
                             <input type="checkbox" id="ux" />
-                            <label class="tab-label competence-label" for="ux">
+                            <label className="tab-label competence-label" htmlFor="ux">
                                 <h3>Interactive & UI/UX Design</h3>
                                 <p>Using a variety of prototyping tools and UX research techniques to create comprehensive  and visually appealing prototypes for interactive media.</p>
                             </label>

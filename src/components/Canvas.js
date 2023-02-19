@@ -1,5 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 
+
+
 const Canvas = props => {
 
   const canvasRef = useRef(null)
@@ -55,7 +57,7 @@ const Canvas = props => {
           ctx.quadraticCurveTo(p1.x, p1.y, xc, yc);
         //   ctx.lineTo(p2.x, p2.y);
 
-          ctx.fillStyle = 'rgba(255, 90, 70, 0)';
+          ctx.fillStyle = 'rgba(255, 90, 70, 0.7)';
           // ctx.fillRect(p1.x-2.5, p1.y-2.5, 5, 5);
 
           p1 = p2;

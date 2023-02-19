@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import FadeIn from 'react-fade-in';
 
 function Nav() {
@@ -14,10 +14,10 @@ function Nav() {
             </div>
 
             <ul className="nav-list-wrapper">
-                <Link to="/" className="nav-link"><li>home</li></Link>
-                <Link to="/expertise" className="nav-link"><li>expertise</li></Link>
-                <Link to="/projects" className="nav-link"><li>projects</li></Link>
-                <Link to="/about" className="nav-link"><li>about</li></Link>
+                <NavLink to="/home" className="nav-link "><li>home</li></NavLink>
+                <NavLink to="/expertise" className="nav-link "><li>expertise</li></NavLink>
+                <NavLink to="/projects" className="nav-link "><li>projects</li></NavLink>
+                <NavLink to="/about" className="nav-link "><li>about</li></NavLink>
                 {/* <a href="#contact" className="nav-link"><li>contact</li></a> */}
             </ul>
             </FadeIn>
