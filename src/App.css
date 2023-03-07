@@ -19,33 +19,32 @@
   display: none;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Neue-Thin', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
-}
-
-.dots {
-  padding-top: 1rem;
-  display: block;
-}
-
-.dot {
-  height: 8px;
-  width: 8px;
-  display: block;
-  border-radius: 100%;
-  cursor: pointer;
-  margin-bottom: 10px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-  border: 3px solid;
+  line-height: 1.5;
 }
 
 a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   text-decoration: none;
   padding-bottom: 0.1rem;
-  font-family: "Neue-Medium";
   border-bottom: 2px solid white;
+}
+
+a:hover {
+  color: grey !important;
+  border-color: grey !important;
 }
 
 .site-wrapper {
@@ -87,7 +86,28 @@ a {
   transition: 0.3s linear;
 }
 
+.main-wrapper {
+  margin-top: 1.5rem;
+  height: calc(100% - 3rem);
+}
+
+.main-wrapper > div {
+  height: 100%;
+}
+
+.mobile-wrapper {
+  display: none;
+}
+
+canvas {
+  height: 95vh;
+  width: 95vw;
+}
+
 .main-heading h1 {
+  font-family: 'Neue-Thin', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 32px;
@@ -96,7 +116,9 @@ a {
 }
 
 .main-heading h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-style: normal;
   font-weight: 300;
   font-size: 15px;
   margin-top: 5px;
@@ -129,7 +151,26 @@ a {
 .nav-list-wrapper li {
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
-  font-family: "Neue-Medium";
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.dots {
+  padding-top: 1rem;
+  display: block;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  display: block;
+  border-radius: 100%;
+  cursor: pointer;
+  margin-bottom: 10px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  border: 3px solid;
 }
 
 .footer-wrapper {
@@ -144,22 +185,16 @@ a {
 
 .footer-wrapper ul li,
 .footer-wrapper ul a {
-  border-bottom: none;
-  padding-bottom: 0;
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
   text-decoration: none;
+  padding-bottom: 0.1rem;
 }
 
 .footer-wrapper ul a {
   margin-right: 0.5rem;
-}
-
-.main-wrapper {
-  margin-top: 1.5rem;
-  height: calc(100% - 3rem);
-}
-
-.main-wrapper > div {
-  height: 100%;
 }
 
 .home-mission {
@@ -222,8 +257,10 @@ a {
 }
 
 .expertise h2 {
-  font-size: 16px;
-  font-family: "Neue-Medium";
+  font-size: 18px;
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
 }
 
 .expertise .competence {
@@ -260,9 +297,18 @@ a {
   margin-bottom: 0rem;
 }
 
+.expertise .competence .expertise-tags {
+  line-break: unset;
+  margin-bottom: 1.5rem;
+}
+
 .expertise .competence .expertise-tags span {
   margin-right: 0.7rem;
   margin-left: 0;
+  font-size: 16px;
+  font-family: 'Neue-Thin', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .expertise .competence:hover h3 {
@@ -290,17 +336,25 @@ a {
 }
 
 #about .about-inner p {
-  line-height: 1.26;
+  line-height: 1.5;
+  margin-top: 0;
 }
 
 #about h2 {
   font-size: 16px;
-  font-family: "Neue-Medium";
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   margin-bottom: 3rem;
 }
 
 #about h3 {
-  font-size: 24px;
+  font-size: 30px;
+  margin-bottom: .7rem;
+  margin-top: 1rem;
+  font-family: 'Neue-Thin', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 #about li {
@@ -314,7 +368,9 @@ a {
 
 #projects h2 {
   font-size: 16px;
-  font-family: "Neue-Medium";
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   margin-bottom: 3rem;
 }
 
@@ -344,7 +400,11 @@ a {
 
 .projects-item .project-title h4 {
   white-space: nowrap;
-  font-family: "Neue-Medium";
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  text-transform: lowercase;
+  font-size: 18px;
   margin: 10px;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -363,7 +423,7 @@ a {
 .projects-item .project-content .project-tab-inner {
   width: 50%;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.5;
   padding-right: 2rem;
   padding-bottom: 0.5rem;
   border-right: 2px solid;
@@ -380,7 +440,11 @@ a {
           align-items: flex-end;
 }
 
-.projects-item .project-content .project-tab-inner h2, .projects-item .project-content .project-tab-inner h3, .projects-item .project-content .project-tab-inner h4, .projects-item .project-content .project-tab-inner h5, .projects-item .project-content .project-tab-inner p {
+.projects-item .project-content .project-tab-inner h2,
+.projects-item .project-content .project-tab-inner h3,
+.projects-item .project-content .project-tab-inner h4,
+.projects-item .project-content .project-tab-inner h5,
+.projects-item .project-content .project-tab-inner p {
   margin-top: 0;
 }
 
@@ -390,17 +454,24 @@ a {
 }
 
 .projects-item .project-content .project-tags span {
-  margin-left: 1rem;
-  margin-right: 0;
+  margin-right: 0.7rem;
+  margin-left: 0;
   line-break: unset;
+  font-size: 16px;
+  font-family: 'Neue-Thin', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .projects-item .project-content .project-links a {
   margin-left: 1rem;
   margin-right: 0;
+  font-size: 18px;
   text-decoration: none;
   padding-bottom: 0.3rem;
-  font-family: "Neue-Medium";
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
 }
@@ -429,6 +500,13 @@ a {
   padding-top: 5rem;
 }
 
+.codepen-projects a {
+  font-size: 18px;
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
 .tabs {
   overflow: hidden;
 }
@@ -452,7 +530,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   cursor: pointer;
-  /* Icon */
 }
 
 .tab-content {
@@ -476,13 +553,15 @@ input:checked + .tab-label {
   color: black;
 }
 
-input:checked + .tab-label h2, input:checked + .tab-label h3 {
+input:checked + .tab-label h2,
+input:checked + .tab-label h3 {
   color: black;
 }
 
 input:checked + .tab-label.competence-label h3 {
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid;
+  margin-bottom: .7rem;
+  border-bottom: 2px solid;
 }
 
 input:checked ~ .tab-content {
@@ -567,6 +646,10 @@ input:checked ~ .tab-content.competence-content {
 
 .dark-theme input:checked + .tab-label h3, .dark-theme input:checked + .tab-label h4 {
   color: white;
+}
+
+.dark-theme .footer-wrapper ul a {
+  border-bottom: 2px solid white;
 }
 
 .light-theme {
@@ -792,38 +875,5 @@ input:checked ~ .tab-content.competence-content {
 .center-all-content #about h3,
 .center-all-content #about h3 {
   text-align: left;
-}
-
-/* -----
-SVG Icons - svgicons.sparkk.fr
------ */
-.svg-icon-email {
-  width: 2.1rem;
-  height: 2.1rem;
-}
-
-.svg-icon-cv {
-  width: 1.9rem;
-  height: 1.9rem;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: white;
-}
-
-.svg-icon circle {
-  stroke: white;
-  stroke-width: 1;
-}
-
-.mobile-wrapper {
-  display: none;
-}
-
-canvas {
-  height: 95vh;
-  width: 95vw;
 }
 /*# sourceMappingURL=App.css.map */

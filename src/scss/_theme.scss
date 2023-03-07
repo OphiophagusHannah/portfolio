@@ -1,0 +1,282 @@
+
+// This file contains modifications of the styles based on theme and alignment changes
+
+
+// Dark Color Layout
+
+.dark-theme {
+  height: 0;
+  .dot {
+    background: white;
+    border-color: white;
+    &--red {
+      &:hover {
+        background: rgb(203, 57, 41);
+        border-color: rgb(202, 58, 41);
+      }
+    }
+    &--border {
+      &:hover {
+        border-color: rgb(202, 58, 41);
+        background: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  li,
+  .nav-list-wrapper a li {
+    color: white;
+    transition: 0.3s linear;
+  }
+
+  a,
+  .nav-list-wrapper a {
+    li {
+      &:hover {
+        color: grey;
+        transition: 0.3s linear;
+      }
+    }
+
+    &.active li {
+      color: rgb(202, 58, 41);
+      // text-decoration: line-through;
+    }
+  }
+
+  .site-wrapper {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid darkgrey;
+    transition: 0.3s linear;
+  }
+
+  input:checked + .tab-label.competence-label h3,
+  .project-tab-inner {
+    border-color: white !important;
+  }
+
+  .project-tags span,
+  .expertise-tags span {
+    color: white;
+  }
+
+  input:checked {
+    + .tab-label {
+      color: white;
+      h3, h4 {
+        color: white;
+      }
+    }
+  }
+
+  .footer-wrapper {
+    ul {
+      a {
+        border-bottom: 2px solid white;
+      }
+    }
+  }
+}
+
+// Light Color Layout
+
+.light-theme {
+  height: 0;
+  .dot {
+    background: #222222;
+    border-color: #222222;
+    &--border {
+      &:hover {
+        border-color: rgb(202, 58, 41);
+        background: white;
+      }
+    }
+    &--red {
+      &:hover {
+        border-color: rgb(202, 58, 41);
+        background: rgb(202, 58, 41);
+      }
+    }
+  }
+
+  a,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ul,
+  li,
+  .nav-list-wrapper a li {
+    color: black;
+    border-color: black;
+    transition: 0.3s linear;
+  }
+
+  a,
+  .nav-list-wrapper a {
+
+    li {
+      &:hover {
+        color: grey;
+        transition: 0.3s linear;
+      }
+    }
+
+    &.active li {
+      color: rgb(202, 58, 41);
+      // text-decoration: line-through;
+
+    }
+  }
+
+
+  .site-wrapper {
+    background: rgba(253, 253, 247, 0.753);
+    border: 1px solid lightgrey;
+    transition: 0.3s linear;
+  }
+
+  input:checked + .tab-label.competence-label h3,
+  .project-tab-inner {
+    border-color: black;
+  }
+
+  .project-tags span,
+  .expertise-tags span {
+    color: black;
+  }
+
+  input:checked {
+    + .tab-label {
+      color: black;
+      h3, h4 {
+        color: black;
+      }
+    }
+  }
+}
+
+// Centered Layout
+
+.center-all-content {
+  .main-heading {
+    text-align: right;
+    transition: 0.3s linear;
+  }
+
+  .left-side {
+    width: 27%;
+    align-items: flex-end;
+    transition: 0.3s linear;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 100%;
+    }
+  }
+
+  .right-side {
+    width: 73%;
+    padding-left: 2%;
+    text-align: left;
+    transition: 0.3s linear;
+  }
+
+  .nav-list-wrapper a {
+    text-align: right;
+    transition: 0.3s linear;
+  }
+
+  .home-mission {
+    align-items: flex-start;
+    text-align: left;
+    transition: 0.3s linear;
+  }
+
+  .codepen-projects {
+    justify-content: flex-start;
+  }
+
+
+  .projects-item {
+    .project-title {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: baseline;
+      transition: 0.3s linear;
+    }
+
+    .project-content {
+      display: flex;
+      justify-content: flex-start;
+      text-align: left;
+
+      .project-tab-inner {
+        width: 50%;
+        font-size: 18px;
+        line-height: 1.6;
+        padding-left: 2rem;
+        padding-bottom: 0.5rem;
+        border-left: 2px solid;
+        border-right: 0px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .project-tags {
+        span {
+          margin-right: 1rem;
+          margin-left: 0;
+        }
+      }
+
+      .project-links {
+        a {
+          margin-right: 1rem;
+          margin-left: 0;
+          transition: 0.3s linear;
+        }
+      }
+    }
+  }
+
+  .expertise {
+    .competence-wrapper {
+      display: flex;
+      justify-content: flex-start;
+
+      > div {
+        display: block;
+      }
+
+      .competence {
+        max-width: 25rem;
+      }
+    }
+  }
+
+  #about {
+    .flex-end {
+      display: flex;
+      justify-content: flex-start;
+    }
+    h3,
+    h3 {
+      text-align: left;
+    }
+    text-align: left;
+  }
+}

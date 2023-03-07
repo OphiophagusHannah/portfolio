@@ -11,20 +11,19 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="miphic" name="projects"/>
                     <label className="tab-label project-title" htmlFor="miphic">
-                        <h4>Website / Design / Development</h4>
-                        <h3>Miphic</h3>
+                        <h4>Gallery / Design / Dev</h4>
+                        <h3>Metamorphosis</h3>
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
-                            <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
+                            <p>Personal Art Project dedicated to exploration of emotional transitions and questioning polarity of feelings.</p>
                             <div className="project-tags">
                                 <span>React</span>
-                                <span>GraphCMS</span>
+
                                 <span>UX/UI Design</span>
                             </div>
                             <div className="project-links">
-                                <a target="_blank" href="https://www.miphic.co/">visit site</a>
-                                <a target="_blank" href="https://github.com/OphiophagusHannah/miphic">github</a>
+                                <a target="_blank" href="https://www.miphic.co/">gallery</a>
                             </div>
                         </div>
                     </div>
@@ -55,6 +54,28 @@ function Projects() {
                 </div>
 
                 <div className="tab projects-item">
+                    <input type="radio" id="miphic" name="projects"/>
+                    <label className="tab-label project-title" htmlFor="miphic">
+                        <h4>Website / Design / Development</h4>
+                        <h3>Miphic</h3>
+                    </label>
+                    <div className="tab-content project-content">
+                        <div className="project-tab-inner">
+                            <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
+                            <div className="project-tags">
+                                <span>React</span>
+                                <span>GraphCMS</span>
+                                <span>UX/UI Design</span>
+                            </div>
+                            <div className="project-links">
+                                <a target="_blank" href="https://www.miphic.co/">visit site</a>
+                                <a target="_blank" href="https://github.com/OphiophagusHannah/miphic">github</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="tab projects-item">
                     <input type="radio" id="interference" name="projects"/>
                     <label className="tab-label project-title" htmlFor="interference">
                         <h4>Exhibition / Interactive Design</h4>
@@ -75,7 +96,7 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="geo" name="projects"/>
                     <label className="tab-label project-title" htmlFor="geo">
-                        <h4>Prototype/ UX/Ui Design / Identity</h4>
+                        <h4>Prototype / UX/Ui Design / Identity</h4>
                         <h3>Geometry</h3>
                     </label>
                     <div className="tab-content project-content">
@@ -133,7 +154,7 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="refract" name="projects"/>
                     <label className="tab-label project-title" htmlFor="refract">
-                        <h4>Website, UX/UI Design, Development</h4>
+                        <h4>Website / UX/UI Design / Development</h4>
                         <h3>Refract</h3>
                     </label>
                     <div className="tab-content project-content">
@@ -152,7 +173,7 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="MVMJSON" name="projects"/>
                     <label className="tab-label project-title" htmlFor="MVMJSON">
-                        <h4>Interactive Installation, Projected Interface</h4>
+                        <h4>Interactive Installation / Projected Interface</h4>
                         <h3>MVMJSON</h3>
                     </label>
                     <div className="tab-content project-content">

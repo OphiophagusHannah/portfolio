@@ -1,0 +1,84 @@
+// This file contains generic variables, mixins, settings for the project
+
+
+// Font Imports
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap");
+
+@font-face {
+  font-family: "Neue-Thin";
+  src: local("Neue-Thin"), url("./fonts/PPNeueMontreal-Thin.otf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Neue-Medium";
+  src: local("Neue-Medium"), url("./fonts/PPNeueMontreal-Medium.otf") format("truetype");
+  font-weight: bold;
+}
+
+// Font Mixins
+
+@mixin font_body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font_bold {
+  font-family: 'Neue-Medium', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin font_title {
+  font-family: 'Neue-Thin', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin font_tag {
+  font-family: 'Neue-Thin', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  // text-transform: lowercase;
+}
+
+// Variables
+
+$text-color: white;
+$text-hover: grey;
+$background-color: black;
+$border-color: darkgrey;
+
+//Base
+
+* {
+  font-family: "Neue-Thin";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1, h2, h3, h4 {
+  @include font_title;
+}
+
+p {
+  @include font_body;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  @include font_body;
+  text-decoration: none;
+  padding-bottom: 0.1rem;
+  border-bottom: 2px solid $text-color;
+
+  &:hover {
+    color: grey !important;
+    border-color: grey !important;
+  }
+}
