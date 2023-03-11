@@ -214,7 +214,8 @@ canvas {
         margin-left: 0;
         font-size: 16px;
         // color: rgb(202, 58, 41);
-        @include font_tag;
+        // @include font_tag;
+        @include font_body;
       }
     }
 
@@ -332,12 +333,13 @@ canvas {
 
     .project-tags {
       span {
-        margin-right: 0.7rem;
-        margin-left: 0;
+        margin-left: 0.7rem;
+        // margin-left: 0;
         line-break: unset;
         font-size: 16px;
         // color: rgb(202, 58, 41);
-        @include font_tag;
+        @include font_body;
+        font-weight: 500;
       }
 
       line-break: unset;
@@ -474,3 +476,20 @@ input:checked {
 //   stroke: white;
 //   stroke-width: 1;
 // }
+
+.distort-text {
+  filter: blur(1px);
+}
+.distort-text:hover {
+  animation: distort 400ms infinite;
+}
+
+
+@keyframes distort {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }
+}

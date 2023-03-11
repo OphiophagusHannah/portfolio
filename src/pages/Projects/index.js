@@ -9,8 +9,8 @@ function Projects() {
                 <FadeIn>
 
                 <div className="tab projects-item">
-                    <input type="radio" id="miphic" name="projects"/>
-                    <label className="tab-label project-title" htmlFor="miphic">
+                    <input type="radio" id="meta" name="projects"/>
+                    <label className="tab-label project-title" htmlFor="meta">
                         <h4>Gallery / Design / Dev</h4>
                         <h3>Metamorphosis</h3>
                     </label>
@@ -23,7 +23,7 @@ function Projects() {
                                 <span>UX/UI Design</span>
                             </div>
                             <div className="project-links">
-                                <a target="_blank" href="https://www.miphic.co/">gallery</a>
+                                <a target="_blank" href="https://ophiophagushannah.github.io/metamorphosis/">gallery</a>
                             </div>
                         </div>
                     </div>
