@@ -51,14 +51,6 @@ class App extends Component {
         <Canvas />
         <Router>
         <div className={this.state.isDist ? "distort-text"  :  "text"}>
-            <svg>
-                <filter id="wavy">
-                    <feTurbulence id="turbulence" type="turbulence" numOctaves="1" result="NOISE"></feTurbulence>
-                    <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="50"></feDisplacementMap>
-                    <animate xlink:href="#turbulence" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1"
-                    values="0.01 0.02;0.02 0.04;0.01 0.02" repeatCount="indefinite"></animate>
-                </filter>
-            </svg>
         </div>
             <div className={this.state.isOff ? "site-wrapper center-all-content"  :  "site-wrapper"}>
 
