@@ -46,8 +46,8 @@
 }
 
 canvas {
-  height: 95vh;
-  width: 95vw;
+  height: 94vh;
+  width: 94vw;
 }
 
 // Heading
@@ -110,6 +110,9 @@ canvas {
   margin-bottom: 10px;
   transition: 0.3s linear;
   border: 3px solid;
+  &--blank {
+    border: 2px solid;
+  }
 }
 
 // Footer
@@ -162,10 +165,11 @@ canvas {
 // Expertise
 
 .expertise {
-  height: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
 
   .competence-wrapper > div {
     align-items: flex-end;
@@ -186,8 +190,9 @@ canvas {
   .competence {
     display: flex;
     flex-direction: column;
-    padding-right: 15px;
-    max-width: 25rem;
+    // padding-right: 15px;
+    max-width: 27rem;
+    margin-top: 2rem;
 
     label {
       display: flex;
@@ -195,27 +200,37 @@ canvas {
     }
 
     h3 {
-      font-size: 30px;
+      margin-top: 0.3rem;
+      font-size: 34px;
       margin-bottom: 0rem;
     }
 
     p {
       margin-top: 0.5rem;
-      font-size: 15px;
+      // font-size: 15px;
       line-height: 1.5;
       margin-bottom: 0rem;
     }
 
     .expertise-tags {
       line-break: unset;
-      margin-bottom: 1.5rem;
+      //margin-bottom: 1.5rem;
+      border-top: 1px solid;
+      padding-top: 1rem;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
       span {
-        margin-right: 0.7rem;
-        margin-left: 0;
-        font-size: 16px;
+        margin-left: 0rem;
+        margin-right: 1rem;
+        @include font_body;
+        // font-weight: 500;
+        line-break: unset;
+        font-size: 14px;
+        line-height: 1.5;
         // color: rgb(202, 58, 41);
         // @include font_tag;
-        @include font_body;
+
       }
     }
 
@@ -230,17 +245,25 @@ canvas {
 
 // About
 
+.about {
+  min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
 #about {
-  padding-top: 7.2rem;
-  text-align: right;
+  // padding-top: 7.2rem;
+  text-align: left;
 
   .flex-end {
-    display: flex;
-    justify-content: flex-end;
+    // display: flex;
+    // justify-content: flex-end;
   }
 
   .about-inner {
-    max-width: 26rem;
+    max-width: 27rem;
     p {
       line-height: 1.5;
       margin-top: 0;
@@ -314,7 +337,7 @@ canvas {
       width: 50%;
       font-size: 18px;
       line-height: 1.5;
-      padding-right: 2rem;
+      padding-right: 1.5rem;
       padding-bottom: 0.5rem;
       border-right: 2px solid;
       border-left: 0px solid;
@@ -332,14 +355,20 @@ canvas {
     }
 
     .project-tags {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      padding-right: 2px;
       span {
         margin-left: 0.7rem;
-        // margin-left: 0;
-        line-break: unset;
-        font-size: 16px;
-        // color: rgb(202, 58, 41);
         @include font_body;
         font-weight: 500;
+        line-break: unset;
+        font-size: 16px;
+
+        // margin-left: 0;
+        // color: rgb(202, 58, 41);
+
       }
 
       line-break: unset;
@@ -432,23 +461,36 @@ input:checked {
   }
 
   + .tab-label.competence-label h3 {
-    padding-bottom: 0.5rem;
-    margin-bottom: .7rem;
-    border-bottom: 2px solid;
+    // padding-bottom: 0.5rem;
+    // margin-bottom: .7rem;
+    // border-bottom: 2px solid;
   }
 
   ~ .tab-content {
     margin-top: 1rem;
     max-height: 100vh;
-    margin-bottom: 3rem;
-    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0rem;
+
   }
 
   ~ .tab-content.competence-content {
     margin-bottom: 0;
     margin-top: 0.5rem;
     padding-top: 0.5rem;
+    margin-bottom: 0rem;
+
     // border-top: 1px solid;
+  }
+}
+
+.competence-wrapper div {
+  ~ div:nth-child(3) {
+  input:checked {
+    + .tab-label.competence-label + .tab-content.competence-content {
+        margin-bottom: 1.5rem;
+      }
+    }
   }
 }
 

@@ -146,7 +146,9 @@ function Projects() {
                         <div className="project-tab-inner">
                             <p>This study is dedicated to exploring the informational architecture of the human brain as a model and analyzing how memories and associations are stored and retrieved. It has been influenced by my long lasting enthusiasm about architecture (tangible) and my life changing interest in holographic experiments and information storage.
                             </p>
+                            <div className="project-links">
                             <a target="_blank" href="https://ophiophagushannah.github.io/flexible-multi-dimension/">design study</a>
+                            </div>
                         </div>
                     </div>
                 </div>

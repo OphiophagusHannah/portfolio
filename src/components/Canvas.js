@@ -121,8 +121,10 @@ const Canvas = props => {
           this._radius = value;
         }
       }
+
+
       get radius() {
-        return this._radius || 300;
+        return this._radius || canvas.width/4.5;
       }
 
       set position(value) {
@@ -131,7 +133,7 @@ const Canvas = props => {
         }
       }
       get position() {
-        return this._position || { x: 0.3, y: 0.5 };
+        return this._position || { x: 0.33, y: 0.52 };
       }
 
       get divisional() {
@@ -232,9 +234,13 @@ const Canvas = props => {
 
       document.body.appendChild(canvas);
 
+
+
       let resize = function () {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
+
+
       };
       window.addEventListener('resize', resize);
       resize();

@@ -21,6 +21,13 @@
         background: rgba(0, 0, 0, 0);
       }
     }
+
+    &--blank {
+
+        border-color: white;
+        background: none;
+
+    }
   }
 
   a,
@@ -105,6 +112,13 @@
         background: rgb(202, 58, 41);
       }
     }
+
+    &--blank {
+
+      border-color: black;
+      background: none;
+
+  }
   }
 
   a,
@@ -237,6 +251,7 @@
       }
 
       .project-tags {
+        justify-content: flex-start;
         span {
           margin-right: 1rem;
           margin-left: 0;
@@ -263,7 +278,7 @@
       }
 
       .competence {
-        max-width: 25rem;
+        max-width: 26rem;
       }
     }
   }

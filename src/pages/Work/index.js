@@ -12,26 +12,28 @@ function Work() {
                         <div className="tab competence">
                             <input type="checkbox" id="front-dev" />
                             <label className="tab-label competence-label" htmlFor="front-dev">
+                                {/* <div className="dot dot--blank"></div> */}
                                 <h3>Frontend & Web Development</h3>
                                 <p>Implementing functional and responsive websites and web applications in mind with information architecture and user experience.</p>
                             </label>
                             <div className="tab-content competence-content">
                                 <div className="expertise-tags">
-                                    <span>CSS/SASS</span>
-                                    <span>PHP</span>
                                     <span>JS & JS Frameworks</span>
                                     <span>React</span>
-                                    <span>eCommerce</span>
                                     <span>Canvas-Sketch</span>
                                     <span>D3</span>
-                                    <span>Processing</span>
                                     <span>WebGL</span>
-                                    <span>Three.js</span></div>
+                                    <span>Three.js</span>
+                                    <span>CSS/SASS</span>
+                                    <span>PHP</span>
+                                    <span>eCommerce</span>
+                                </div>
                             </div>
                         </div>
                         <div className="tab competence">
                             <input type="checkbox" id="interactive-design" />
                             <label className="tab-label competence-label" htmlFor="interactive-design">
+                                {/* <div className="dot dot--blank"></div> */}
                                 <h3>Tangible Experience Design</h3>
                                 <p>Designing interactive and immersive experiences and interfaces. Exploring Augmented Reality and Machine Learning concepts.</p>
                             </label>
@@ -48,6 +50,7 @@ function Work() {
                         <div className="tab competence">
                             <input type="checkbox" id="ux" />
                             <label className="tab-label competence-label" htmlFor="ux">
+                                {/* <div className="dot dot--blank"></div> */}
                                 <h3>Interactive & UI/UX Design</h3>
                                 <p>Using a variety of prototyping tools and UX research techniques to create comprehensive  and visually appealing prototypes for interactive media.</p>
                             </label>
