@@ -110,8 +110,8 @@ function Projects() {
                             <p>Data Visualization with D3.js</p>
 
                             <div className="project-links">
-                                <a target="_blank" href="#">documentation</a>
-                                <a target="_blank" href="#">prototype</a>
+                                <a target="_blank" href="https://geometry-of-the-city.herokuapp.com/">documentation</a>
+                                <a target="_blank" href="https://www.figma.com/proto/iKIoLZeQyhzjTRgT5ktFcp/Geometry-Of-The-City?node-id=3-14&scaling=scale-down&page-id=3%3A2&starting-point-node-id=3%3A14">prototype</a>
                             </div>
                         </div>
                     </div>
