@@ -11,19 +11,16 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="meta" name="projects"/>
                     <label className="tab-label project-title" htmlFor="meta">
-                        <h4>Gallery / Design / Dev</h4>
-                        <h3>Metamorphosis</h3>
+                        <h4>Gallery / Art / Develpment</h4>
+                        <h3>Metamorphoses</h3>
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
-                            <p>Personal Art Project dedicated to exploration of emotional transitions and questioning polarity of feelings.</p>
+                            <p>Personal Art Project dedicated to exploration of emotions, fears, desires and their transformation into dreams.</p>
                             <div className="project-tags">
-                                <span>React</span>
-
-                                <span>UX/UI Design</span>
                             </div>
                             <div className="project-links">
-                                <a target="_blank" href="https://ophiophagushannah.github.io/metamorphosis/">gallery</a>
+                                <a target="_blank" href="https://ophiophagushannah.github.io/metamorphoses/">gallery</a>
                             </div>
                         </div>
                     </div>
@@ -32,18 +29,15 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="experiments" name="projects"/>
                     <label className="tab-label project-title" htmlFor="experiments">
-                        <h4>Interactive Sketches / Development</h4>
+                        <h4>Visualization / Development / Gallery</h4>
                         <h3>Experiments</h3>
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
-                            <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
+                            <p>My library of sketches where i am exploring graphic development and interactive visualization through various frameworks and languages.</p>
                             <div className="project-tags">
-                                <span>Various JS Frameworks</span>
-                                <span>canvas-sketch</span>
-                                <span>Processing</span>
-                                <span>WebGl</span>
-                                <span>and more</span>
+
+
                             </div>
                             <div className="project-links">
                                 <a target="_blank" href="https://github.com/OphiophagusHannah/experiments">github</a>
@@ -56,16 +50,16 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="miphic" name="projects"/>
                     <label className="tab-label project-title" htmlFor="miphic">
-                        <h4>Website / Design / Development</h4>
+                        <h4>Web Design / Development</h4>
                         <h3>Miphic</h3>
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
-                            <p>With this project I am exploring creation of art further than just aa visual aspect. Each interactive sketch contains not only visual aspect of a certain idea, but elevated with interactivity that supports the meaning and allows to explore the concept further.</p>
+                            <p>Website for the chemical science company that dedicates themself to progressive mitochondrial research. I started with simple identity design and continued with full on development, hosting and support.</p>
                             <div className="project-tags">
                                 <span>React</span>
                                 <span>GraphCMS</span>
-                                <span>UX/UI Design</span>
+                                <span>UX/UI</span>
                             </div>
                             <div className="project-links">
                                 <a target="_blank" href="https://www.miphic.co/">visit site</a>
@@ -78,16 +72,14 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="interference" name="projects"/>
                     <label className="tab-label project-title" htmlFor="interference">
-                        <h4>Exhibition / Interactive Design</h4>
+                        <h4>Interactive Experience Design / Holography</h4>
                         <h3>Interference</h3>
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
-                            <p>The exhibition contains four main installations each of which describes different activities and philosophyc ideas and through representation of holographic concepts and interactive experiences. Since this exhibit covers physical, visual and philosophical aspects, each segment of the audience can find the most enjoyable way to experience the presented information either separately or as a whole</p>
-                            <p>Holography and Lasers</p>
+                            <p>This exhibition concept combines science, visualization, and philosophic allegory based or holographic approach and ideas.  Each part describes aspects of holography and laser work through interactive experiences and artistic visualization.</p>
                             <div className="project-links">
-                                <a target="_blank" href="https://github.com/OphiophagusHannah/interference">github</a>
-                                <a target="_blank" href="https://in-interference.herokuapp.com/">visit site</a>
+                                <a target="_blank" href="https://in-interference.herokuapp.com/">concept</a>
                             </div>
                         </div>
                     </div>
@@ -96,21 +88,16 @@ function Projects() {
                 <div className="tab projects-item">
                     <input type="radio" id="geo" name="projects"/>
                     <label className="tab-label project-title" htmlFor="geo">
-                        <h4>Prototype / UX/Ui Design / Identity</h4>
+                        <h4>UX/UI / Identity / Concept</h4>
                         <h3>Geometry</h3>
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
                             <h3>Geometry of the City</h3>
-                            <p>Inspired by my love to architecture and ergonomics, this project is a journal and</p>
-                            <h3>Achievements</h3>
-                            <p>Use google maps api to generate map</p>
-                            <p>Reorganized history of worlds architecture</p>
-                            <p>Great cities of the world</p>
-                            <p>Data Visualization with D3.js</p>
-
+                            <p>Inspired by my love of architecture, urban design and ergonomics, this project is meant to elevate travel experiences and provide awareness about urban development.</p>
+                            <span>Data Visualization / Information Architecture</span>
                             <div className="project-links">
-                                <a target="_blank" href="https://geometry-of-the-city.herokuapp.com/">documentation</a>
+                                <a target="_blank" href="https://geometry-of-the-city.herokuapp.com/">concept</a>
                                 <a target="_blank" href="https://www.figma.com/proto/iKIoLZeQyhzjTRgT5ktFcp/Geometry-Of-The-City?node-id=3-14&scaling=scale-down&page-id=3%3A2&starting-point-node-id=3%3A14">prototype</a>
                             </div>
                         </div>
@@ -136,7 +123,7 @@ function Projects() {
                     </div>
                 </div>
 
-                <div className="tab projects-item">
+                {/* <div className="tab projects-item">
                     <input type="radio" id="multidimension" name="projects"/>
                     <label className="tab-label project-title" htmlFor="multidimension">
                         <h4>Information Architecture Study</h4>
@@ -151,7 +138,7 @@ function Projects() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="tab projects-item">
                     <input type="radio" id="refract" name="projects"/>
@@ -198,7 +185,7 @@ function Projects() {
                     </label>
                     <div className="tab-content project-content">
                         <div className="project-tab-inner">
-                            <p>I was working on exloring and learning new techniques of data visualization and information presentation
+                            <p>I was working on exploring and learning new techniques of data visualization and information presentation
                             </p>
                             <div className="project-links">
                                 <a target="_blank" href="https://ophiophagushannah.github.io/the-orbit/documentation/index.html">concept</a>
@@ -210,6 +197,8 @@ function Projects() {
 
                 <div className="codepen-projects">
                     <h3><a target="_blank" href="https://codepen.io/hannahavgust/pens/public">codepen</a></h3>
+                    <h3><a target="_blank" href="
+                    https://www.gulosolutions.com/portfolio/">gulo projects</a></h3>
                 </div>
                 </FadeIn>
             </section>
