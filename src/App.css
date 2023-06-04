@@ -102,6 +102,9 @@ a:hover {
 canvas {
   height: 94vh;
   width: 94vw;
+  display: fixed;
+  top: 0;
+  z-index: -10;
 }
 
 .main-heading h1 {

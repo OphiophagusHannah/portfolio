@@ -14,7 +14,7 @@ function Nav() {
             </div>
 
             <ul className="nav-list-wrapper">
-                <NavLink to="/home" className="nav-link "><li>home</li></NavLink>
+                <NavLink to="/" className="nav-link "><li>home</li></NavLink>
                 <NavLink to="/expertise" className="nav-link "><li>expertise</li></NavLink>
                 <NavLink to="/projects" className="nav-link "><li>projects</li></NavLink>
                 <NavLink to="/about" className="nav-link "><li>about</li></NavLink>

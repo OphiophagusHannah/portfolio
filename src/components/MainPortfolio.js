@@ -9,12 +9,6 @@ import Work from '../pages/Work';
 import Projects from '../pages/Projects';
 
 import ProjectGeo from '../pages/ProjectGeo';
-import ProjectMiphic from '../pages/ProjectMiphic';
-import ProjectInterference from '../pages/ProjectInterference';
-import ProjectOrbit from '../pages/ProjectOrbit';
-import ProjectSol from '../pages/ProjectSol';
-import ProjectExperiments from '../pages/ProjectExperiments';
-import MainPortfolio from './MainPortfolio';
 
 import Nav from './Nav';
 import Footer from './Footer';
@@ -23,7 +17,7 @@ import FadeIn from 'react-fade-in';
 import Canvas from './Canvas'
 
 
-class Main extends Component {
+class MainPortfolio extends Component {
     constructor(props){
         super(props);
         this.handleClick = this.handleClick.bind(this);
@@ -52,24 +46,40 @@ class Main extends Component {
         const { isLight } = this.state;
         const { isDist } = this.state;
         return (
-            <Router>
-                <Routes>
-                    <Route exact path='/' element={<MainPortfolio/>} >
+            <div className={this.state.isLight ? "dark-theme"  :  "light-theme"}>
+            <Canvas />
+
+            <div className={this.state.isOff ? "site-wrapper center-all-content"  :  "site-wrapper"}>
+
+                <div className="left-side">
+                    <FadeIn>
+                        <Nav />
+                        <div className="dots">
+
+                            <div className="dot dot--border" onClick={this.handleClick}></div>
+                            <div className="dot dot--red" onClick={this.handleColor}></div>
+                            {/* <div className="dot dot--red" onClick={this.handleDist}></div> */}
+
+                        </div>
+                    </FadeIn>
+                    <Footer />
+                </div>
+                <div className="right-side" >
+                    <div className="main-wrapper">
+                    <Routes>
                         <Route exact path='/' element={<Home />} />
                         <Route exact path='/expertise' element={<Work />} />
                         <Route exact path='/projects' element={<Projects />} />
                         <Route exact path='/about' element={<About />} />
-                    </Route>
-                    <Route exact path='/projects/geo' element={<ProjectGeo />} />
-                    <Route exact path='/projects/miphic' element={<ProjectMiphic />} />
-                    <Route exact path='/projects/interference' element={<ProjectInterference />} />
-                    <Route exact path='/projects/orbit' element={<ProjectOrbit />} />
-                    <Route exact path='/projects/sol' element={<ProjectSol />} />
-                    <Route exact path='/projects/experiments' element={<ProjectExperiments />} />
-                </Routes>
-            </Router>
+                    </Routes>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
         );
     }
 }
 
-export default Main;
+export default MainPortfolio;
