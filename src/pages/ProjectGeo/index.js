@@ -14,7 +14,7 @@ function ProjectGeo() {
 
     return (
         <div className="geo-project">
- <button onClick={handleClick}>Navigate to Home</button>
+            <button onClick={handleClick}>Navigate to Home</button>
             <FadeIn>
             <div>
             <nav className="geo-site-wrapper">

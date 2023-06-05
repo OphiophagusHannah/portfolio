@@ -163,7 +163,7 @@ function Projects() {
                         </div>
                     </div>
 
-                    <div className="tab projects-item">
+                    {/* <div className="tab projects-item">
                         <input type="radio" id="sol" name="projects" />
                         <label className="tab-label project-title" htmlFor="sol">
                             <h4>Interactive Installation / Projected Interfaces</h4>
@@ -179,9 +179,9 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
-                    <div className="tab projects-item">
+                    {/* <div className="tab projects-item">
                         <input type="radio" id="orbit" name="projects" />
                         <label className="tab-label project-title" htmlFor="orbit">
                             <h4>Data Visualization / D3 Development</h4>
@@ -198,7 +198,7 @@ function Projects() {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="codepen-projects">
                         {/* <h3><a target="_blank" href="https://codepen.io/hannahavgust/pens/public">codepen</a></h3> */}

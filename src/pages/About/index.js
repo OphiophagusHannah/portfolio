@@ -36,7 +36,7 @@ function About() {
                             <div className="flex-end">
                                 <div className="about-inner">
                                     <h3>Current Interests</h3>
-                                    <p>Glitch art and distortion. Architecture. Holography. </p>
+                                    <p>Glitch art and distortion. Architecture. Holography.</p>
                                 </div>
                             </div>
                         </div>
