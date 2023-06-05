@@ -12,7 +12,7 @@ function About() {
                             <div className="flex-end">
                                 <div className="about-inner">
                                     <p>
-                                        Currently working as a Front-end Web Developer at <a target="_blank" href="https://gulosolutions.com">Gulo</a></p>
+                                        Currently working as a Front-end Web Developer at <a target="_blank" rel="noreferrer" href="https://gulosolutions.com">Gulo</a></p>
                                 </div>
                             </div>
                         </div>
