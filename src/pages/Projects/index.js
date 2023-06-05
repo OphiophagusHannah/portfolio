@@ -25,8 +25,8 @@ function Projects() {
                                 </div>
                                 <div className="project-links">
                                     <a href="/projects/miphic">concept</a>
-                                    <a target="_blank" href="https://www.miphic.co/">visit site</a>
-                                    <a target="_blank" href="https://github.com/OphiophagusHannah/miphic">github</a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.miphic.co/">visit site</a>
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/OphiophagusHannah/miphic">github</a>
                                 </div>
                             </div>
                         </div>
@@ -44,7 +44,7 @@ function Projects() {
                                 <div className="project-tags">
                                 </div>
                                 <div className="project-links">
-                                    <a target="_blank" href="https://ophiophagushannah.github.io/metamorphoses/">view gallery</a>
+                                    <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/metamorphoses/">view gallery</a>
                                 </div>
                             </div>
                         </div>
@@ -62,8 +62,8 @@ function Projects() {
                                 <div className="project-tags">
                                 </div>
                                 <div className="project-links">
-                                    <a target="_blank" href="https://ophiophagushannah.github.io/experiments/">visit site</a>
-                                    <a target="_blank" href="https://github.com/OphiophagusHannah/experiments">github</a>
+                                    <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/experiments/">visit site</a>
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/OphiophagusHannah/experiments">github</a>
                                 </div>
                             </div>
                         </div>
@@ -81,8 +81,8 @@ function Projects() {
                                 <p>Originally the idea was created as a potential prototype for Web Virtual Reality Gallery, which led towards two paths of possible interactions: 1st Path:Full AR/ VR gallery with gesture control. 2nd Path: Experience with the gallery using mobile phone as controller (main goal within this path is accessibility from anywhere).
                                 </p>
                                 <div className="project-links">
-                                    <a target="_blank" href="https://ophiophagushannah.github.io/enso/">visit site</a>
-                                    <a target="_blank" href="https://github.com/OphiophagusHannah/gallery">github</a>
+                                    <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/enso/">visit site</a>
+                                    <a target="_blank" rel="noreferrer" href="https://github.com/OphiophagusHannah/gallery">github</a>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +119,7 @@ function Projects() {
                                 <span>Data Visualization / Information Architecture</span>
                                 <div className="project-links">
                                     <a href="/projects/geo">concept</a>
-                                    <a target="_blank" href="https://www.figma.com/proto/iKIoLZeQyhzjTRgT5ktFcp/Geometry-Of-The-City?node-id=3-14&scaling=scale-down&page-id=3%3A2&starting-point-node-id=3%3A14">prototype</a>
+                                    <a target="_blank" rel="noreferrer" href="https://www.figma.com/proto/iKIoLZeQyhzjTRgT5ktFcp/Geometry-Of-The-City?node-id=3-14&scaling=scale-down&page-id=3%3A2&starting-point-node-id=3%3A14">prototype</a>
                                 </div>
                             </div>
                         </div>
@@ -157,7 +157,7 @@ function Projects() {
                                 <p>I was involved in three main phases of the project: Research and Ideation, Design and Prototyping, and Development and played a role in each part of the iterative process while working closely with a team to create a collaborative web application for the community of students and organizations.
                                 </p>
                                 <div className="project-links">
-                                    <a target="_blank" href="https://ophiophagushannah.github.io/refract/documentation/index.html">documentation</a>
+                                    <a target="_blank" rel="noreferrer" href="https://ophiophagushannah.github.io/refract/documentation/index.html">documentation</a>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +202,7 @@ function Projects() {
 
                     <div className="codepen-projects">
                         {/* <h3><a target="_blank" href="https://codepen.io/hannahavgust/pens/public">codepen</a></h3> */}
-                        <h3><a target="_blank" href="
+                        <h3><a target="_blank" rel="noreferrer" href="
                     https://www.gulosolutions.com/portfolio/">gulo projects</a></h3>
                     </div>
                 </FadeIn>
