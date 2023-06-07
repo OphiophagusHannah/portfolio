@@ -13,20 +13,16 @@ import ProjectMiphic from '../pages/ProjectMiphic';
 import ProjectInterference from '../pages/ProjectInterference';
 import MainPortfolio from './MainPortfolio';
 
-
-
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
         }
     }
 
     componentDidMount() {
     }
     render() {
-
         return (
             <Router>
                 <Routes>
@@ -39,7 +35,7 @@ class Main extends Component {
                     <Route exact path='/projects/geo' element={<ProjectGeo />} />
                     <Route exact path='/projects/miphic' element={<ProjectMiphic />} />
                     <Route exact path='/projects/interference' element={<ProjectInterference />} />
-
+                    <Route exact path='/welcome' />
                 </Routes>
             </Router>
         );

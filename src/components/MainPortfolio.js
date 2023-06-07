@@ -1,6 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+
+
 import React, { Component } from 'react';
+
+import { Query } from 'react-apollo';
+import ProjectView from '../components/ProjectView';
+import GraphCMSContent from '../services/graphcms';
 
 import About from '../pages/About';
 import Home from '../pages/Home';
