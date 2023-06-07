@@ -4,9 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import React, { Component } from 'react';
 
-import { Query } from 'react-apollo';
-import ProjectView from '../components/ProjectView';
-import GraphCMSContent from '../services/graphcms';
+
 
 import About from '../pages/About';
 import Home from '../pages/Home';
@@ -49,6 +47,7 @@ class MainPortfolio extends Component {
         // const { isOff } = this.state;
         // const { isLight } = this.state;
         // const { isDist } = this.state;
+
         return (
             <div className={this.state.isLight ? "dark-theme" : "light-theme"}>
                 <Canvas />

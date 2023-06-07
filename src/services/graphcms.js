@@ -15,11 +15,16 @@ export default class GraphCMSContent {
     fetchPosts() {
         const myProjects = gql`
       query {
-        projects {
-            id
-            projectTitle
-            projectDescription
-        }
+    projects {
+    id
+    projectTitle
+    projectDescription
+  }
+  expertises {
+    expertiseDescription
+    expertiseTitle
+    id
+  }
 
       }
     `;
