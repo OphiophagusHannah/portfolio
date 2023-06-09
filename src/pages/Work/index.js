@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Query } from 'react-apollo';
-import ExpertiseView from '../../components/ExpertiseView';
+import ViewExpertise from '../../components/ViewExpertise';
 import GraphCMSContent from '../../services/graphcms';
+import FadeIn from 'react-fade-in';
 
 const Work = props => {
     const [expertises, setPosts] = React.useState([]);
@@ -11,33 +12,29 @@ const Work = props => {
             <div>{expertises}</div>
         </div>
     );
-    // const ErrorLoadingPostsJsx = () => (
-    //     <div className="mx-auto alert-danger">
-    //         Error!
-    //     </div>
-    // );
 
     return (
 
-        <div className="">
+        <section className="expertise" id="keys">
+            {/* <h2>expertise & competence</h2> */}
+            <div className="tabs competence-wrapper">
 
-            <Query query={Client.fetchPosts()}>
-                {
-                    ({ loading, error, data }) => {
-                        if (loading) return LoadingPostsJsx();
-                        // if (error) {
-                        //     console.log(error);
-                        //     return ErrorLoadingPostsJsx();
-                        // }
-                        const POSTS = data.expertises;
-                        setPosts(POSTS);
-                        return POSTS.slice(0, 6).map(expertise => (
-                            <ExpertiseView expertise={expertise} />
-                        ));
+                <Query query={Client.fetchPosts()}>
+                    {
+                        ({ loading, data }) => {
+                            if (loading) return LoadingPostsJsx();
+
+                            const POSTS = data.expertises;
+                            setPosts(POSTS);
+                            return POSTS.slice(0, 6).map(expertise => (
+                                <ViewExpertise expertise={expertise} />
+                            ));
+                        }
                     }
-                }
-            </Query>
-        </div>
+                </Query>
+
+            </div>
+        </section>
     );
 };
 export default Work;

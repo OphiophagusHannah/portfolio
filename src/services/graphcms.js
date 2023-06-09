@@ -14,20 +14,46 @@ export default class GraphCMSContent {
 
     fetchPosts() {
         const myProjects = gql`
-      query {
-    projects {
-    id
-    projectTitle
-    projectDescription
-  }
-  expertises {
-    expertiseDescription
-    expertiseTitle
-    id
-  }
-
-      }
-    `;
+        query {
+            projects {
+                id
+                projectTitle
+                projectDescription
+                projectTagline
+                projectTag
+                projectLinks {
+                    ... on Link {
+                        linkTitle
+                        url
+                    }
+                }
+            }
+            expertises {
+                expertiseDescription
+                expertiseTitle
+                id
+                tag
+                skills {
+                    ... on Skill {
+                        id
+                        skill
+                    }
+                }
+            }
+            abouts {
+                infoContent {
+                ... on Section {
+                    id
+                    heading
+                    content
+                }
+                }
+                intro {
+                    html
+                }
+            }
+        }
+        `;
         return myProjects;
     };
 };

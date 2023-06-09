@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX",
-    "sources": [
-        "experiments.scss"
-    ],
-    "names": [],
-    "file": "experiments.css"
-}
+{"version":3,"sources":["experiments.scss","experiments.css"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,YAAA;EACA,SAAA;EACA,UAAA;ACCF","file":"experiments.css"}

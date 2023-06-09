@@ -17,7 +17,7 @@ function Projects() {
                         </label>
                         <div className="tab-content project-content">
                             <div className="project-tab-inner">
-                                <p>Website for the chemical science company that dedicates themself to progressive mitochondrial research. I started with simple identity design and continued with full on development, hosting and support.</p>
+                                <p>Website for the chemical science company that dedicates themselves to progressive mitochondrial research. I started with simple identity design and continued with full on development, hosting and support.</p>
                                 <div className="project-tags">
                                     <span>React</span>
                                     <span>GraphCMS</span>

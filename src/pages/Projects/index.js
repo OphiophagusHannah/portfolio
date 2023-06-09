@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { Query } from 'react-apollo';
-import ProjectView from '../../components/ProjectView';
+import ViewProject from '../../components/ViewProject';
 import GraphCMSContent from '../../services/graphcms';
+import FadeIn from 'react-fade-in';
 
 const Projects = props => {
     const [projects, setPosts] = React.useState([]);
@@ -18,29 +19,28 @@ const Projects = props => {
     // );
 
     return (
-
-        <div className="">
-
-            <Query query={Client.fetchPosts()}>
-                {
-                    ({ loading, error, data }) => {
-                        if (loading) return LoadingPostsJsx();
-                        // if (error) {
-                        //     console.log(error);
-                        //     return ErrorLoadingPostsJsx();
-                        // }
-                        const POSTS = data.projects;
-                        setPosts(POSTS);
-                        return POSTS.slice(0, 6).map(project => (
-                            <ProjectView project={project} />
-                        ));
+        <section className="tabs" id="projects">
+            {/* <h2>personal projects & studies</h2> */}
+            <FadeIn>
+                <Query query={Client.fetchPosts()}>
+                    {
+                        ({ loading, data }) => {
+                            if (loading) return LoadingPostsJsx();
+                            const POSTS = data.projects;
+                            setPosts(POSTS);
+                            return POSTS.slice(0, 6).map(project => (
+                                <ViewProject project={project} />
+                            ));
+                        }
                     }
-                }
-            </Query>
-        </div>
-
-
-
+                </Query>
+                <div className="codepen-projects">
+                    {/* <h3><a target="_blank" href="https://codepen.io/hannahavgust/pens/public">codepen</a></h3> */}
+                    <h3><a target="_blank" rel="noreferrer" href="
+                    https://www.gulosolutions.com/portfolio/">gulo projects</a></h3>
+                </div>
+            </FadeIn>
+        </section>
     );
 };
 export default Projects;

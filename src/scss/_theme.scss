@@ -1,6 +1,4 @@
-
 // This file contains modifications of the styles based on theme and alignment changes
-
 
 // Dark Color Layout
 
@@ -23,10 +21,8 @@
     }
 
     &--blank {
-
-        border-color: white;
-        background: none;
-
+      border-color: white;
+      background: none;
     }
   }
 
@@ -78,7 +74,8 @@
   input:checked {
     + .tab-label {
       color: white;
-      h3, h4 {
+      h3,
+      h4 {
         color: white;
       }
     }
@@ -114,11 +111,9 @@
     }
 
     &--blank {
-
       border-color: black;
       background: none;
-
-  }
+    }
   }
 
   a,
@@ -138,7 +133,6 @@
 
   a,
   .nav-list-wrapper a {
-
     li {
       &:hover {
         color: grey;
@@ -149,10 +143,8 @@
     &.active li {
       color: rgb(202, 58, 41);
       // text-decoration: line-through;
-
     }
   }
-
 
   .site-wrapper {
     background: rgba(253, 253, 247, 0.753);
@@ -173,7 +165,8 @@
   input:checked {
     + .tab-label {
       color: black;
-      h3, h4 {
+      h3,
+      h4 {
         color: black;
       }
     }
@@ -222,7 +215,6 @@
     justify-content: flex-start;
   }
 
-
   .projects-item {
     .project-title {
       display: flex;
@@ -259,6 +251,7 @@
       }
 
       .project-links {
+        display: flex;
         a {
           margin-right: 1rem;
           margin-left: 0;
@@ -269,9 +262,13 @@
   }
 
   .expertise {
+    display: flex;
+    // justify-content: flex-start;
+    justify-content: flex-end;
+    align-items: flex-start;
     .competence-wrapper {
       display: flex;
-      justify-content: flex-start;
+      flex-direction: column;
 
       > div {
         display: block;
@@ -284,6 +281,7 @@
   }
 
   #about {
+    align-items: flex-start;
     .flex-end {
       display: flex;
       justify-content: flex-start;

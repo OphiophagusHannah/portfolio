@@ -174,8 +174,8 @@ canvas {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: flex-end;
-
 
   .competence-wrapper > div {
     align-items: flex-end;
@@ -220,6 +220,7 @@ canvas {
 
     .expertise-tags {
       line-break: unset;
+      width: 100%;
       //margin-bottom: 1.5rem;
       border-top: 1px solid;
       padding-top: 1rem;
@@ -236,7 +237,6 @@ canvas {
         line-height: 1.5;
         // color: rgb(202, 58, 41);
         // @include font_tag;
-
       }
     }
 
@@ -253,10 +253,10 @@ canvas {
 
 .about {
   min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 #about {
@@ -284,7 +284,7 @@ canvas {
 
   h3 {
     font-size: 30px;
-    margin-bottom: .7rem;
+    margin-bottom: 0.7rem;
     margin-top: 1rem;
     // text-transform: lowercase;
     // font-size: 18px;
@@ -374,7 +374,6 @@ canvas {
 
         // margin-left: 0;
         // color: rgb(202, 58, 41);
-
       }
 
       line-break: unset;
@@ -382,6 +381,7 @@ canvas {
     }
 
     .project-links {
+      display: flex;
       a {
         margin-left: 1rem;
         margin-right: 0;
@@ -477,7 +477,6 @@ input:checked {
     max-height: 100vh;
     margin-bottom: 1rem;
     padding-bottom: 0rem;
-
   }
 
   ~ .tab-content.competence-content {
@@ -492,17 +491,15 @@ input:checked {
 
 .competence-wrapper div {
   ~ div:nth-child(3) {
-  input:checked {
-    + .tab-label.competence-label + .tab-content.competence-content {
+    input:checked {
+      + .tab-label.competence-label + .tab-content.competence-content {
         margin-bottom: 1.5rem;
       }
     }
   }
 }
 
-
 // SVG Icons
-
 
 // .svg-icon-email {
 //   width: 2.1rem;
@@ -532,12 +529,23 @@ input:checked {
   animation: distort 400ms infinite;
 }
 
-
 @keyframes distort {
-  0% { transform: skewX(-15deg); }
-  5% { transform: skewX(15deg); }
-  10% { transform: skewX(-15deg); }
-  15% { transform: skewX(15deg); }
-  20% { transform: skewX(0deg); }
-  100% { transform: skewX(0deg); }
+  0% {
+    transform: skewX(-15deg);
+  }
+  5% {
+    transform: skewX(15deg);
+  }
+  10% {
+    transform: skewX(-15deg);
+  }
+  15% {
+    transform: skewX(15deg);
+  }
+  20% {
+    transform: skewX(0deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
 }
