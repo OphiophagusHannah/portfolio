@@ -4,6 +4,8 @@
 // Font Imports
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@300;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
 
 @font-face {
   font-family: "Neue-Thin";
@@ -20,7 +22,7 @@
 // Font Mixins
 
 @mixin font_body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Valera', sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -50,8 +52,16 @@ $text-color: white;
 $text-hover: grey;
 $background-color: black;
 $border-color: darkgrey;
+$asphalt: rgb(35, 35, 35);
+$milk: rgb(238, 235, 216);
+$purple: #a565ff;
+$red: #ce3120;
 
 //Base
+
+body, html {
+  border: 0;
+}
 
 * {
   font-family: "Neue-Thin";

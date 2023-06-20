@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Query } from 'react-apollo';
 import ViewAbout from '../../components/ViewAbout';
 import GraphCMSContent from '../../services/graphcms';
-import FadeIn from 'react-fade-in';
 
 const About = props => {
     const [abouts, setPosts] = React.useState([]);

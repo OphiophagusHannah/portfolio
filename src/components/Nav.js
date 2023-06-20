@@ -15,8 +15,9 @@ function Nav() {
 
                 <ul className="nav-list-wrapper">
                     <NavLink to="/" className="nav-link "><li>home</li></NavLink>
-                    <NavLink to="/expertise" className="nav-link "><li>expertise</li></NavLink>
                     <NavLink to="/projects" className="nav-link "><li>projects</li></NavLink>
+                    <NavLink to="/expertise" className="nav-link "><li>expertise</li></NavLink>
+                    
                     <NavLink to="/about" className="nav-link "><li>about</li></NavLink>
                     {/* <a href="#contact" className="nav-link"><li>contact</li></a> */}
                 </ul>

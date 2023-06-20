@@ -2,26 +2,29 @@
 
 // Dark Color Layout
 
+
+
+
 .dark-theme {
   height: 0;
   .dot {
-    background: white;
-    border-color: white;
+    background: $milk;
+    border-color: $milk;
     &--red {
       &:hover {
-        background: rgb(203, 57, 41);
-        border-color: rgb(202, 58, 41);
+        background: $purple;
+        border-color: $purple;
       }
     }
     &--border {
       &:hover {
-        border-color: rgb(202, 58, 41);
-        background: rgba(0, 0, 0, 0);
+        border-color: $purple;
+        background: $asphalt;
       }
     }
 
     &--blank {
-      border-color: white;
+      border-color: $milk;
       background: none;
     }
   }
@@ -36,7 +39,7 @@
   ul,
   li,
   .nav-list-wrapper a li {
-    color: white;
+    color: $milk;
     transition: 0.3s linear;
   }
 
@@ -50,41 +53,55 @@
     }
 
     &.active li {
-      color: rgb(202, 58, 41);
+      color: $purple;
       // text-decoration: line-through;
     }
   }
 
   .site-wrapper {
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid darkgrey;
+    // background: $asphalt;
+    // border: 1px solid darkgrey;
     transition: 0.3s linear;
   }
 
   input:checked + .tab-label.competence-label h3,
   .project-tab-inner {
-    border-color: white !important;
+    border-color: $milk !important;
   }
 
   .project-tags span,
+  label,
   .expertise-tags span {
-    color: white;
+    color: $milk;
+  }
+
+  .competence-label {
+    border-color:$milk;
   }
 
   input:checked {
     + .tab-label {
-      color: white;
+      color: $purple !important;
       h3,
       h4 {
-        color: white;
+        color: $purple!important;
       }
+    }
+    + .tab-label.competence-label {
+      color: $purple!important;
+      border-color: $purple!important;
+  
+      span {
+        color: $purple!important;
+      }
+
     }
   }
 
   .footer-wrapper {
     ul {
       a {
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $milk;
       }
     }
   }
@@ -94,19 +111,23 @@
 
 .light-theme {
   height: 0;
+
+  #darkcontainer {
+    display: none;
+  }
   .dot {
     background: #222222;
     border-color: #222222;
     &--border {
       &:hover {
-        border-color: rgb(202, 58, 41);
+        border-color: $red;
         background: white;
       }
     }
     &--red {
       &:hover {
-        border-color: rgb(202, 58, 41);
-        background: rgb(202, 58, 41);
+        border-color: $red;
+        background: $red;
       }
     }
 
@@ -141,14 +162,14 @@
     }
 
     &.active li {
-      color: rgb(202, 58, 41);
+      color: $red;
       // text-decoration: line-through;
     }
   }
 
   .site-wrapper {
-    background: rgba(253, 253, 247, 0.753);
-    border: 1px solid lightgrey;
+    background: rgba(253, 253, 247, 0.747);
+    // border: 1px solid lightgrey;
     transition: 0.3s linear;
   }
 
@@ -164,10 +185,10 @@
 
   input:checked {
     + .tab-label {
-      color: black;
+      color: $red;
       h3,
       h4 {
-        color: black;
+        color: $red;
       }
     }
   }
@@ -233,10 +254,10 @@
         width: 50%;
         font-size: 18px;
         line-height: 1.6;
-        padding-left: 2rem;
+        // padding-left: 2rem;
         padding-bottom: 0.5rem;
-        border-left: 2px solid;
-        border-right: 0px solid;
+        // border-left: 2px solid;
+        // border-right: 0px solid;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -275,7 +296,8 @@
       }
 
       .competence {
-        max-width: 26rem;
+        max-width: 28rem;
+        padding-left: 0;
       }
     }
   }

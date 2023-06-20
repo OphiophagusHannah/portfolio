@@ -1,5 +1,4 @@
 import React from 'react';
-import FadeIn from 'react-fade-in';
 
 
 const ViewExpertise = ({ expertise }) => {
@@ -14,12 +13,14 @@ const ViewExpertise = ({ expertise }) => {
 
     return (
         <div className="tab competence">
-            <input type="checkbox" id={tag} />
+           
+            <h3>{expertise.expertiseTitle}</h3>
+                <p>{expertise.expertiseDescription}</p>
+                <input type="checkbox" id={tag}  />
             <label className="tab-label competence-label" htmlFor={tag}>
                 {/* <div className="dot dot--blank"></div> */}
-                <h3>{expertise.expertiseTitle}</h3>
-                <p>{expertise.expertiseDescription}</p>
-                <span>{expertise.moreInfo}</span>
+                    <span>{expertise.moreInfo}</span>
+               
             </label>
             <div className="tab-content competence-content">
 
