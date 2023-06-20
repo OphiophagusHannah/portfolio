@@ -84,7 +84,7 @@ function step() {
 
     n = (~~p.x + ~~p.y * w) * 4;
     
-    (b[n] = b[n + 1] = b[n + 2] = color),
+    (b[n] = b[n +1 ] = b[n +2] = color),
       (b[n + 3] = 255);
   }
 

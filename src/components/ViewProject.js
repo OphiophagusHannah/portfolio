@@ -6,7 +6,7 @@ const ViewProject = ({ project }) => {
   const links = project.projectLinks.map((link, id) => {
     return (
       <div key={id}>
-        <a href={link.url} target="">
+        <a href={link.url} target="_blank">
           {link.linkTitle}
         </a>
       </div>

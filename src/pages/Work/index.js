@@ -19,7 +19,7 @@ const Work = (props) => {
   }, []);
 
   return (
-    <section className="expertise" id="keys" >
+    <section className="expertise" id="keys" data-aos={"fade-up"}>
       {/* <h2>expertise & competence</h2> */}
       <div className="tabs competence-wrapper" >
         <Query query={Client.fetchPosts()}>

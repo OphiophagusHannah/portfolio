@@ -13,14 +13,14 @@
 
 #lightcontainer,
 #lightcontainer canvas {
-  margin-left: 0 !important;
-  margin-top: 0 !important;
-  background: $asphalt;
-  height: 100vh;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  left: 0;
+  // margin-left: 0 !important;
+  // margin-top: 0 !important;
+  // background: $asphalt;
+  // height: 100vh;
+  // width: 100vw;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
 }
 
 #lightcontainer canvas {
@@ -221,7 +221,7 @@
   .competence-wrapper {
     // padding-top: 5.2rem;
     padding-bottom: .5rem;
-    display: flex;
+    // display: flex;
     align-items: flex-end;
     > div {
       align-items: flex-start;
@@ -244,7 +244,7 @@
     // display: flex;
     // flex-direction: column;
     // padding-right: 15px;
-    max-width: 23rem;
+    max-width: 25rem;
     margin-top: auto;
     margin-bottom: 0;
     padding-left: 3rem;
@@ -253,6 +253,7 @@
     .competence-content {
       // max-width: 27rem;
       // max-width: 0;
+   
     }
 
     label {
@@ -324,6 +325,8 @@
       display: flex;
       justify-content: flex-start;
       flex-wrap: wrap;
+
+      padding-bottom: 1.5rem;
 
       span {
         margin-left: 0rem;
@@ -413,8 +416,14 @@
 // Projects
 
 #projects {
-  padding-top: 6.8rem;
-  padding-bottom: 1rem;
+  // padding-top: 6.8rem;
+  // padding-bottom: 1rem;
+
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
   h2 {
     display: flex;
     justify-content: flex-end;
