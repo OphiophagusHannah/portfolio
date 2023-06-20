@@ -34,19 +34,18 @@ class MainPortfolio extends Component {
     this.setState({ isDist: !this.state.isDist });
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+
+
+  }
+
   render() {
-    // const { isOff } = this.state;
-    // const { isLight } = this.state;
-    // const { isDist } = this.state;
 
     return (
       <div className={this.state.isLight ? "dark-theme" : "light-theme"}>
-        {/* <Canvas /> */}
         <div id="lightcontainer">
-              <Canvas />
-    </div>
-      
+            <Canvas />
+        </div>
         <div
           className={
             this.state.isOff
@@ -54,6 +53,7 @@ class MainPortfolio extends Component {
               : "site-wrapper"
           }
         >
+ 
           <div className="left-side">
             <FadeIn>
               <Nav />

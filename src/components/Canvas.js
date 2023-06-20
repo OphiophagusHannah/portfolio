@@ -5,6 +5,7 @@ const Canvas = (props) => {
 
   useEffect(() => {
     let canvas;
+    let container;
     let init;
     let blob;
 
