@@ -1,46 +1,22 @@
-var NUM_PARTICLES = (ROWS = 100) * (COLS = 190),
-  THICKNESS = Math.pow(400, 2),
-  SPACING = 20,
-  MARGIN = 0,
-  COLOR = 300,
-  DRAG = 0.2,
-  EASE = 0.25,
-
-    
-    // used for sine approximation, but Math.sin in Chrome is still fast enough :)http://jsperf.com/math-sin-vs-sine-approximation
-
-    B = 4 / Math.PI,
-    C = -4 / Math.pow( Math.PI, 2 ),
-    P = 0.225,
-
-
-
+var rows = 100,
+  columns = 190,
+  number = columns * rows,
+  thick = Math.pow(400, 2),
+  margin = 15,
+  padding = 0,
+  color = 200,
+  magnet = 0.4,
+  ease = 0.15,
   container,
   particle,
   canvas,
-  mouse,
   stats,
   list,
   ctx,
-  tog,
-  man,
   dx,
   dy,
   mx,
-  my,
-  d,
-  t,
-  f,
-  a,
-  b,
-  i,
-  n,
-  w,
-  h,
-  p,
-  s,
-  r,
-  c;
+  my;
 
 particle = {
   vx: 0,
@@ -54,21 +30,19 @@ function init() {
   canvas = document.createElement("canvas");
 
   ctx = canvas.getContext("2d");
-  man = false;
-  tog = true;
 
   list = [];
 
-  w = canvas.width = COLS * SPACING + MARGIN * 2;
-  h = canvas.height = ROWS * SPACING + MARGIN * 2;
+  w = canvas.width = columns * margin + padding * 2;
+  h = canvas.height = rows * margin + padding * 2;
 
   container.style.marginLeft = Math.round(w * -0.5) + "px";
   container.style.marginTop = Math.round(h * -0.5) + "px";
 
-  for (i = 0; i < NUM_PARTICLES; i++) {
+  for (i = 0; i < number; i++) {
     p = Object.create(particle);
-    p.x = p.ox = MARGIN + SPACING * (i % COLS);
-    p.y = p.oy = MARGIN + SPACING * Math.floor(i / COLS);
+    p.x = p.ox = padding + margin * (i % columns);
+    p.y = p.oy = padding + margin * Math.floor(i / columns);
 
     list[i] = p;
   }
@@ -77,54 +51,44 @@ function init() {
     bounds = container.getBoundingClientRect();
     mx = e.clientX - bounds.left;
     my = e.clientY - bounds.top;
-    man = true;
   });
-
-  if (typeof Stats === "function") {
-    document.body.appendChild((stats = new Stats()).domElement);
-  }
 
   container.appendChild(canvas);
 }
 
 function step() {
-  if (stats) stats.begin();
+  for (i = 0; i < number; i++) {
+    p = list[i];
 
-  if ((tog = !tog)) {
-    if (!man) {
-      t = +new Date() * 0.001;
-      mx = w * 0.5 + Math.cos(t * 2.1) * Math.cos(t * 0.9) * w * 0.45;
-      my = h * 0.5 + Math.sin(t * 3.2) * Math.tan(Math.sin(t * 0.8)) * h * 0.45;
+    dx = mx - p.x
+    dy = my - p.y
+
+    d = dx * dx + dy * dy;
+    f = -thick / d;
+
+    if (d < thick) {
+      t = Math.atan2(dy, dx);
+      p.vx += f * Math.cos(t);
+      p.vy += f * Math.sin(t);
     }
 
-    for (i = 0; i < NUM_PARTICLES; i++) {
-      p = list[i];
-
-      d = (dx = mx - p.x) * dx + (dy = my - p.y) * dy;
-      f = -THICKNESS / d;
-
-      if (d < THICKNESS) {
-        t = Math.atan2(dy, dx);
-        p.vx += f * Math.cos(t);
-        p.vy += f * Math.sin(t);
-      }
-
-      p.x += (p.vx *= DRAG) + (p.ox - p.x) * EASE;
-      p.y += (p.vy *= DRAG) + (p.oy - p.y) * EASE;
-    }
-  } else {
-    b = (a = ctx.createImageData(w, h)).data;
-
-    for (i = 0; i < NUM_PARTICLES; i++) {
-      p = list[i];
-      (b[(n = (~~p.x + ~~p.y * w) * 4)] = b[n + 1] = b[n + 2] = COLOR),
-        (b[n + 3] = 255);
-    }
-
-    ctx.putImageData(a, 0, 0);
+    p.x += (p.vx *= magnet) + (p.ox - p.x) * ease;
+    p.y += (p.vy *= magnet) + (p.oy - p.y) * ease;
   }
 
-  if (stats) stats.end();
+  a = ctx.createImageData(w, h)
+  b = a.data;
+
+  for (i = 0; i < number; i++) {
+    p = list[i];
+
+    n = (~~p.x + ~~p.y * w) * 4;
+    
+    (b[n] = b[n + 1] = b[n + 2] = color),
+      (b[n + 3] = 255);
+  }
+
+  ctx.putImageData(a, 0, 0);
 
   requestAnimationFrame(step);
 }
