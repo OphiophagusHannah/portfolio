@@ -4,8 +4,8 @@ const Canvas = (props) => {
   const canvasRef = useRef(null);
 
   useEffect(() => {
-    let canvas;
-    let container;
+    let canvas = document.createElement("canvas");
+    let container = document.getElementById("lightcontainer");
     let init;
     let blob;
 
@@ -242,9 +242,10 @@ const Canvas = (props) => {
     blob = new Blob();
 
     init = function () {
-      container = document.getElementById("lightcontainer");
-      canvas = document.createElement("canvas");
+      // container = document.getElementById("lightcontainer");
+      // canvas = document.createElement("canvas");
       canvas.setAttribute("touch-action", "none");
+      container.appendChild(canvas);
 
       let resize = function () {
         canvas.width = window.innerWidth;
@@ -303,7 +304,7 @@ const Canvas = (props) => {
         oldMousePoint.x = e.clientX;
         oldMousePoint.y = e.clientY;
 
-        container.appendChild(canvas);
+        
       };
       // window.addEventListener('mousemove', mouseMove);
       window.addEventListener("pointermove", mouseMove);

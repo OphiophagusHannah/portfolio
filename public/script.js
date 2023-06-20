@@ -5,15 +5,15 @@ var NUM_PARTICLES = (ROWS = 100) * (COLS = 190),
   COLOR = 300,
   DRAG = 0.2,
   EASE = 0.25,
-  /*
+
     
-    used for sine approximation, but Math.sin in Chrome is still fast enough :)http://jsperf.com/math-sin-vs-sine-approximation
+    // used for sine approximation, but Math.sin in Chrome is still fast enough :)http://jsperf.com/math-sin-vs-sine-approximation
 
     B = 4 / Math.PI,
     C = -4 / Math.pow( Math.PI, 2 ),
     P = 0.225,
 
-    */
+
 
   container,
   particle,
