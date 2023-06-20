@@ -19,8 +19,10 @@ const ViewExpertise = ({ expertise }) => {
                 {/* <div className="dot dot--blank"></div> */}
                 <h3>{expertise.expertiseTitle}</h3>
                 <p>{expertise.expertiseDescription}</p>
+                <span>{expertise.moreInfo}</span>
             </label>
             <div className="tab-content competence-content">
+
                 <div className="expertise-tags">
                     {skills}
                 </div>

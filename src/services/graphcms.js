@@ -31,6 +31,7 @@ export default class GraphCMSContent {
             expertises {
                 expertiseDescription
                 expertiseTitle
+                moreInfo
                 id
                 tag
                 skills {
